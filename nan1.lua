@@ -449,7 +449,7 @@ while true do
         break
     end
     if v66:IsA('ImageLabel') and v66.Image == 'rbxassetid://9968344105' then
-        v66.Image = 'rbxassetid://130883588373523'
+        v66.Image = 'rbxassetid://17874360446'
         v66.ImageTransparency = 0
         v66.ScaleType = Enum.ScaleType.Stretch
     end
@@ -457,7 +457,7 @@ end
 
 local u67 = {
     Wlc = v60:AddTab({
-        Title = 'Boarding',
+        Title = 'Porn',
         Icon = 'rbxassetid://92947874955378',
     }),
     Main = v60:AddTab({
