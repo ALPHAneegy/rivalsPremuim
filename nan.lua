@@ -129,7 +129,7 @@ local function v24(p11, p12)
     if v16.key ~= p11 or v16.hwid ~= p12 then
         print('Server 2: Invalid key.')
 
-        return true, 'Invalid key'
+        return false, 'Invalid key'
     end
     if v16.userlvl ~= 'free' then
         if v16.userlvl ~= 'premium' then
