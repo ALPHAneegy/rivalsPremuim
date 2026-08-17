@@ -458,7 +458,7 @@ local v62 = u41.CreateWindow(v61, {
     TabWidth = 150,
     Size = UDim2.fromOffset(650, 390),
     Acrylic = false,
-    Theme = '8bit',
+    Theme = 'Dark',
     MinimizeKey = Enum.KeyCode.RightShift,
 })
 
