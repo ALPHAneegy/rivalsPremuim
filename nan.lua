@@ -24,7 +24,7 @@ local v8 = '8bit.txt'
 local v9 = game:GetService('RbxAnalyticsService'):GetClientId()
 
 if not isfile(v8) then
-    print("File '8bit.txt' not found.")
+    print('err')
 
     return
 end
@@ -32,78 +32,73 @@ end
 local v10 = readfile(v8)
 
 local function v24(p11, p12)
-    local v13 = c_n({
-        104,
-        116,
-        116,
-        112,
-        115,
-        58,
-        47,
-        47,
-        100,
-        101,
-        118,
-        45,
-        56,
-        98,
-        105,
-        116,
-        115,
-        102,
-        111,
-        114,
-        121,
-        97,
-        46,
-        112,
-        97,
-        110,
-        116,
-        104,
-        101,
-        111,
-        110,
-        115,
-        105,
-        116,
-        101,
-        46,
-        105,
-        111,
-        47,
-        97,
-        117,
-        116,
-        104,
-        46,
-        112,
-        104,
-        112,
-        63,
-        107,
-        101,
-        121,
-        61,
-    }) .. p11 .. c_n({
-        38,
-        104,
-        119,
-        105,
-        100,
-        61,
-    }) .. p12
-
-    print('Checking Server 2: ' .. v13)
-
-    local u14 = http_request({
-        Url = v13,
+    local v13 = {
+        Url = c_n({
+            104,
+            116,
+            116,
+            112,
+            115,
+            58,
+            47,
+            47,
+            100,
+            101,
+            118,
+            45,
+            56,
+            98,
+            105,
+            116,
+            115,
+            102,
+            111,
+            114,
+            121,
+            97,
+            46,
+            112,
+            97,
+            110,
+            116,
+            104,
+            101,
+            111,
+            110,
+            115,
+            105,
+            116,
+            101,
+            46,
+            105,
+            111,
+            47,
+            97,
+            117,
+            116,
+            104,
+            46,
+            112,
+            104,
+            112,
+            63,
+            107,
+            101,
+            121,
+            61,
+        }) .. p11 .. c_n({
+            38,
+            104,
+            119,
+            105,
+            100,
+            61,
+        }) .. p12,
         Method = 'GET',
-    })
+    }
+    local u14 = http_request(v13)
 
     if not (u14 and u14.Body) then
-        print('Server 2: Request failed.')
-
         return false, 'Request failed'
     end
 
@@ -112,12 +107,10 @@ local function v24(p11, p12)
     end)
 
     if not (v15 and v16) then
-        print('Server 2: Failed to parse JSON.')
-
         return false, 'Invalid response'
     end
     if v16.error == 'HWID mismatch' then
-        print('Server 2: HWID Mismatch!')
+        print('HWID Mismatch!')
         Fluent:Notify({
             Title = 'HWID Mismatch',
             Content = "Your HWID doesn't match. Please contact support for assistance.",
@@ -127,13 +120,11 @@ local function v24(p11, p12)
         return false, 'HWID mismatch'
     end
     if v16.key ~= p11 or v16.hwid ~= p12 then
-        print('Server 2: Invalid key.')
-
-        return true, 'Invalid key'
+        return false, 'Invalid key'
     end
-    if v16.userlvl ~= 'free' then
-        if v16.userlvl ~= 'premium' then
-            if v16.userlvl == 'sponsor' then
+    if v16.userlvl ~= 'ref' then
+        if v16.userlvl ~= 'erp' then
+            if v16.userlvl == 'pos' then
                 print('Thanks for supporting the project')
                 Fluent:Notify({
                     Title = 'Sponsor Key',
@@ -179,61 +170,58 @@ local function v24(p11, p12)
         table.insert(v23, v22 .. ' seconds')
     end
 
-    return false, 'Valid Key (Server 2). Time left: ' .. table.concat(v23, ', ')
+    return true, 'Valid Key (Server 2). Time left: ' .. table.concat(v23, ', ')
 end
 
-local v37, v38 = (function(p25)
-    local v26 = c_n({
-        104,
-        116,
-        116,
-        112,
-        115,
-        58,
-        47,
-        47,
-        119,
-        111,
-        114,
-        107,
-        46,
-        105,
-        110,
-        107,
-        47,
-        95,
-        97,
-        112,
-        105,
-        47,
-        118,
-        50,
-        47,
-        116,
-        111,
-        107,
-        101,
-        110,
-        47,
-        105,
-        115,
-        86,
-        97,
-        108,
-        105,
-        100,
-        47,
-    }) .. p25
-
-    print('Checking Server 1: ' .. v26)
-
-    local u27 = http_request({
-        Url = v26,
+local v37, _ = (function(p25)
+    local v26 = {
+        Url = c_n({
+            104,
+            116,
+            116,
+            112,
+            115,
+            58,
+            47,
+            47,
+            119,
+            111,
+            114,
+            107,
+            46,
+            105,
+            110,
+            107,
+            47,
+            95,
+            97,
+            112,
+            105,
+            47,
+            118,
+            50,
+            47,
+            116,
+            111,
+            107,
+            101,
+            110,
+            47,
+            105,
+            115,
+            86,
+            97,
+            108,
+            105,
+            100,
+            47,
+        }) .. p25,
         Method = 'GET',
-    })
+    }
+    local u27 = http_request(v26)
 
     if not (u27 and u27.Body) then
-        print('Server 1: Request failed, checking Server 2...')
+        print('c')
 
         return false, 'Request failed'
     end
@@ -243,17 +231,15 @@ local v37, v38 = (function(p25)
     end)
 
     if not (v28 and v29) then
-        print('Server 1: Failed to parse JSON, checking Server 2...')
+        print('c')
 
         return false, 'Invalid response'
     end
     if v29.valid == false then
-        print('Server 1: Key expired, checking Server 2...')
-
         return false, 'Expired'
     end
     if v29.valid ~= true or not v29.info or not v29.info.expiresAfter then
-        print('Server 1: Unexpected response, checking Server 2...')
+        print('c')
 
         return false, 'Invalid response'
     end
@@ -282,17 +268,10 @@ local v37, v38 = (function(p25)
     return true, 'Valid Key (Server 1). Time left: ' .. table.concat(v36, ', ')
 end)(v10)
 
-if v37 then
-    print(v38)
-else
-    print('S1: ' .. v38)
+if not v37 then
+    local v38, _ = v24(v10, v9)
 
-    local v39, v40 = v24(v10, v9)
-
-    if v39 then
-        print(v40)
-    else
-        print('S2: ' .. v40)
+    if not v38 then
         game:GetService('Players').LocalPlayer:Kick('Invalid login, please visit Discord for help.')
         wait(99999999999)
     end
