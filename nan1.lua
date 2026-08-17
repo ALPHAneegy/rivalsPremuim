@@ -457,7 +457,7 @@ end
 
 local u67 = {
     Wlc = v60:AddTab({
-        Title = 'Boarding',
+        Title = 'Info',
         Icon = 'rbxassetid://124620632231839',
     }),
     Main = v60:AddTab({
@@ -669,7 +669,12 @@ else
 end
 
 u67.Wlc:AddParagraph({
-    Title = 'Are you winning son ?',
+    Title = 'Szoo premium Rivals',
+    Content = '',
+})
+
+u67.Wlc:AddParagraph({
+    Title = 'Made by V.Roy',
     Content = '',
 })
 
