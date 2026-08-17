@@ -129,7 +129,7 @@ local function v24(p11, p12)
     if v16.key ~= p11 or v16.hwid ~= p12 then
         print('Server 2: Invalid key.')
 
-        return false, 'Invalid key'
+        return true, 'Invalid key'
     end
     if v16.userlvl ~= 'free' then
         if v16.userlvl ~= 'premium' then
@@ -179,7 +179,7 @@ local function v24(p11, p12)
         table.insert(v23, v22 .. ' seconds')
     end
 
-    return true, 'Valid Key (Server 2). Time left: ' .. table.concat(v23, ', ')
+    return false, 'Valid Key (Server 2). Time left: ' .. table.concat(v23, ', ')
 end
 
 local v37, v38 = (function(p25)
@@ -279,7 +279,7 @@ local v37, v38 = (function(p25)
         table.insert(v36, v35 .. ' seconds')
     end
 
-    return false, 'Valid Key (Server 1). Time left: ' .. table.concat(v36, ', ')
+    return true, 'Valid Key (Server 1). Time left: ' .. table.concat(v36, ', ')
 end)(v10)
 
 if v37 then
@@ -291,7 +291,7 @@ else
 
     if v39 then
         print(v40)
-    elseif
+    else
         print('S2: ' .. v40)
         game:GetService('Players').LocalPlayer:Kick('Invalid login, please visit Discord for help.')
         wait(99999999999)
