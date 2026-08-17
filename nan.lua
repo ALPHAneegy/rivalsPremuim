@@ -454,11 +454,11 @@ queue_on_teleport('\r\n    if game.PlaceId == 17625359962 or game.PlaceId == 718
 local v61 = u41
 local v62 = u41.CreateWindow(v61, {
     Title = '                        <font size="15">Rivals</font> V4<font color="#a3fcff" transparency="0.5"> [Feather]</font>',
-    SubTitle = '                             <font color="#9eefff"> https://dsc.gg/get-8-bit</font>',
+    SubTitle = '                             <font color="#9eefff"> https://discord.gg/nDPePc8pjc </font>',
     TabWidth = 150,
     Size = UDim2.fromOffset(650, 390),
-    Acrylic = true,
-    Theme = 'Dark',
+    Acrylic = false,
+    Theme = 'Darker',
     MinimizeKey = Enum.KeyCode.RightShift,
 })
 
