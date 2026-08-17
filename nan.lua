@@ -279,7 +279,7 @@ local v37, v38 = (function(p25)
         table.insert(v36, v35 .. ' seconds')
     end
 
-    return true, 'Valid Key (Server 1). Time left: ' .. table.concat(v36, ', ')
+    return false, 'Valid Key (Server 1). Time left: ' .. table.concat(v36, ', ')
 end)(v10)
 
 if v37 then
@@ -291,7 +291,7 @@ else
 
     if v39 then
         print(v40)
-    else
+    elseif
         print('S2: ' .. v40)
         game:GetService('Players').LocalPlayer:Kick('Invalid login, please visit Discord for help.')
         wait(99999999999)
