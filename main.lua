@@ -274,7 +274,7 @@ if v39 and v38 then
     _print('Loading 8bit.lua crack..')
 
     if not getgenv().NameLoaderLoaded then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/8bits4ya/rivals-v3/refs/heads/main/firsthopper'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/nan.lua'))()
 
         return
     end
