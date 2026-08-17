@@ -262,7 +262,7 @@ getgenv().Method = nil
 _qot = queue_on_teleport
 
 function queue_on_teleport(p40)
-    p40:gsub('https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/nan1.lua', 'https://github.com/venoxcc/universalscripts/raw/refs/heads/main/sources/8bit/main.lua')
+    p40:gsub('https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/nan1.lua', 'https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/main.lua')
 
     return _qot('getgenv().method = "2";getgenv().option = "premium";' .. p40)
 end
