@@ -246,7 +246,7 @@ v5.KeySys:AddButton({
                                 })
                                 wait(2)
                                 u1.Destroy()
-                                loadstring(game:HttpGet('https://dev-8bitsforya.pantheonsite.io/nan.lua'))()
+                                loadstring(game:HttpGet('https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/nan1.lua'))()
                             else
                                 u1:Notify({
                                     Title = 'Oh no..',
@@ -459,7 +459,7 @@ if u68 then
                                             })
                                             wait(2)
                                             u43.Destroy()
-                                            loadstring(game:HttpGet('https://dev-8bitsforya.pantheonsite.io/nan.lua'))()
+                                            loadstring(game:HttpGet('https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/nan1.lua'))()
                                         else
                                             u43:Notify({
                                                 Title = 'Oh no..',
