@@ -2460,8 +2460,8 @@ end)
 _UserInputService2.InputBegan:Connect(SilentAimUIS)
 DrawFov()
 u69.Silent:AddParagraph({
-    Title = 'Please get 8bit client for better experince.',
-    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use 8bit autoclicker client then do taptap to connect.',
+    Title = 'Please get Szoo client for better experince.',
+    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use Szoo autoclicker client then do taptap to connect.',
 })
 
 local _SAimtgl = u69.Silent:AddToggle('SAimtgl', {
@@ -4479,8 +4479,8 @@ end)
 _UserInputService5.InputBegan:Connect(SilentAimUIS)
 DrawFov()
 u69.Silent:AddParagraph({
-    Title = 'Please get 8bit client for better experince.',
-    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use 8bit autoclicker client then do taptap to connect.',
+    Title = 'Please get Szoo client for better experince.',
+    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use Szoo autoclicker client then do taptap to connect.',
 })
 
 local _SAimtgl2 = u69.Silent:AddToggle('SAimtgl', {
