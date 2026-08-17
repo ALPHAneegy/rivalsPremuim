@@ -198,7 +198,7 @@ local aa = {
                 r.init()
             end
             local E =
-                e(s.Window) {Parent = w, Size = D.Size, Title = "Szoo premium", SubTitle = " ", TabWidth = D.TabWidth}
+                e(s.Window) {Parent = w, Size = D.Size, Title = "                                             Szoo premium", SubTitle = " ", TabWidth = D.TabWidth}
             x.Window = E
             x:SetTheme(D.Theme)
             return E
@@ -1682,7 +1682,7 @@ local aa = {
                 "TextLabel",
                 {
                     RichText = true,
-                    Text = "                                                          💀 Szoo Rivals Premium 💀",
+                    Text = "💀 Szoo Rivals Premium 💀",
                     TextTransparency = 0,
                     FontFace = Font.new("rbxassetid://12187360881", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal),
                     TextSize = 28,
