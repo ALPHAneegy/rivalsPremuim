@@ -502,7 +502,7 @@ local u69 = {
     }),
     Gunmod = v62:AddTab({
         Title = 'Gunmods <font color="#52e2ff"> [New]</font>',
-        Icon = 'rbxassetid://14652100980',
+        Icon = 'rbxassetid://6450238472',
     }),
     Settings = v62:AddTab({
         Title = 'Settings',
