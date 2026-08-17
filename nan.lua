@@ -504,22 +504,6 @@ local u69 = {
         Title = 'Gunmods <font color="#52e2ff"> [New]</font>',
         Icon = 'rbxassetid://125408091543622',
     }),
-    Skinz = v62:AddTab({
-        Title = 'Skins',
-        Icon = 'rbxassetid://76607307318384',
-    }),
-    Nono = v62:AddTab({
-        Title = 'Rage Mode',
-        Icon = 'rbxassetid://87013483692424',
-    }),
-    Essential = v62:AddTab({
-        Title = 'Game',
-        Icon = 'rbxassetid://88251165499317',
-    }),
-    Spoof = v62:AddTab({
-        Title = 'Spoofer',
-        Icon = 'rbxassetid://95920111859083',
-    }),
     Settings = v62:AddTab({
         Title = 'Settings',
         Icon = 'rbxassetid://138649597358592',
@@ -1932,7 +1916,6 @@ task.spawn(function()
         u304 = _Options.targetstat.Value
     end)
 end)
-u69.Skinz:AddSection('Mouse Aimbot [v2]')
 
 function InitializeAimbot2()
     local u329 = false
