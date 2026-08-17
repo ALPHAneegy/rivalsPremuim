@@ -485,7 +485,7 @@ end
 
 local u69 = {
     Wlc = v62:AddTab({
-        Title = 'Boarding',
+        Title = 'Vroy not porn',
         Icon = 'rbxassetid://92947874955378',
     }),
     Main = v62:AddTab({
