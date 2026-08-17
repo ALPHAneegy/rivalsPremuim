@@ -457,44 +457,44 @@ end
 
 local u67 = {
     Wlc = v60:AddTab({
-        Title = 'Porn',
-        Icon = 'rbxassetid://92947874955378',
+        Title = 'Boarding',
+        Icon = 'rbxassetid://124620632231839',
     }),
     Main = v60:AddTab({
         Title = 'Visuals',
-        Icon = 'rbxassetid://87059528626425',
+        Icon = 'rbxassetid://6523858394',
     }),
     AimTab = v60:AddTab({
         Title = 'Aim Features <font color="#52ff7d"> [New]</font>',
-        Icon = 'rbxassetid://87273500737344',
+        Icon = 'rbxassetid://125143421594685',
     }),
     Silent = v60:AddTab({
         Title = 'Silent <font color="#52ff7d"> [New]</font>',
-        Icon = 'rbxassetid://83984616384467',
+        Icon = 'rbxassetid://13557340523',
     }),
     Gunmod = v60:AddTab({
         Title = 'Gunmods <font color="#52e2ff"> [New]</font>',
-        Icon = 'rbxassetid://125408091543622',
+        Icon = 'rbxassetid://6450238472',
     }),
     Skinz = v60:AddTab({
         Title = 'Skins',
-        Icon = 'rbxassetid://76607307318384',
+        Icon = 'rbxassetid://6020038035',
     }),
     Nono = v60:AddTab({
         Title = 'Rage Mode',
-        Icon = 'rbxassetid://87013483692424',
+        Icon = 'rbxassetid://15441239798',
     }),
     Essential = v60:AddTab({
         Title = 'Game',
-        Icon = 'rbxassetid://88251165499317',
+        Icon = 'rbxassetid://83588998609796',
     }),
     Spoof = v60:AddTab({
         Title = 'Spoofer',
-        Icon = 'rbxassetid://95920111859083',
+        Icon = 'rbxassetid://97682995973876',
     }),
     Settings = v60:AddTab({
         Title = 'Settings',
-        Icon = 'rbxassetid://138649597358592',
+        Icon = 'rbxassetid://7145468831',
     }),
 }
 local _Options = u65.Options
@@ -2449,8 +2449,8 @@ end)
 _UserInputService2.InputBegan:Connect(SilentAimUIS)
 DrawFov()
 u67.Silent:AddParagraph({
-    Title = 'Please get 8bit client for better experince.',
-    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use 8bit autoclicker client then do taptap to connect.',
+    Title = 'Please get Szoo client for better experince.',
+    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use Szoo autoclicker client then do taptap to connect.',
 })
 
 local _SAimtgl = u67.Silent:AddToggle('SAimtgl', {
@@ -4466,8 +4466,8 @@ end)
 _UserInputService5.InputBegan:Connect(SilentAimUIS)
 DrawFov()
 u67.Silent:AddParagraph({
-    Title = 'Please get 8bit client for better experince.',
-    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use 8bit autoclicker client then do taptap to connect.',
+    Title = 'Please get Szoo client for better experince.',
+    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use Szoo autoclicker client then do taptap to connect.',
 })
 
 local _SAimtgl2 = u67.Silent:AddToggle('SAimtgl', {
