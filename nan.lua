@@ -457,7 +457,7 @@ local v62 = u41.CreateWindow(v61, {
     SubTitle = '                             <font color="#9eefff"> https://dsc.gg/get-8-bit</font>',
     TabWidth = 150,
     Size = UDim2.fromOffset(650, 390),
-    Acrylic = false,
+    Acrylic = true,
     Theme = 'Dark',
     MinimizeKey = Enum.KeyCode.RightShift,
 })
