@@ -478,7 +478,7 @@ while true do
     end
     if v68:IsA('ImageLabel') and v68.Image == 'rbxassetid://9968344105' then
         v68.Image = 'rbxassetid://17874360446'
-        v68.ImageTransparency = 0
+        v68.ImageTransparency = 0.1
         v68.ScaleType = Enum.ScaleType.Stretch
     end
 end
