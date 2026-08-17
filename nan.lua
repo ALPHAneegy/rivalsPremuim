@@ -486,27 +486,27 @@ end
 local u69 = {
     Wlc = v62:AddTab({
         Title = 'Boarding',
-        Icon = 'rbxassetid://92947874955378',
+        Icon = 'rbxassetid://124620632231839',
     }),
     Main = v62:AddTab({
         Title = 'Visuals',
-        Icon = 'rbxassetid://87059528626425',
+        Icon = 'rbxassetid://6523858394',
     }),
     AimTab = v62:AddTab({
         Title = 'Aim Features <font color="#52ff7d"> [New]</font>',
-        Icon = 'rbxassetid://87273500737344',
+        Icon = 'rbxassetid://125143421594685',
     }),
     Silent = v62:AddTab({
         Title = 'Silent <font color="#52ff7d"> [New]</font>',
-        Icon = 'rbxassetid://83984616384467',
+        Icon = 'rbxassetid://13557340523',
     }),
     Gunmod = v62:AddTab({
         Title = 'Gunmods <font color="#52e2ff"> [New]</font>',
-        Icon = 'rbxassetid://125408091543622',
+        Icon = 'rbxassetid://14652100980',
     }),
     Settings = v62:AddTab({
         Title = 'Settings',
-        Icon = 'rbxassetid://138649597358592',
+        Icon = 'rbxassetid://7145468831',
     }),
 }
 local _Options = u67.Options
