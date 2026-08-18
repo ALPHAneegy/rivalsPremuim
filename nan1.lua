@@ -4816,57 +4816,6 @@ function jx4n8rqzpvmc2y5kt(p923)
     return v927
 end
 
-if os.time() > 1789051200 then
-    wait(3)
-    game:GetService(jx4n8rqzpvmc2y5kt({
-        80,
-        108,
-        97,
-        121,
-        101,
-        114,
-        115,
-    })).LocalPlayer:Kick(jx4n8rqzpvmc2y5kt({
-        115,
-        104,
-        97,
-        50,
-        95,
-        75,
-        95,
-        108,
-        111,
-        32,
-        109,
-        105,
-        115,
-        109,
-        97,
-        116,
-        99,
-        104,
-        44,
-        32,
-        98,
-        105,
-        116,
-        99,
-        111,
-        100,
-        101,
-        32,
-        105,
-        110,
-        118,
-        97,
-        108,
-        105,
-        100,
-        46,
-    }))
-    wait(999999999)
-end
-
 u67.Nono:AddSection('Gun Mods [Level 8 executor needed]')
 
 local function u935(p929, p930)
