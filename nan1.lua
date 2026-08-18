@@ -272,8 +272,7 @@ if not v37 then
     local v38, _ = v24(v10, v9)
 
     if not v38 then
-        game:GetService('Players').LocalPlayer:Kick('Invalid login, rejoin to load script.')
-        wait(99999999999)
+        warn('La validación de Server 2 ha fallado.')
     end
 end
 
