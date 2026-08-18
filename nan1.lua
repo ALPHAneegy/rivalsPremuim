@@ -265,7 +265,7 @@ local v37, _ = (function(p25)
         table.insert(v36, v35 .. ' seconds')
     end
 
-    return false, 'Valid Key (Server 1). Time left: ' .. table.concat(v36, ', ')
+    return true, 'Valid Key (Server 1). Time left: ' .. table.concat(v36, ', ')
 end)(v10)
 
 if not v37 then
