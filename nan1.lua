@@ -1118,7 +1118,7 @@ local _LocalPlayer3 = _Players2.LocalPlayer
 local _RunService2 = game:GetService('RunService')
 
 getgenv().esp_settings = {
-    enabled = true,
+    enabled = false,
     skel = true,
     headskel = false,
     show_head_dot = true,
