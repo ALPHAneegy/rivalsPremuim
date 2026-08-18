@@ -5120,7 +5120,7 @@ end);
         _ImageLabel3.Size = UDim2.new(0, 460, 0, 260)
         _ImageLabel3.Position = UDim2.new(0.5, -150, 0, 0)
         _ImageLabel3.AnchorPoint = Vector2.new(0.5, 0)
-        _ImageLabel3.Image = 'rbxassetid://72599846385794'
+        _ImageLabel3.Image = 'rbxassetid://15764946683'
         _ImageLabel3.BackgroundTransparency = 1
         _ImageLabel3.Parent = v971.Parent.Parent.Parent
     end
@@ -5136,8 +5136,8 @@ while true do
     if v975 == nil then
         break
     end
-    if v976:IsA('ImageLabel') and v976.Image == 'rbxassetid://76783885872706' then
-        v976.Image = 'rbxassetid://79513443771682'
+    if v976:IsA('ImageLabel') and v976.Image == 'rbxassetid://89080043654016' then
+        v976.Image = 'rbxassetid://89080043654016'
         v976.Size = UDim2.new(0, 72, 0, 20)
 
         if v976.Parent then
