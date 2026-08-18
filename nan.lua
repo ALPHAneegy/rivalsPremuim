@@ -5134,8 +5134,8 @@ while true do
     if v979 == nil then
         break
     end
-    if v980:IsA('ImageLabel') and v980.Image == 'rbxassetid://76783885872706' then
-        v980.Image = 'rbxassetid://79513443771682'
+    if v980:IsA('ImageLabel') and v980.Image == 'rbxassetid://16686579408' then
+        v980.Image = 'rbxassetid://16686579408'
         v980.Size = UDim2.new(0, 72, 0, 20)
 
         if v980.Parent then
