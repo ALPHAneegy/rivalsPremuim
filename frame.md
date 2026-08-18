@@ -385,7 +385,7 @@ local aa = {
                 {
                     Size = UDim2.fromScale(1, 1),
                     BackgroundTransparency = 0.9,
-                    BackgroundColor3 = Color3.fromRGB(255, 0, 0),
+                    BackgroundColor3 = Color3.fromRGB(255, 255, 255),
                     BorderSizePixel = 0
                 },
                 {
