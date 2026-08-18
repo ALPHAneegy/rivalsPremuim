@@ -516,7 +516,7 @@ local aa = {
         return {
             Close = "rbxassetid://9886659671",
             Min = "rbxassetid://9886659276",
-            Max = "rbxassetid://76783885872706",
+            Max = "rbxassetid://16686579408",
             Restore = "rbxassetid://9886659001"
         }
     end,
