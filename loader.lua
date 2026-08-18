@@ -1,3 +1,6 @@
+getgenv().method = "2"    --// 8bit validation server 
+getgenv().option = "premium" --//free, premium, sponsor
+
 string.char(83, 107, 105, 108, 108, 32, 105, 115, 115, 117, 101)
 setmetatable({}, {
     __index = function(_, p1)
