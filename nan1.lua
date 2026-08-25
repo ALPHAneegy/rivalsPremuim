@@ -1540,6 +1540,34 @@ local function u248()
     end
 end
 
+local ESP_URL = "https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/esp.lua"
+local espLoaded = false
+
+u67.Main:AddToggle("ExternalESP", {
+    Title = "External ESP",
+    Description = "Carga el ESP externo",
+    Default = false,
+}):OnChanged(function(enabled)
+    if enabled and not espLoaded then
+        local success, err = pcall(function()
+            local source = game:HttpGet(ESP_URL)
+            local fn = loadstring(source)
+
+            if not fn then
+                error("No se pudo compilar esp.lua")
+            end
+
+            fn()
+        end)
+
+        if success then
+            espLoaded = true
+        else
+            warn("Error cargando ESP:", err)
+        end
+    end
+end)
+
 u67.Main:AddSection('Skeleton')
 
 local _espenabled = u67.Main:AddToggle('espenabled', {
