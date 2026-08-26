@@ -1540,7 +1540,7 @@ local function u248()
     end
 end
 
-u67.Main:AddSection("External Features")
+u67.Main:AddSection("External Features (Recomended)")
 
 local ESP_URL = "https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/esp.lua"
 local espLoaded = false
