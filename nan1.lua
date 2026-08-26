@@ -817,11 +817,11 @@ local _CurrentCamera2 = game:GetService('Workspace').CurrentCamera
 local _RunService = game:GetService('RunService')
 
 getgenv().espsettings = {
-    showname = true,
-    showdistance = true,
-    showhealth = true,
-    showsweapon = true,
-    showweaponimage = true,
+    showname = false,
+    showdistance = false,
+    showhealth = false,
+    showsweapon = false,
+    showweaponimage = false,
     scale = 15,
     background = 0,
     maxDistance = 320,
@@ -1118,7 +1118,7 @@ local _LocalPlayer3 = _Players2.LocalPlayer
 local _RunService2 = game:GetService('RunService')
 
 getgenv().esp_settings = {
-    enabled = true,
+    enabled = false,
     skel = false,
     headskel = false,
     show_head_dot = false,
@@ -1672,6 +1672,9 @@ u67.Main:AddDropdown('HeadDotDropdown', {
     end
 end)
 u67.Main:AddSection('Box Esp')
+
+u81.Drawing.Boxes.Full.Enabled = false
+u81.Drawing.Boxes.Filled.Enabled = false
 
 local _FullBoxesToggle = u67.Main:AddToggle('FullBoxesToggle', {
     Title = 'Toggle Full Boxes',
