@@ -1118,10 +1118,10 @@ local _LocalPlayer3 = _Players2.LocalPlayer
 local _RunService2 = game:GetService('RunService')
 
 getgenv().esp_settings = {
-    enabled = false,
-    skel = true,
+    enabled = true,
+    skel = false,
     headskel = false,
-    show_head_dot = true,
+    show_head_dot = false,
     head_dot_type = 'fill',
     skel_col = Color3.fromRGB(255, 255, 255),
     head_col = Color3.fromRGB(255, 0, 0),
