@@ -456,43 +456,43 @@ end
 
 local u67 = {
     Wlc = v60:AddTab({
-        Title = 'Info',
+        Title = 'Info <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://124620632231839',
     }),
     Main = v60:AddTab({
-        Title = 'Visuals',
+        Title = 'Visuals <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://6523858394',
     }),
     AimTab = v60:AddTab({
-        Title = 'Aim Features <font color="#52ff7d"> [New]</font>',
+        Title = 'Aim Features <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://125143421594685',
     }),
     Silent = v60:AddTab({
-        Title = 'Silent <font color="#52ff7d"> [New]</font>',
+        Title = 'Silent <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://13557340523',
     }),
     Gunmod = v60:AddTab({
-        Title = 'Gunmods <font color="#52e2ff"> [New]</font>',
+        Title = 'Gunmods <font color="#52e2ff"> [Nigger]</font>',
         Icon = 'rbxassetid://6450238472',
     }),
     Skinz = v60:AddTab({
-        Title = 'Skins',
+        Title = 'Skins <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://6020038035',
     }),
     Nono = v60:AddTab({
-        Title = 'Rage Mode',
+        Title = 'Rage Mode <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://15441239798',
     }),
     Essential = v60:AddTab({
-        Title = 'Game',
+        Title = 'Game <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://83588998609796',
     }),
     Spoof = v60:AddTab({
-        Title = 'Spoofer',
+        Title = 'Spoofer <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://97682995973876',
     }),
     Settings = v60:AddTab({
-        Title = 'Settings',
+        Title = 'Settings <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://7145468831',
     }),
 }
