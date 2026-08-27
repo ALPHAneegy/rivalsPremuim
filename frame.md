@@ -198,7 +198,7 @@ local aa = {
                 r.init()
             end
             local E =
-                e(s.Window) {Parent = w, Size = D.Size, Title = "", SubTitle = " ", TabWidth = D.TabWidth}
+                e(s.Window) {Parent = w, Size = D.Size, Title = "   ", SubTitle = "     Rivals ", TabWidth = D.TabWidth}
             x.Window = E
             x:SetTheme(D.Theme)
             return E
