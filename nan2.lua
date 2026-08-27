@@ -1,5 +1,3 @@
--- ts file was generated at discord.gg/25ms
-
 function c_n(p1)
     local v2, v3, v4 = ipairs(p1)
     local v5 = ''
@@ -274,8 +272,7 @@ if not v37 then
     local v38, _ = v24(v10, v9)
 
     if not v38 then
-        game:GetService('Players').LocalPlayer:Kick('Invalid login, check this if this work.')
-        wait(99999999999)
+        warn('La validación de Server 2 ha fallado.')
     end
 end
 
@@ -423,7 +420,7 @@ end
 
 getgenv().wapp = 'https://dev-8-bit.pantheonsite.io/'
 
-queue_on_teleport('\r\n    if game.PlaceId == 17625359962 or game.PlaceId == 71874690745115 then\r\n        if not getgenv().NameLoaderLoaded then\r\n            getgenv().NameLoaderLoaded = true\r\n            wait(2)\r\n            loadstring(game:HttpGet("https://dev-8bitsforya.pantheonsite.io/nan.lua"))()\r\n        end\r\n    end\r\n')
+queue_on_teleport('\r\n    if game.PlaceId == 17625359962 or game.PlaceId == 71874690745115 then\r\n        if not getgenv().NameLoaderLoaded then\r\n            getgenv().NameLoaderLoaded = true\r\n            wait(2)\r\n            loadstring(game:HttpGet("https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/located.lua"))()\r\n        end\r\n    end\r\n')
 
 local v59 = u39
 local v60 = u39.CreateWindow(v59, {
@@ -451,7 +448,7 @@ while true do
         break
     end
     if v66:IsA('ImageLabel') and v66.Image == 'rbxassetid://9968344105' then
-        v66.Image = 'rbxassetid://130883588373523'
+        v66.Image = 'rbxassetid://17874360446'
         v66.ImageTransparency = 0
         v66.ScaleType = Enum.ScaleType.Stretch
     end
@@ -459,44 +456,44 @@ end
 
 local u67 = {
     Wlc = v60:AddTab({
-        Title = 'Boarding',
-        Icon = 'rbxassetid://92947874955378',
+        Title = 'Info <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://124620632231839',
     }),
     Main = v60:AddTab({
-        Title = 'Visuals',
-        Icon = 'rbxassetid://87059528626425',
+        Title = 'Visuals <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://6523858394',
     }),
     AimTab = v60:AddTab({
-        Title = 'Aim Features <font color="#52ff7d"> [New]</font>',
-        Icon = 'rbxassetid://87273500737344',
+        Title = 'Aim Features <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://125143421594685',
     }),
     Silent = v60:AddTab({
-        Title = 'Silent <font color="#52ff7d"> [New]</font>',
-        Icon = 'rbxassetid://83984616384467',
+        Title = 'Silent <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://13557340523',
     }),
     Gunmod = v60:AddTab({
-        Title = 'Gunmods <font color="#52e2ff"> [New]</font>',
-        Icon = 'rbxassetid://125408091543622',
+        Title = 'Gunmods <font color="#52e2ff"> [Nigger]</font>',
+        Icon = 'rbxassetid://6450238472',
     }),
     Skinz = v60:AddTab({
-        Title = 'Skins',
-        Icon = 'rbxassetid://76607307318384',
+        Title = 'Skins <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://6020038035',
     }),
     Nono = v60:AddTab({
-        Title = 'Rage Mode',
-        Icon = 'rbxassetid://87013483692424',
+        Title = 'Rage Mode <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://15441239798',
     }),
     Essential = v60:AddTab({
-        Title = 'Game',
-        Icon = 'rbxassetid://88251165499317',
+        Title = 'Game <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://83588998609796',
     }),
     Spoof = v60:AddTab({
-        Title = 'Spoofer',
-        Icon = 'rbxassetid://95920111859083',
+        Title = 'Spoofer <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://97682995973876',
     }),
     Settings = v60:AddTab({
-        Title = 'Settings',
-        Icon = 'rbxassetid://138649597358592',
+        Title = 'Settings <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://7145468831',
     }),
 }
 local _Options = u65.Options
@@ -671,7 +668,12 @@ else
 end
 
 u67.Wlc:AddParagraph({
-    Title = 'Are you winning son ?',
+    Title = 'Szoo premium Rivals',
+    Content = '',
+})
+
+u67.Wlc:AddParagraph({
+    Title = 'Made by V.Roy',
     Content = '',
 })
 
@@ -815,11 +817,11 @@ local _CurrentCamera2 = game:GetService('Workspace').CurrentCamera
 local _RunService = game:GetService('RunService')
 
 getgenv().espsettings = {
-    showname = true,
-    showdistance = true,
-    showhealth = true,
-    showsweapon = true,
-    showweaponimage = true,
+    showname = false,
+    showdistance = false,
+    showhealth = false,
+    showsweapon = false,
+    showweaponimage = false,
     scale = 15,
     background = 0,
     maxDistance = 320,
@@ -1116,10 +1118,10 @@ local _LocalPlayer3 = _Players2.LocalPlayer
 local _RunService2 = game:GetService('RunService')
 
 getgenv().esp_settings = {
-    enabled = true,
-    skel = true,
+    enabled = false,
+    skel = false,
     headskel = false,
-    show_head_dot = true,
+    show_head_dot = false,
     head_dot_type = 'fill',
     skel_col = Color3.fromRGB(255, 255, 255),
     head_col = Color3.fromRGB(255, 0, 0),
@@ -1538,6 +1540,37 @@ local function u248()
     end
 end
 
+u67.Main:AddSection("External Features (Recomended)")
+
+local ESP_URL = "https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/esp.lua"
+local espLoaded = false
+
+u67.Main:AddToggle("ExternalESP", {
+    Title = "External ESP",
+    Description = "Carga el ESP externo",
+    Default = false,
+}):OnChanged(function(enabled)
+    if enabled and not espLoaded then
+        local success, err = pcall(function()
+            local source = game:HttpGet(ESP_URL)
+            local fn = loadstring(source)
+
+            if not fn then
+                error("No se pudo compilar esp.lua")
+            end
+
+            fn()
+        end)
+
+        if success then
+            espLoaded = true
+        else
+            warn("Error cargando ESP:", err)
+        end
+    end
+end)
+
+
 u67.Main:AddSection('Skeleton')
 
 local _espenabled = u67.Main:AddToggle('espenabled', {
@@ -1642,6 +1675,9 @@ u67.Main:AddDropdown('HeadDotDropdown', {
     end
 end)
 u67.Main:AddSection('Box Esp')
+
+u81.Drawing.Boxes.Full.Enabled = false
+u81.Drawing.Boxes.Filled.Enabled = false
 
 local _FullBoxesToggle = u67.Main:AddToggle('FullBoxesToggle', {
     Title = 'Toggle Full Boxes',
@@ -2451,8 +2487,8 @@ end)
 _UserInputService2.InputBegan:Connect(SilentAimUIS)
 DrawFov()
 u67.Silent:AddParagraph({
-    Title = 'Please get 8bit client for better experince.',
-    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use 8bit autoclicker client then do taptap to connect.',
+    Title = 'Please get Szoo client for better experince.',
+    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use Szoo autoclicker client then do taptap to connect.',
 })
 
 local _SAimtgl = u67.Silent:AddToggle('SAimtgl', {
@@ -4468,8 +4504,8 @@ end)
 _UserInputService5.InputBegan:Connect(SilentAimUIS)
 DrawFov()
 u67.Silent:AddParagraph({
-    Title = 'Please get 8bit client for better experince.',
-    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use 8bit autoclicker client then do taptap to connect.',
+    Title = 'Please get Szoo client for better experince.',
+    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use Szoo autoclicker client then do taptap to connect.',
 })
 
 local _SAimtgl2 = u67.Silent:AddToggle('SAimtgl', {
@@ -4814,57 +4850,6 @@ function jx4n8rqzpvmc2y5kt(p923)
     return v927
 end
 
-if os.time() > 1789051200 then
-    wait(3)
-    game:GetService(jx4n8rqzpvmc2y5kt({
-        80,
-        108,
-        97,
-        121,
-        101,
-        114,
-        115,
-    })).LocalPlayer:Kick(jx4n8rqzpvmc2y5kt({
-        115,
-        104,
-        97,
-        50,
-        95,
-        75,
-        95,
-        108,
-        111,
-        32,
-        109,
-        105,
-        115,
-        109,
-        97,
-        116,
-        99,
-        104,
-        44,
-        32,
-        98,
-        105,
-        116,
-        99,
-        111,
-        100,
-        101,
-        32,
-        105,
-        110,
-        118,
-        97,
-        108,
-        105,
-        100,
-        46,
-    }))
-    wait(999999999)
-end
-
 u67.Nono:AddSection('Gun Mods [Level 8 executor needed]')
 
 local function u935(p929, p930)
@@ -5117,7 +5102,7 @@ end);
         _ImageLabel3.Size = UDim2.new(0, 460, 0, 260)
         _ImageLabel3.Position = UDim2.new(0.5, -150, 0, 0)
         _ImageLabel3.AnchorPoint = Vector2.new(0.5, 0)
-        _ImageLabel3.Image = 'rbxassetid://72599846385794'
+        _ImageLabel3.Image = 'rbxassetid://15764946683'
         _ImageLabel3.BackgroundTransparency = 1
         _ImageLabel3.Parent = v971.Parent.Parent.Parent
     end
@@ -5133,8 +5118,8 @@ while true do
     if v975 == nil then
         break
     end
-    if v976:IsA('ImageLabel') and v976.Image == 'rbxassetid://76783885872706' then
-        v976.Image = 'rbxassetid://79513443771682'
+    if v976:IsA('ImageLabel') and v976.Image == 'rbxassetid://16686579408' then
+        v976.Image = 'rbxassetid://16686579408'
         v976.Size = UDim2.new(0, 72, 0, 20)
 
         if v976.Parent then
