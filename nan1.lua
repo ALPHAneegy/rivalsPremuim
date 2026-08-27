@@ -456,7 +456,7 @@ end
 
 local u67 = {
     Wlc = v60:AddTab({
-        Title = 'Info <font color="#52ff7d"> [Nigger]</font>',
+        Title = 'Info',
         Icon = 'rbxassetid://124620632231839',
     }),
     Main = v60:AddTab({
