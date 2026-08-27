@@ -282,7 +282,7 @@ local u39 = loadstring(game:HttpGet('https://gist.githubusercontent.com/8bits4ya
     if getgenv().executed then
         u39:Notify({
             Title = 'Notification',
-            Content = 'Already Injected.Dont load twice.',
+            Content = 'Already Injected FN.',
             SubContent = '',
             Duration = 5,
         })
