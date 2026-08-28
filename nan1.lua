@@ -448,7 +448,7 @@ while true do
         break
     end
     if v66:IsA('ImageLabel') and v66.Image == 'rbxassetid://9968344105' then
-        v66.Image = 'rbxassetid://17874360446'
+        v66.Image = 'rbxassetid://18150523717'
         v66.ImageTransparency = 0
         v66.ScaleType = Enum.ScaleType.Stretch
     end
@@ -482,10 +482,6 @@ local u67 = {
     Nono = v60:AddTab({
         Title = 'Rage Mode',
         Icon = 'rbxassetid://15441239798',
-    }),
-    Essential = v60:AddTab({
-        Title = 'Game',
-        Icon = 'rbxassetid://83588998609796',
     }),
     Spoof = v60:AddTab({
         Title = 'Spoofer',
@@ -732,21 +728,6 @@ local function u105(p92)
             return false
         end
     end
-
-    local _Frame = u91('Frame', {
-        Parent = u91('ScreenGui', {
-            Parent = _CoreGui2,
-            Name = p92.Name .. 'ESP',
-        }),
-        BackgroundColor3 = u81.Drawing.Boxes.Filled.RGB,
-        BackgroundTransparency = u81.Drawing.Boxes.Filled.Transparency,
-    })
-    local _UIStroke = u91('UIStroke', {
-        Parent = _Frame,
-        Color = getgenv().boxBorderColor,
-        Thickness = 2,
-        Transparency = 0,
-    })
 
     u78.RenderStepped:Connect(function()
         _UIStroke.Color = getgenv().boxBorderColor
@@ -1071,474 +1052,12 @@ end
         end)
     end)
 end)()
-u67.Main:AddSection('Nametags')
-
-local function v154(p150, p151)
-    local u152 = u67.Main:AddToggle(p150, {
-        Title = p150,
-        Default = espsettings[p151],
-    })
-    local v153 = u152
-
-    u152.OnChanged(v153, function()
-        espsettings[p151] = u152.Value
-    end)
-end
-
-v154('Show Name', 'showname')
-v154('Show Distance', 'showdistance')
-v154('Show Health', 'showhealth')
-v154('Show Weapon', 'showsweapon')
-v154('Show Weapon Icon', 'showweaponimage')
-u67.Main:AddSlider('NTBGTSlider', {
-    Title = 'BackGround Transparency',
-    Default = 4,
-    Min = 0,
-    Max = 10,
-    Rounding = 1,
-    Callback = function(p155)
-        getgenv().espsettings.background = p155 / 10
-    end,
-})
-u67.Main:AddSlider('NTSSlider', {
-    Title = 'NameTag Scale',
-    Default = 15,
-    Min = 0,
-    Max = 50,
-    Rounding = 1,
-    Callback = function(p156)
-        espsettings.scale = p156
-    end,
-})
 
 local _Workspace = game:GetService('Workspace')
 local _CurrentCamera3 = workspace.CurrentCamera
 local _Players2 = game:GetService('Players')
 local _LocalPlayer3 = _Players2.LocalPlayer
 local _RunService2 = game:GetService('RunService')
-
-getgenv().esp_settings = {
-    enabled = false,
-    skel = false,
-    headskel = false,
-    show_head_dot = false,
-    head_dot_type = 'fill',
-    skel_col = Color3.fromRGB(255, 255, 255),
-    head_col = Color3.fromRGB(255, 0, 0),
-    dot_col = Color3.fromRGB(0, 255, 0),
-    max_distance = 350,
-    skeletonthickness = 3,
-}
-
-local u162 = {}
-local u163 = false
-
-local function u248()
-    if not u163 then
-        local function u239(p164, p165)
-            local u166 = {
-                'Head',
-                'UpperTorso',
-                'LowerTorso',
-                'LeftUpperArm',
-                'LeftLowerArm',
-                'RightUpperArm',
-                'RightLowerArm',
-                'LeftUpperLeg',
-                'LeftLowerLeg',
-                'RightUpperLeg',
-                'RightLowerLeg',
-            }
-            local v167, v168, v169 = pairs(u166)
-            local u170 = {}
-            local u171 = {}
-
-            while true do
-                local v172
-
-                v169, v172 = v167(v168, v169)
-
-                if v169 == nil then
-                    break
-                end
-
-                u170[v172] = Drawing.new('Line')
-                u170[v172].Visible = false
-                u170[v172].Thickness = esp_settings.skeletonthickness
-                u170[v172].Color = esp_settings.skel_col
-                u171[v172] = Drawing.new('Circle')
-                u171[v172].Visible = false
-                u171[v172].Color = esp_settings.dot_col
-                u171[v172].Filled = true
-            end
-
-            local _Circle = Drawing.new('Circle')
-
-            _Circle.Visible = false
-            _Circle.Color = esp_settings.head_col
-            _Circle.Thickness = 1
-            _Circle.Transparency = 1
-
-            local v174 = {
-                bones = u170,
-                dots = u171,
-                head_dot = _Circle,
-            }
-
-            u162[p164.UserId] = v174
-
-            local function v238()
-                local u175 = nil
-                local _ = _RunService2.RenderStepped:Connect(function()
-                    if p165 and (p165:FindFirstChild('HumanoidRootPart') and 5 == 5) then
-                        if p165.HumanoidRootPart:FindFirstChild('TeammateLabel') then
-                            local v176, v177, v178 = pairs(u170)
-
-                            while true do
-                                local v179
-
-                                v178, v179 = v176(v177, v178)
-
-                                if v178 == nil then
-                                    break
-                                end
-
-                                v179.Visible = false
-                            end
-
-                            local v180, v181, v182 = pairs(u171)
-
-                            while true do
-                                local v183
-
-                                v182, v183 = v180(v181, v182)
-
-                                if v182 == nil then
-                                    break
-                                end
-
-                                v183.Visible = false
-                            end
-
-                            _Circle.Visible = false
-
-                            return
-                        end
-                        if _LocalPlayer3.Character.Humanoid.Health == 0 then
-                            local v184, v185, v186 = pairs(u170)
-
-                            while true do
-                                local v187
-
-                                v186, v187 = v184(v185, v186)
-
-                                if v186 == nil then
-                                    break
-                                end
-
-                                v187.Visible = false
-                            end
-
-                            local v188, v189, v190 = pairs(u171)
-
-                            while true do
-                                local v191
-
-                                v190, v191 = v188(v189, v190)
-
-                                if v190 == nil then
-                                    break
-                                end
-
-                                v191.Visible = false
-                            end
-
-                            _Circle.Visible = false
-
-                            return
-                        end
-
-                        local _Magnitude = (p165.HumanoidRootPart.Position - _LocalPlayer3.Character.HumanoidRootPart.Position).Magnitude
-
-                        if esp_settings.max_distance < _Magnitude or _Magnitude < 2 then
-                            local v193, v194, v195 = pairs(u170)
-
-                            while true do
-                                local v196
-
-                                v195, v196 = v193(v194, v195)
-
-                                if v195 == nil then
-                                    break
-                                end
-
-                                v196.Visible = false
-                            end
-
-                            local v197, v198, v199 = pairs(u171)
-
-                            while true do
-                                local v200
-
-                                v199, v200 = v197(v198, v199)
-
-                                if v199 == nil then
-                                    break
-                                end
-
-                                v200.Visible = false
-                            end
-
-                            _Circle.Visible = false
-
-                            return
-                        end
-
-                        local v201, v202, v203 = pairs(u166)
-                        local v204 = {}
-
-                        while true do
-                            local v205
-
-                            v203, v205 = v201(v202, v203)
-
-                            if v203 == nil then
-                                break
-                            end
-
-                            local v206 = p165:FindFirstChild(v205)
-
-                            if v206 then
-                                local v207, v208 = _CurrentCamera3:WorldToViewportPoint(v206.Position)
-
-                                if v208 then
-                                    v204[v205] = v207
-                                else
-                                    v204[v205] = nil
-                                end
-                            end
-                        end
-
-                        if esp_settings.enabled then
-                            local v209, v210, v211 = pairs(u170)
-
-                            while true do
-                                local v212
-
-                                v211, v212 = v209(v210, v211)
-
-                                if v211 == nil then
-                                    break
-                                end
-
-                                local v213
-
-                                if v204[v211] == nil then
-                                    v213 = false
-                                else
-                                    v213 = esp_settings.skel
-                                end
-
-                                v212.Visible = v213
-                            end
-
-                            local v214, v215, v216 = pairs(u171)
-
-                            while true do
-                                local v217
-
-                                v216, v217 = v214(v215, v216)
-
-                                if v216 == nil then
-                                    break
-                                end
-                                if v204[v216] then
-                                    if v216 == 'LeftLowerArm' or v216 == 'RightLowerArm' or (v216 == 'LeftLowerLeg' or v216 == 'RightLowerLeg') then
-                                        v217.Position = Vector2.new(v204[v216].X, v204[v216].Y)
-                                        v217.Radius = math.clamp(100 / _Magnitude, 1, 3)
-                                        v217.Visible = true
-                                    else
-                                        v217.Visible = false
-                                    end
-                                else
-                                    v217.Visible = false
-                                end
-                            end
-
-                            if esp_settings.show_head_dot and esp_settings.head_dot_type ~= 'none' and v204.Head then
-                                _Circle.Position = Vector2.new(v204.Head.X, v204.Head.Y)
-                                _Circle.Radius = math.clamp(300 / _Magnitude, 5, 15)
-
-                                if esp_settings.head_dot_type ~= 'fill' then
-                                    if esp_settings.head_dot_type == 'holo' then
-                                        _Circle.Filled = false
-                                        _Circle.Thickness = 2
-                                    end
-                                else
-                                    _Circle.Filled = true
-                                end
-
-                                _Circle.Visible = true
-                            else
-                                _Circle.Visible = false
-                            end
-                            if v204.Head and v204.UpperTorso then
-                                u170.Head.From = Vector2.new(v204.Head.X, v204.Head.Y)
-                                u170.Head.To = Vector2.new(v204.UpperTorso.X, v204.UpperTorso.Y)
-                            end
-                            if v204.UpperTorso and v204.LowerTorso then
-                                u170.UpperTorso.From = Vector2.new(v204.UpperTorso.X, v204.UpperTorso.Y)
-                                u170.UpperTorso.To = Vector2.new(v204.LowerTorso.X, v204.LowerTorso.Y)
-                            end
-
-                            local v218, v219, v220 = pairs({
-                                {
-                                    'UpperTorso',
-                                    'LeftUpperArm',
-                                },
-                                {
-                                    'LeftUpperArm',
-                                    'LeftLowerArm',
-                                },
-                                {
-                                    'UpperTorso',
-                                    'RightUpperArm',
-                                },
-                                {
-                                    'RightUpperArm',
-                                    'RightLowerArm',
-                                },
-                                {
-                                    'LowerTorso',
-                                    'LeftUpperLeg',
-                                },
-                                {
-                                    'LeftUpperLeg',
-                                    'LeftLowerLeg',
-                                },
-                                {
-                                    'LowerTorso',
-                                    'RightUpperLeg',
-                                },
-                                {
-                                    'RightUpperLeg',
-                                    'RightLowerLeg',
-                                },
-                            })
-
-                            while true do
-                                local v221
-
-                                v220, v221 = v218(v219, v220)
-
-                                if v220 == nil then
-                                    break
-                                end
-                                if v204[v221[1] ] and v204[v221[2] ] then
-                                    u170[v221[2] ].From = Vector2.new(v204[v221[1] ].X, v204[v221[1] ].Y)
-                                    u170[v221[2] ].To = Vector2.new(v204[v221[2] ].X, v204[v221[2] ].Y)
-                                end
-                            end
-                        else
-                            local v222, v223, v224 = pairs(u170)
-
-                            while true do
-                                local v225
-
-                                v224, v225 = v222(v223, v224)
-
-                                if v224 == nil then
-                                    break
-                                end
-
-                                v225.Visible = false
-                            end
-
-                            local v226, v227, v228 = pairs(u171)
-
-                            while true do
-                                local v229
-
-                                v228, v229 = v226(v227, v228)
-
-                                if v228 == nil then
-                                    break
-                                end
-
-                                v229.Visible = false
-                            end
-
-                            _Circle.Visible = false
-                        end
-                    else
-                        u175:Disconnect()
-
-                        local v230, v231, v232 = pairs(u170)
-
-                        while true do
-                            local v233
-
-                            v232, v233 = v230(v231, v232)
-
-                            if v232 == nil then
-                                break
-                            end
-
-                            v233.Visible = false
-                        end
-
-                        local v234, v235, v236 = pairs(u171)
-
-                        while true do
-                            local v237
-
-                            v236, v237 = v234(v235, v236)
-
-                            if v236 == nil then
-                                break
-                            end
-
-                            v237.Visible = false
-                        end
-
-                        _Circle.Visible = false
-                    end
-                end)
-            end
-
-            coroutine.wrap(v238)()
-        end
-        local function v242(p240)
-            if p240.Character then
-                coroutine.wrap(u239)(p240, p240.Character)
-            end
-
-            p240.CharacterAdded:Connect(function(p241)
-                coroutine.wrap(u239)(p240, p241)
-            end)
-        end
-
-        local v243 = _Players2
-        local v244, v245, v246 = ipairs(v243:GetPlayers())
-
-        while true do
-            local v247
-
-            v246, v247 = v244(v245, v246)
-
-            if v246 == nil then
-                break
-            end
-            if v247 ~= _LocalPlayer3 then
-                v242(v247)
-            end
-        end
-
-        _Players2.PlayerAdded:Connect(v242)
-
-        u163 = true
-    end
-end
 
 u67.Main:AddSection("External Features (Recomended)")
 
@@ -1570,159 +1089,6 @@ u67.Main:AddToggle("ExternalESP", {
     end
 end)
 
-
-u67.Main:AddSection('Skeleton')
-
-local _espenabled = u67.Main:AddToggle('espenabled', {
-    Title = 'Enable ESP',
-    Default = esp_settings.enabled,
-})
-local v250 = _espenabled
-
-_espenabled.OnChanged(v250, function()
-    esp_settings.enabled = _espenabled.Value
-
-    if esp_settings.enabled then
-        u248()
-    else
-        local v251, v252, v253 = pairs(u162)
-
-        while true do
-            local v254
-
-            v253, v254 = v251(v252, v253)
-
-            if v253 == nil then
-                break
-            end
-
-            local v255, v256, v257 = pairs(v254.bones)
-
-            while true do
-                local v258
-
-                v257, v258 = v255(v256, v257)
-
-                if v257 == nil then
-                    break
-                end
-
-                v258.Visible = false
-            end
-
-            local v259, v260, v261 = pairs(v254.dots)
-
-            while true do
-                local v262
-
-                v261, v262 = v259(v260, v261)
-
-                if v261 == nil then
-                    break
-                end
-
-                v262.Visible = false
-            end
-
-            if v254.head_dot then
-                v254.head_dot.Visible = false
-            end
-        end
-    end
-end)
-
-local _headdot = u67.Main:AddToggle('headdot', {
-    Title = 'Enable Head Dot',
-    Default = esp_settings.show_head_dot,
-})
-local v264 = _headdot
-
-_headdot.OnChanged(v264, function()
-    esp_settings.show_head_dot = _headdot.Value
-
-    if esp_settings.show_head_dot then
-        u248()
-    else
-        local v265, v266, v267 = pairs(u162)
-
-        while true do
-            local v268
-
-            v267, v268 = v265(v266, v267)
-
-            if v267 == nil then
-                break
-            end
-
-            v268.head_dot.Visible = false
-        end
-    end
-end)
-u67.Main:AddDropdown('HeadDotDropdown', {
-    Title = 'Head Dot Dropdown',
-    Values = {
-        'none',
-        'fill',
-        'holo',
-    },
-    Multi = false,
-    Default = 2,
-}):OnChanged(function(p269)
-    esp_settings.head_dot_type = p269
-
-    if esp_settings.enabled then
-        u248()
-    end
-end)
-u67.Main:AddSection('Box Esp')
-
-u81.Drawing.Boxes.Full.Enabled = false
-u81.Drawing.Boxes.Filled.Enabled = false
-
-local _FullBoxesToggle = u67.Main:AddToggle('FullBoxesToggle', {
-    Title = 'Toggle Full Boxes',
-    Default = u81.Drawing.Boxes.Full.Enabled,
-})
-local v271 = _FullBoxesToggle
-
-_FullBoxesToggle.OnChanged(v271, function()
-    u81.Drawing.Boxes.Full.Enabled = _FullBoxesToggle.Value
-end)
-
-local _FilledBoxesToggle = u67.Main:AddToggle('FilledBoxesToggle', {
-    Title = 'Toggle Filled Boxes',
-    Default = u81.Drawing.Boxes.Filled.Enabled,
-})
-local v273 = _FilledBoxesToggle
-
-_FilledBoxesToggle.OnChanged(v273, function()
-    if _FilledBoxesToggle.Value then
-        u81.Drawing.Boxes.Filled.Transparency = 0.7
-    else
-        u81.Drawing.Boxes.Filled.Transparency = 1
-    end
-end)
-u67.Main:AddToggle('Rainbowbox', {
-    Title = 'Rainbow Box',
-    Default = false,
-}):OnChanged(function(p274)
-    if p274 then
-        local _RunService3 = game:GetService('RunService')
-
-        rainbowRunning = true
-
-        _RunService3.Heartbeat:Connect(function()
-            if rainbowRunning then
-                local v276 = tick() % 5
-
-                getgenv().boxBorderColor = Color3.fromHSV(v276 / 5, 1, 1)
-            end
-        end)
-    else
-        rainbowRunning = false
-        getgenv().boxBorderColor = Color3.fromRGB(255, 255, 255)
-    end
-end)
 task.spawn(function()
     local _Players3 = game:GetService('Players')
     local _RunService4 = game:GetService('RunService')
@@ -1942,7 +1308,9 @@ task.spawn(function()
         u300 = _Options.targetstat.Value
     end)
 end)
-u67.Skinz:AddSection('Mouse Aimbot [v2]')
+u67.Skinz:AddSection('Gun Effects')
+
+u67.AimTab:AddSection('Aimbot')
 
 function InitializeAimbot2()
     local u325 = false
@@ -2345,8 +1713,6 @@ function InitializeAimbotUI2()
     end
 end
 
-InitializeAimbotUI2()
-
 local _UserInputService2 = game:GetService('UserInputService')
 local _Lighting = game:GetService('Lighting')
 local _RunService6 = game:GetService('RunService')
@@ -2486,81 +1852,8 @@ _RunService6.RenderStepped:Connect(function()
 end)
 _UserInputService2.InputBegan:Connect(SilentAimUIS)
 DrawFov()
-u67.Silent:AddParagraph({
-    Title = 'Please get Szoo client for better experince.',
-    Content = ' \u{25cf} Currently Safe to use\n \u{25cf} If not use Szoo autoclicker client then do taptap to connect.',
-})
-
-local _SAimtgl = u67.Silent:AddToggle('SAimtgl', {
-    Title = 'Silent Aim [V1] [Safe]',
-    Description = '\u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd} Spam click to make it work\n\u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd} This is safe to use',
-    Default = false,
-})
-local _Fovtgl = u67.Silent:AddToggle('Fovtgl', {
-    Title = 'Show FOV',
-    Default = false,
-})
-local v444 = _SAimtgl
-
-_SAimtgl.OnChanged(v444, function()
-    if textLabels and textLabels.silentaim then
-        textLabels.silentaim.Visible = _Options.SAimtgl.Value
-    end
-
-    SilentAim.Enabled = _SAimtgl.Value
-end)
-
-local v445 = _Fovtgl
-
-_Fovtgl.OnChanged(v445, function()
-    SilentAimFov.Visible = _Fovtgl.Value
-end)
-u67.Silent:AddSlider('SFovSlider', {
-    Title = 'Silent Fov Radius',
-    Description = 'Adjust the FOV Radius',
-    Default = 150,
-    Min = 50,
-    Max = 900,
-    Rounding = 0,
-    Callback = function(p446)
-        SilentAimFov.Radius = p446
-
-        if SilentAimFov.Circle then
-            SilentAimFov.Circle.Radius = p446
-        end
-    end,
-})
-u67.Silent:AddColorpicker('SFovColorpicker', {
-    Title = 'Fov Color',
-    Default = Color3.fromRGB(96, 205, 255),
-}):OnChanged(function(p447)
-    SilentAimFov.Color = p447
-
-    if SilentAimFov.Circle then
-        SilentAimFov.Circle.Color = p447
-    end
-end)
-u67.Silent:AddDropdown('TargetpartDropdown', {
-    Title = 'Target Dropdown',
-    Description = 'What will be targeted?',
-    Values = {
-        'Legit',
-        'Head',
-        'UpperTorso',
-        'LowerTorso',
-    },
-    Multi = false,
-    Default = 1,
-}):OnChanged(function(p448)
-    if p448 == 'Legit' then
-        SilentAim.TargetPart = math.random(1, 2) == 1 and 'Head' or 'UpperTorso'
-    else
-        SilentAim.TargetPart = p448
-    end
-end)
 
 function a4()
-    u67.Gunmod:AddSection('Custom Hit Sound')
     u67.Gunmod:AddSection('HeadShot Sound')
 
     local u449 = {
@@ -3026,8 +2319,6 @@ u67.Nono:AddToggle('Dp', {
     u513 = _Options.Dp.Value
 end)
 
-speedsect = u67.Nono:AddSection('Speed')
-
 local _LocalPlayer9 = game:GetService('Players').LocalPlayer
 local _RunService8 = game:GetService('RunService')
 
@@ -3064,81 +2355,6 @@ local function u561()
 
         u556 = nil
     end
-end
-
-local _SpeedBoost = u67.Nono:AddToggle('SpeedBoost', {
-    Title = 'CFrame Speed v2',
-    Default = false,
-})
-local v563 = _SpeedBoost
-
-_SpeedBoost.OnChanged(v563, function()
-    if textLabels and textLabels.bspeed then
-        textLabels.bspeed.Visible = _SpeedBoost.Value
-    end
-
-    u555 = _SpeedBoost.Value
-
-    if u555 then
-        u560()
-    else
-        u561()
-    end
-end)
-u67.Nono:AddSlider('MultiplierSlider', {
-    Title = 'Speed Limit',
-    Description = 'Adjust speed multiplier (1 = 0.1, 5 = 0.5, etc.)',
-    Default = 2,
-    Min = 0,
-    Max = 10,
-    Rounding = 1,
-    Callback = function(p564)
-        getgenv().Multiplier = p564 / 10
-    end,
-}):OnChanged(function(p565)
-    getgenv().Multiplier = p565 / 10
-end)
-u67.Nono:AddSection('Gun Mods [Level 8 executor needed]')
-
-local function u572(p566, p567)
-    local v568, v569, v570 = pairs(getgc(true))
-
-    while true do
-        local v571
-
-        v570, v571 = v568(v569, v570)
-
-        if v570 == nil then
-            break
-        end
-        if type(v571) == 'table' and rawget(v571, p566) then
-            v571[p566] = p567
-        end
-    end
-end
-
-if u67 and u67.Nono then
-    u67.Nono:AddButton({
-        Title = 'Rapid Fire',
-        Description = 'Fire Rapidly, but wont work in xeno or solara.',
-        Callback = function()
-            u572('ShootCooldown', 0)
-        end,
-    })
-    u67.Nono:AddButton({
-        Title = 'No Spread',
-        Description = 'Bullet Will not spray, but wont work in xeno or solara.',
-        Callback = function()
-            u572('ShootSpread', 0)
-        end,
-    })
-    u67.Nono:AddButton({
-        Title = 'NO Recoil',
-        Description = 'Stops the recoil, but wont work in xeno or solara. Ive mead another no recoil use that.',
-        Callback = function()
-            u572('ShootRecoil', 0)
-        end,
-    })
 end
 
 _RunService8 = game:GetService('RunService')
@@ -3370,60 +2586,6 @@ if _Default3 then
     v616.Parent = _FireHitboxes
 end
 
-u67.Skinz:AddDropdown('FireEffectDropdown', {
-    Title = 'Moltov Fire ',
-    Values = {
-        'None',
-        'Hexxed Candle [Purple]',
-    },
-    Multi = false,
-    Default = 1,
-}):OnChanged(function(p617)
-    local v618 = _BurningEffects:FindFirstChild('Default') or _BurningEffects:FindFirstChild('Burning Effect Original')
-    local v619 = _FireHitboxes:FindFirstChild('Default') or _FireHitboxes:FindFirstChild('Fire Hitbox Original')
-
-    if v618 then
-        v618:Destroy()
-    end
-    if v619 then
-        v619:Destroy()
-    end
-    if p617 == 'Hexxed Candle' then
-        local _HexxedCandle = _BurningEffects:FindFirstChild('Hexxed Candle')
-        local _HexxedCandle2 = _FireHitboxes:FindFirstChild('Hexxed Candle')
-
-        if _HexxedCandle then
-            local v622 = _HexxedCandle:Clone()
-
-            v622.Name = 'Default'
-            v622.Parent = _BurningEffects
-        end
-        if _HexxedCandle2 then
-            local v623 = _HexxedCandle2:Clone()
-
-            v623.Name = 'Default'
-            v623.Parent = _FireHitboxes
-        end
-    else
-        local _BurningEffectOriginal = _BurningEffects:FindFirstChild('Burning Effect Original')
-        local _FireHitboxOriginal = _FireHitboxes:FindFirstChild('Fire Hitbox Original')
-
-        if _BurningEffectOriginal then
-            local v626 = _BurningEffectOriginal:Clone()
-
-            v626.Name = 'Default'
-            v626.Parent = _BurningEffects
-        end
-        if _FireHitboxOriginal then
-            local v627 = _FireHitboxOriginal:Clone()
-
-            v627.Name = 'Default'
-            v627.Parent = _FireHitboxes
-        end
-    end
-end)
-u67.Skinz:AddSection('Gun Skin')
-
 local _LocalPlayer11 = game:GetService('Players').LocalPlayer
 local _Assets = _LocalPlayer11.PlayerScripts.Assets
 local _ViewModels = _Assets:WaitForChild('ViewModels')
@@ -3503,221 +2665,12 @@ local function v661(p656, p657, p658, p659)
     end)
 end
 
-local v662, v663, v664 = ipairs({
-    {
-        'Assault Rifle',
-        'Assault Rifle Original',
-        {
-            'None',
-            'AUG',
-            'AK-47',
-            'Boneclaw Rifle',
-            'AKEY-47',
-        },
-    },
-    {
-        'Energy Rifle',
-        'Energy Rifle Original',
-        {
-            'None',
-            'Apex Rifle',
-            'Hacker Rifle',
-            '2025 Energy Rifle',
-        },
-    },
-    {
-        'Battle Axe',
-        'Battle Axe Original',
-        {
-            'None',
-            'The Shred',
-            'Nordic Axe',
-        },
-    },
-    {
-        'Freeze Ray',
-        'Freeze Ray Original',
-        {
-            'None',
-            'Temporal Ray',
-            'Bubble Ray',
-        },
-    },
-    {
-        'War Horn',
-        'War Horn Original',
-        {
-            'None',
-            'Trumpet',
-            'Mammoth Horn',
-        },
-    },
-    {
-        'Handgun',
-        'Handgun Original',
-        {
-            'None',
-            'Blaster',
-            'Hand Gun',
-            'Pixel Handgun',
-            'Pumpkin Handgun',
-            'Gingerbread Handgun',
-        },
-    },
-    {
-        'Riot Shield',
-        'Riot Shield Original',
-        {
-            'None',
-            'Door',
-            'Sled',
-        },
-    },
-    {
-        'Fists',
-        'Fists Original',
-        {
-            'None',
-            'Festive Fists',
-            'Pumpkin Claws',
-            'Brass Knuckles',
-            'Boxing Gloves',
-        },
-    },
-    {
-        'Revolver',
-        'Revolver Original',
-        {
-            'None',
-            'Boneclaw Revolver',
-        },
-    },
-    {
-        'Knife',
-        'Knife Original',
-        {
-            'None',
-            'Candy Cane',
-            'Karambit',
-            'Chancla',
-            'Machete',
-        },
-    },
-    {
-        'Bow',
-        'Bow Original',
-        {
-            'None',
-            'Bat Bow',
-            'Compound Bow',
-            'Raven Bow',
-        },
-    },
-    {
-        'Shorty',
-        'Shorty Original',
-        {
-            'None',
-            'Lovely Shorty',
-            'Not So Shorty',
-            'Too Shorty',
-            'Demon Shorty',
-        },
-    },
-    {
-        'Burst Rifle',
-        'Burst Rifle Original',
-        {
-            'None',
-            'Electro Rifle',
-            'Aqua Burst',
-            'Pixel Burst',
-            'Spectral Burst',
-        },
-    },
-    {
-        'RPG',
-        'RPG Original',
-        {
-            'None',
-            'Nuke Launcher',
-        },
-    },
-    {
-        'Shotgun',
-        'Shotgun Original',
-        {
-            'None',
-            'Balloon Shotgun',
-            'Hyper Shotgun',
-        },
-    },
-    {
-        'Sniper',
-        'Sniper Original',
-        {
-            'None',
-            'Pixel Sniper',
-            'Hyper Sniper',
-            'Keyper',
-            'Eyething Sniper',
-        },
-    },
-})
+
 local u665 = _CoreGui2
 local u666 = u655
 local v667 = _RunService8
 local u668 = _Workspace
 local u669 = _ViewModels
-
-while true do
-    local v670, v671 = v662(v663, v664)
-
-    if v670 == nil then
-        break
-    end
-
-    v664 = v670
-
-    local v672 = u669:FindFirstChild(v671[1])
-
-    if v672 then
-        v637(v672, u669, v671[2])
-        v661(v671[1], v671[1], v671[3], u669)
-    end
-end
-
-v637(u669:FindFirstChild('Grenade'), u669, 'Grenade Original')
-v637(_Throwables:FindFirstChild('Grenade'), _Throwables, 'Grenade Original')
-v637(u669:FindFirstChild('Molotov'), u669, 'Molotov Original')
-v637(_Throwables:FindFirstChild('Molotov'), _Throwables, 'Molotov Original')
-v661('Grenade', 'Grenade', {
-    'None',
-    'Whoopee Cushion',
-    'Water Balloon',
-    'Soul Grenade',
-}, u669)
-v661('Molotov', 'Molotov', {
-    'None',
-    'Coffee',
-    'Hexxed Candle',
-    'Torch',
-}, u669)
-v637(u669:FindFirstChild('Scythe'), u669, 'Scythe Original')
-v637(_Throwables:FindFirstChild('Scythe'), _Throwables, 'Scythe Original')
-u67.Skinz:AddDropdown('ScytheDropdown', {
-    Title = 'Scythe',
-    Values = {
-        'None',
-        'Keythe',
-        'Anchor',
-    },
-    Multi = false,
-    Default = 1,
-}):OnChanged(function(p673)
-    u666('Scythe', p673, u669, 'Scythe Original')
-    u666('Scythe', p673, _Throwables, 'Scythe Original')
-end)
 
 local _Throwables2 = _LocalPlayer11.PlayerScripts.Assets:WaitForChild('Throwables')
 local _SmokeClouds = _LocalPlayer11.PlayerScripts.Assets.Misc.SmokeClouds
@@ -3745,31 +2698,6 @@ local v685 = _Throwables2
 u680(_Throwables2.FindFirstChild(v685, 'Smoke Grenade'), _Throwables2, 'Smoke Grenade Original')
 
 local v686 = _SmokeClouds
-
-u680(_SmokeClouds.FindFirstChild(v686, 'Default'), _SmokeClouds, 'Smoke Grenade Original')
-u67.Skinz:AddDropdown('SmokeGrenadeDropdown', {
-    Title = 'Smoke Grenade ',
-    Values = {
-        'None',
-        'Eyeball',
-        'Balance',
-    },
-    Multi = false,
-    Default = 3,
-}):OnChanged(function(p687)
-    u684(u669, 'Smoke Grenade')
-    u684(u669, 'Smoke Grenade Original')
-    u684(_Throwables2, 'Smoke Grenade')
-    u684(_Throwables2, 'Smoke Grenade Original')
-    u684(_SmokeClouds, 'Default')
-    u684(_SmokeClouds, 'Smoke Grenade Original')
-
-    local v688 = p687 == 'None' and ('Smoke Grenade Original' or p687) or p687
-
-    u680(u669:FindFirstChild(v688), u669, 'Smoke Grenade')
-    u680(_Throwables2:FindFirstChild(v688), _Throwables2, 'Smoke Grenade')
-    u680(_SmokeClouds:FindFirstChild(v688), _SmokeClouds, 'Default')
-end)
 
 function InitializeAimbotSystem3()
     local _Workspace2 = game:GetService('Workspace')
@@ -4362,8 +3290,6 @@ function InitializeAimbotUI2()
     end
 end
 
-InitializeAimbotUI2()
-
 local _UserInputService5 = game:GetService('UserInputService')
 local _Lighting3 = game:GetService('Lighting')
 local _RunService11 = game:GetService('RunService')
@@ -4510,7 +3436,7 @@ u67.Silent:AddParagraph({
 
 local _SAimtgl2 = u67.Silent:AddToggle('SAimtgl', {
     Title = 'Silent Aim [Safe]',
-    Description = 'Spam click to make it work\nThis is safe to use',
+    Description = 'Spam click to make it work. This is safe to use',
     Default = false,
 })
 local _Fovtgl2 = u67.Silent:AddToggle('Fovtgl', {
@@ -4908,28 +3834,6 @@ tweenDistanceBehind = defaultOffsetBehind
 tweenDistanceAbove = defaultOffsetAbove
 keybindKey = Enum.KeyCode.N
 isKeyPressed = false
-eww = u67.Nono:AddSection('Enemy Slider')
-
-local _SlideEnm2 = u67.Nono:AddToggle('SlideEnm', {
-    Title = 'Slide to enemy',
-    Description = 'Slides to players behind.',
-    Default = false,
-})
-local v938 = _SlideEnm2
-
-_SlideEnm2.OnChanged(v938, function() end)
-
-Keybind = u67.Nono:AddKeybind('Keybind', {
-    Title = 'KeyBind',
-    Mode = 'Toggle',
-    Default = 'N',
-    Callback = function(p939)
-        isKeyPressed = p939
-    end,
-    ChangedCallback = function(p940)
-        keybindKey = p940
-    end,
-})
 
 function getClosestPlayerToScreenCenter()
     local v941 = nil
